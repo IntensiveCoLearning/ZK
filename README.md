@@ -1,8 +1,6 @@
-# 残酷共学模版
+# ZK 残酷共学
 
-> 本文档为创建残酷共学的通用模版 - 中文版，请根据模版结构来进行你的残酷共学的内容填充
-
-# {本期残酷共学标题}
+> ***大家聚集在这里，~~为了200w的梦想~~，为了学习 ZK***
 
 ## 什么是残酷共学（Intensive Co-learning）？
 
@@ -17,56 +15,85 @@
 
 报名方式是完全基于 GitHub 的流程，通过提交 PR 进行申请，合并 PR 之后拥有更新权限。如果你不熟悉 GitHub 和 Git 的操作，请先自行学习。通常还会有一个小型的 Telegram 交流群方便交流。
 
-关于更多「残酷共学」的介绍请参见：https://forum.lxdao.io/t/topic/1654，关于更多正在发生的残酷共学请参见：https://intensivecolearn.ing/。
+关于更多「残酷共学」的介绍请参见：[https://forum.lxdao.io/t/topic/1654，关于更多正在发生的残酷共学请参见：https://intensivecolearn.ing/。](https://forum.lxdao.io/t/topic/1654%EF%BC%8C%E5%85%B3%E4%BA%8E%E6%9B%B4%E5%A4%9A%E6%AD%A3%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9A%84%E6%AE%8B%E9%85%B7%E5%85%B1%E5%AD%A6%E8%AF%B7%E5%8F%82%E8%A7%81%EF%BC%9Ahttps://intensivecolearn.ing/%E3%80%82)
 
 如果你有任何有关残酷共学的疑问或者想法，请到 [残酷共学 Telegram 群](https://t.me/LXDAO/6215) 联系我们。
 
-## {本期残酷共学名字}介绍
+## ZK 残酷共学介绍
 
-请写清楚本期残酷共学：
+---
 
-- 举办的原因
-- 谁/哪个组织发起的
-- 一共几期
-- 共学形式：自主学习、定期答疑、线上课程 、线下 Meetup (请自由组合或新增新的共学方式)
-- 本次共学目标或产出
-- 适合人群
-- 负责人、助教、导师的简单介绍以及联系方式
+zkSync 使用 zk-Rollup 技术提供了 Layer2 的拓展解决方案，引发了很多人对于 ZK 技术的好奇。不久前关于 ZK 工程师年薪 200w 的爆料更加激发了社区对于 ZK 学习的热情。
 
-## 共学内容
+ZK 的原理是什么？为什么能实现隐私保护？ZK 技术为什么被这么多人看好？想成为 ZK 工程师需要掌握哪些知识？
 
-请写清楚共学内容的链接以及使用方法，如果欢迎新增共学内容，也请说明一下，但请负责人保证共学的内容准确、质量、数量、符合本次共学难度。
+为了回答社区成员关于 ZK 的疑问，同时为了向更多人科普 ZK 技术，LXDAO 基于过往成功举办的残酷学习经验，准备发起 “ZK 残酷共学”，持续召集一群想要了解 ZK 是什么或者想要深入学习 ZK 技术的 LX 道友，通过不懈的残酷学习，**初步了解 ZK 是什么、ZK 技术在具体项目中的应用、ZKP 的发展和简单实现，最终能够成功完成一些产品的开发**。
 
-如果有提供的具体的课程学习计划，也请在此说明。
+- 共学目标：「  ZK 残酷共学」将可持续地从第 1 期有序的推进到 N 期，21 天为一个周期，从基础开始，初步掌握关于 ZK 的基础知识，了解 ZKP 简单的代码实现，进而最终实现 ZK 的项目的设计与开发。
+- 共学激励：**残酷无激励，**为体现残酷共学的氛围，目前不设置激励环节，~~因为 200w 年薪就是最大的激励~~，因为学习知识就是最大的奖励
+- 共学形式：自主学习、线上分享（腾讯会议 or gather town or whatever），更多信息请关注 [ZK 残酷共学频道](https://t.me/LXDAO/9644)
+- 面向人群：背景不限，重点在于你是否对 ZK 技术感兴趣，是否愿意投入精力学习这门非常硬核的技术。
+- 本期助教：Coooder TG 联系方式：@Coooder_Crypto
 
-## 共学时间
+### 共学内容
 
-- 报名截止时间：(请写明时区)
-- 本期共学开始时间：(请写明时区)
-- 本期共学持续时间：21 天（我们默认为 21 天，21 天为养成一个新习惯的周期，可根据自己的内容和课程来制定，但不易过长或过短）
+第一期的重点是向大家介绍什么是 ZK、 ZKP 的基础知识，以及 Circom 代码入门，有一定难度，共学资料如下：
 
-## 共学规则
+- 课前学习：
+    - 20min 的视频：[初步理解 ZK 是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c)
+    - 70min 的播客：[零知识证明：一场”无知“的游戏](https://www.xiaoyuzhoufm.com/episode/6672a76bb6a8412729e0b103)
+- 第一周：7 月 29 日 - 8 月 4 日：Introduction and History of ZKP
+    - 100min 的视频：[ZKP Lecture 1: Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
+    - [（一）初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+    - [（二）理解「模拟」](https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html)
+    - [（三）寻找「知识」](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html)
+    - [（四）随机「挑战」](https://learn.z2o-k7e.world/zkp-intro/4/zkp-rom.html)
+    - [（五）埋藏「秘密」](https://learn.z2o-k7e.world/zkp-intro/5/zkp-crs.html)
+- 第二周：8 月 5 日 - 8 月 11 日：Overview of Modern SNARK Constructions
+    - 80min的视频： [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+    - [1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
+    - [2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
+    - [3-General-Purpose-Computation](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html)
+    - [4-Construction-Properties.md](https://learn.z2o-k7e.world/zk-snarks/4-Construction-Properties.html)
+    - [5-Pinocchio-Protocol](https://learn.z2o-k7e.world/zk-snarks/5-Pinocchio-Protocol.html)
+- 第三周：8 月 12 日 - 8 月 18 日：Write some Circom
+    - 基础电路：
+        - [ZK Shanghai 基础电路教学](https://www.youtube.com/watch?v=CTJ1JkYLiyw&ab_channel=SutuLabs)
+        - 编辑器：[zkREPL](https://zkrepl.dev/)
+        - [基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md) 这部分材料结合了Circom源码，可以多花时间来研究
+    - 实用电路：
+        - [ZK Shanghai 实用电路教学](https://www.youtube.com/watch?v=smJz5RdY0Nc)
+        - 课程资源：[snarkjs resources (zkiap.com)](https://zkiap.com/snarkjs)、[What Is Semaphore? | Semaphore](https://docs.semaphore.pse.dev/)
 
-（以下内容为 LXDAO 共学活动默认规则，你可以根据自己共学的情况进行修改，请注意我们有自动化脚本进行打卡记录的更新，请确保如果修改规则要将脚本规则一并修改）
+本次共学资料前两周的 lecture 来自 [zk-learning](https://zk-learning.org/)，博客来自 [《探索零知识证明系列》](https://learn.z2o-k7e.world/zkp-intro/toc.html)和[《从零开始学习 zk-SNARK》](https://learn.z2o-k7e.world/zk-snarks/toc.html)，第三周的 Circom 部分来自 [0xparc](https://zkiap.com/)，视频讲解为 [ZK Shanghai](https://zkshanghai.xyz/) 的中文版本。学有余力者可以依此找到更多的扩展内容。
 
-- 报名规则：请在报名截止时间前进行报名，共学一旦开始后，不得中途加入
-- 打卡规则：建议你每天学习 30 ～ 60 分钟，并将学习笔记提交，我们会自动更新你的打卡状态，每周有两次请假的机会，超过后状态变为 ❌，视为本次共学失败
-- 激励规则：（如果有具体的激励方式请写明）（没有激励方案默认文案灵感：通过本次共学学到的知识，就是你给自己最好的激励！）
-- 考核规则：（如果有具体的考核方式请写明，没有就不写）
+**最后，非常感谢安比实验室郭宇老师对于本次共学资料选择的指导！**
+
+### **共学时间**
+
+- 报名时间：第 1 期报名从 2024 年 7 月 22 日开始，截至 7 月 28 日晚 23 点（北京时间），之后不再接受报名。
+- 共学时间：第 1 期从北京时间 2024 年 7 月 29 日到 8 月 18 日，共 21 天，持续三周，建议每天投入一小时左右用来残酷学习。
+
+### 共学规则
+
+- 报名规则：请在报名截止时间前进行报名，共学一旦开始后，不得中途加入。
+- 打卡规则：建议你每天学习 30 ～ 60 分钟，并将学习笔记提交，我们会自动更新你的打卡状态，每周有两次请假的机会，超过后状态变为 ❌，视为本次共学失败。
+- 笔记内容：形式不限，记录当天学习的内容和心得，鼓励用自己的语言描述学到的知识。
+- 激励规则：学习知识就是最大的激励。
+
+---
 
 ## 如何报名和打卡？
 
-因为残酷共学的报名和打卡是基于 GitHub 进行开展的，如果你是非开发者或者对 git 操作不熟悉，请先阅读此文档：[残酷共学 GitHub 新手教程](https://www.notion.so/lxdao/GitHub-53fca5ba49bb40c69e4e40e69f58f416) - 这个文档还需要进行优化
+因为残酷共学的报名和打卡是基于 GitHub 进行开展的，如果你是非开发者或者对 git 操作不熟悉，请先阅读此文档：[残酷共学 GitHub 新手教程](https://www.notion.so/GitHub-53fca5ba49bb40c69e4e40e69f58f416?pvs=21) - 这个文档还需要进行优化
 
 - 报名:
-
-  - Fork 本仓库
-  - 复制 Template*{残酷共学编号}.md 创建你的个人笔记文件，并根据文档指引填写你的信息，并将文件重命名为你的名字：YourName*{残酷共学编号}.md。
-  - 创建一个 PR 到当前仓库，本残酷共学助教会对你的 PR 进行 review，review 通过后，你的 PR 会被 merge 到 main 分支，这个时候你会收到邀请加入这个仓库 contribution 的邮件，接受邀请后，你会自动获得 main 分支的 push 权限，这个时候表示你报名成功了，后续就可以将你的学习记录直接 push 到 main 分支进行更新。
-  - 请加入 xxx 群组保持交流：（请添加你创建的群组链接)。加入群组后请在群里报到一下方便助教记录。
-
+    - Fork 本仓库
+    - 复制 Template_{残酷共学编号}.md 创建你的个人笔记文件，并根据文档指引填写你的信息，并将文件重命名为你的名字：YourName_{残酷共学编号}.md。
+    - 创建一个 PR 到当前仓库，本残酷共学助教会对你的 PR 进行 review，review 通过后，你的 PR 会被 merge 到 main 分支，这个时候你会收到邀请加入这个仓库 contribution 的邮件，接受邀请后，你会自动获得 main 分支的 push 权限，这个时候表示你报名成功了，后续就可以将你的学习记录直接 push 到 main 分支进行更新。
+    - 请加入 [ZK 残酷共学频道](https://t.me/LXDAO/9644) 群组保持交流。加入群组后请在群里报到一下方便助教记录。
 - 打卡：
-  - 报名成功后，你将拥有 main 分支的 push 权限，你需要将每天学习笔记按日期更新到你的 YourName\_{残酷共学编号}.md 文档中，提交更新后，我们会自动更新你的打卡状态到下面的打卡记录表。
+    - 报名成功后，你将拥有 main 分支的 push 权限，你需要将每天学习笔记按日期更新到你的 YourName\_{残酷共学编号}.md 文档中，提交更新后，我们会自动更新你的打卡状态到下面的打卡记录表。
 
 ## {本期残酷共学名字}打卡记录表
 
@@ -74,7 +101,7 @@
 
 <!-- START_COMMIT_TABLE -->
 
-| Name(GitHub ID) | 6.24 | 6.25 | 6.26 | 6.27 | 6.28 | 6.29 | 6.30 | 7.01 | 7.02 | 7.03 | 7.04 | 7.05 | 7.06 | 7.07 | 7.08 | 7.09 | 7.10 | 7.11 | 7.12 | 7.13 | 7.14 |
+| Name(GitHub ID) | 7.29 | 7.30 | 7.31 | 8.1  | 8.2  | 8.3  | 8.4  | 8.5  | 8.6  | 8.7  | 8.8  | 8.9  | 8.10 | 8.11 | 8.12 | 8.13 | 8.14 | 8.15 | 8.16 | 8.17 | 8.18 |
 | --------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |                 |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
 |                 |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
@@ -92,24 +119,3 @@
 |                 |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
 
 <!-- END_COMMIT_TABLE -->
-
-> 如果你是此次共学发起人，请进行以下操作进行自动化发放权限的设置，完成后请将这一部分内容从你的仓库中删掉。
-
-### 为您的组织 【残酷共学营】 创建具有邀请协作者权限的个人访问令牌
-
-要创建具有邀请协作者权限的个人访问令牌，请按照以下步骤操作：
-
-1. 导航到您的个人设置: 转到 https://github.com/settings/profile 并登录您的 GitHub 帐户。
-
-2. 访问个人访问令牌页面: 在左侧菜单中，单击 “开发者设置”，然后选择 “个人访问令牌”。
-
-3. 创建新令牌: 点击 “生成新令牌” 按钮。选择 classic 的
-
-4. 命名您的令牌: 在 “令牌名称” 字段中输入一个描述性名称，例如 `invite-collaborators`。
-
-5. 选择适当的范围: 在 “范围” 部分，选择授予您的令牌所需的权限。对于邀请协作者，您需要授予以下范围：
-
-- `repo:invite`：允许您的令牌创建存储库邀请。最好是给这个令牌赋予 repo 总权限
-- admin:org 权限的用户才能创建具有邀请协作者权限的个人访问令牌。
-
-6. 将令牌值添加到存储库 secret: 按照上述步骤将您的个人访问令牌值添加到您的存储库 secret 中，并将名称设置为 `PAT_WITH_INVITE_PERMISSIONS`。
