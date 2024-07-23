@@ -57,7 +57,9 @@ timezone: Asia/Shanghai
 
 自学过一段时间，
 上过 https://github.com/sec-bit/learning-zkp/，
-想巩固和加深。
+对 Plonk 对理论有基础的了解，
+目前在 StarkNet 上做上层应用开发，
+想巩固和加深 zk。
 
 ## Notes
 
