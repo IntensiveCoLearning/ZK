@@ -93,11 +93,11 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 # Hazel Gong
 1. 自我介绍
-   观望 web3。想学点硬核的。
+   数学和物理专业毕业。之前在做 AI 产品。最近在学习 web3 的技术。
 3. 你认为你会完成本次残酷学习吗？
    会。
 5. 目前阶段对于 ZK 的了解？
-   一无所知。
+   了解概念。之前学过一些数论、看过 interactive proofs 相关的论文。看完了本次 colearning week1 前几篇文章。
 
 ## Notes
 
