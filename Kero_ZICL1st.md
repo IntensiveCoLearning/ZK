@@ -41,13 +41,25 @@ timezone: Asia/Shanghai
 
 ---
 
-# Draculabo
+# Kero
+
 1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
+
+
+昵称：Kero
+职业/擅长：区块链底层开发、区块链基础设施开发
+
 2. 你认为你会完成本次残酷学习吗？
-会
+
+100% 会
+
 3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
+
+自学过一段时间，
+上过 https://github.com/sec-bit/learning-zkp/，
+对 Plonk 对理论有基础的了解，
+目前在 StarkNet 上做上层应用开发，
+想巩固和加深 zk。
 
 ## Notes
 

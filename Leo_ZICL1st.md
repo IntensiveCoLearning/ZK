@@ -1,6 +1,8 @@
 ---
-timezone: Asia/Shanghai
+timezone: Pacific/Auckland
 ---
+
+timezone: Asia/Shanghai
 
 # ZK 残酷共学第 1 期残酷指引
 
@@ -41,13 +43,18 @@ timezone: Asia/Shanghai
 
 ---
 
-# Draculabo
+# Leo
 1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
+    
+    在Web3领域有丰富的设计开发经验，想继续充实ZK相关的知识
+
 2. 你认为你会完成本次残酷学习吗？
-会
+
+    会
+
 3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
+
+    基本入门，做过一些ZK应用方面的项目
 
 ## Notes
 

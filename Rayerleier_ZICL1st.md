@@ -2,6 +2,7 @@
 timezone: Asia/Shanghai
 ---
 
+
 # ZK 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
@@ -39,27 +40,14 @@ timezone: Asia/Shanghai
 
 ### **最后，非常感谢安比实验室郭宇老师对于本次共学资料选择的指导！**
 
----
-
-# Draculabo
-1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
-2. 你认为你会完成本次残酷学习吗？
-会
-3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
-
-## Notes
-
-<!-- Content_START -->
-
-### 2024.07.29
-
+{Rayer}
+自我介绍: 区块链从业者
+你认为你会完成本次残酷学习吗？ 会的
+目前阶段对于 ZK 的了解？ 只有概念性的了解，没有数学和算法层面的了解
+Notes
+2024.07.29
 举例示范：
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
-
-### 2024.07.30
-
-<!-- Content_END -->
+学习主题：XXXX
+学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+2024.07.30

@@ -41,13 +41,13 @@ timezone: Asia/Shanghai
 
 ---
 
-# Draculabo
-1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
-2. 你认为你会完成本次残酷学习吗？
-会
-3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
+# Oscar
+1. A eco-lifelong learner.
+
+   For the dream of  2 million😄. To surf🏄‍♀️ better in the Web3 world. Enjoy this challenging vibe and become cooler 🆒. 
+2. 你认为你会完成本次残酷学习吗？Yes
+
+3. 目前阶段对于 ZK 的了解？Have a little knowledge. 
 
 ## Notes
 
@@ -61,5 +61,6 @@ timezone: Asia/Shanghai
 - 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
 
 ### 2024.07.30
+
 
 <!-- Content_END -->

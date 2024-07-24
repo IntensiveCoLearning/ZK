@@ -41,13 +41,19 @@ timezone: Asia/Shanghai
 
 ---
 
-# Draculabo
+# Stone
+
 1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
+
+在Web3领域（底层链和应用）有丰富的经验，目前的工作和ZK相关，希望继续学习完善ZK相关的知识体系。
+
 2. 你认为你会完成本次残酷学习吗？
-会
+
+能。
+
 3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
+
+有一定的了解和设计开发经验。
 
 ## Notes
 
