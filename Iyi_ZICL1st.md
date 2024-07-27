@@ -41,7 +41,7 @@ timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
 
 timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
 
-timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
+timezone: Asia/Shanghai 24.7.27.2.02
 
 timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
 
