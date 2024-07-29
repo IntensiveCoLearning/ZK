@@ -88,15 +88,17 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {你的名字}
-1. 自我介绍
-2. 你认为你会完成本次残酷学习吗？
-3. 目前阶段对于 ZK 的了解？
+# {AricRedemption}
+1. 我是 AricRedemption , BTC layer2社区开发者
+2. 我认为会完成btc-starknet相关的zk验证开发，开源项目[bitcoin-circle-stark
+](https://github.com/Bitcoin-Wildlife-Sanctuary/bitcoin-circle-stark)
+3. 我需要系统学习zk开发相关的知识
 
 ## Notes
 
 <!-- Content_START -->
-
+### 2024.07.28
+注册 ZK 共学
 ### 2024.07.29
 
 举例示范：

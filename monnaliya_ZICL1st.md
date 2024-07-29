@@ -89,9 +89,9 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ---
 
 # {你的名字}
-1. 自我介绍
-2. 你认为你会完成本次残酷学习吗？
-3. 目前阶段对于 ZK 的了解？
+1. 自我介绍 I'm a frontend developer, I want learn web3 technology
+2. 你认为你会完成本次残酷学习吗？yes, I will
+3. 目前阶段对于 ZK 的了解？not know too much
 
 ## Notes
 
