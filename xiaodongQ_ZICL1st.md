@@ -42,11 +42,11 @@ timezone: Asia/Shanghai
 ---
 
 # {你的名字}
-1. 自我介绍
+1. 自我介绍  
     CPP多年开发，学过Go、Rust，尝试搞Web3副业
-2. 你认为你会完成本次残酷学习吗？
+2. 你认为你会完成本次残酷学习吗？  
     应该能
-3. 目前阶段对于 ZK 的了解？
+3. 目前阶段对于 ZK 的了解？  
     了解不多，仅限部分概念
 
 ## Notes
@@ -55,11 +55,23 @@ timezone: Asia/Shanghai
 
 ### 2024.07.29
 
-举例示范：
+- 学习主题：了解ZKP（零知识证明，Zero-Knowledge Proof），以及共学提供的资料
+- 学习内容小结：
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+1. Amit Sahai教授针对不同年龄和知识水平的人讲解ZKP的几个示例（Amit Sahai是UCLA的计算机方面的一位杰出教授，研究兴趣集中在密码学和安全等领域），初步了解零知识证明的作用。视频：[初步理解 ZK 是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c)
+2. 简单听了下介绍ZKP的中文播客，听得有点累，还是先看看文档吧
+3. [z2o-k7e社区](https://learn.z2o-k7e.world/)整理的学习ZKP资料，看起来质量很不错
+
+目前学习了：[1. 初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+
+番外：  
+找郭宇老师推特（[1dot2](https://twitter.com/1dot2)）过程中，看到已退推的[kurtpan.eth](https://twitter.com/kurtpan666)（复旦密码学博士，也是上面z2o-k7e项目的主要贡献者之一）博客上截取自《过河卒》的这篇文章：[过河卒·日出江花红胜火](https://zkfold.ing/guohezu-wd)。  
+周六去杭州的web3 summer线下，正好嘉宾也谈到比特币白皮书和国人的渊源，引用文献的第一篇就是一个华人的文章。也就是上面文章中的[Wei Dai](https://en.wikipedia.org/wiki/Wei_Dai)。
+
+这里简单记录每日学习小结，具体内容放在[zk_learn_note笔记](https://github.com/xiaodongQ/devNoteBackup/blob/master/%E5%90%84%E5%88%86%E7%B1%BB%E8%AE%B0%E5%BD%95/blockchain/zk_learn_note.md)。
 
 ### 2024.07.30
+
+
 
 <!-- Content_END -->
