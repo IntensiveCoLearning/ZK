@@ -108,18 +108,21 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 学习主题：[Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
 学习内容小结：
 
+Basic concepts: 
+
 Interactive proofs:
 - There is a prover and a verifier. Both are algorithms. The prover sends a string to the verifier. The verifier decides whether to accept or reject it. 
 
 Efficiently verifiable proofs (NP proofs):
-- Proofs is short. Verifier has polynomial time to verify. 
+- Proof is short. Verifier has polynomial time to verify. 
 - claim x
-- short proof w: length |w| is polynomial in |x| (so |w|=|x|^a, a is a number)
+- short proof w: length |w| is polynomial in |x| (so |w|=|x|^a, a is a number? )
 - verifier V is a function. accepts x if V(x, w)=1, else reject. V takes time polynomial in |x|.
 
 Polynomial time: 
 - a class of problems whose running time grows polynomially with the size of the input. (用来形容算法复杂度，更加复杂的算法可能会是 exponential time，更简单的算法可能会是 linear time)
 
+NP-Language:
 L is an NP-language (or NP-decision problem) if there is a poly(|x|)-time verifier V with completeness (true claims with short proofs evaluates to 1) and soundness (false claims have no proof). 
 
 
