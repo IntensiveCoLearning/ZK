@@ -2,6 +2,7 @@
 timezone: Asia/Shanghai
 ---
 
+
 # ZK 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
@@ -41,13 +42,16 @@ timezone: Asia/Shanghai
 
 ---
 
-# Oscar
-1. A eco-lifelong learner.
+# Antigone4224
+1. 自我介绍
+   
+   慢慢接触web3的一个本科学生。
+2. 你认为你会完成本次残酷学习吗？
+   
+   Maybe 80%
+3. 目前阶段对于 ZK 的了解？
 
-   For the dream of  2 million😄. To surf🏄‍♀️ better in the Web3 world. Enjoy this challenging vibe and become cooler 🆒. 
-2. 你认为你会完成本次残酷学习吗？Yes
-
-3. 目前阶段对于 ZK 的了解？Have a little knowledge. 
+   了解过一些零知识证明的案例
 
 ## Notes
 
@@ -55,28 +59,8 @@ timezone: Asia/Shanghai
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：Introduction and History of ZKP
-- 学习内容小结：
-
-  - 看[视频](https://mp.weixin.qq.com/s/ZIXOxidlYZExzDZuEdg8Yg)：计算机科学家 Amit Sahai 分别向五类不同水平的人群（儿童、青少年、大学生、研究生和专家）讲解零知识证明。有趣的思考：**为什么叫零知识而不是零信息、零数据** ? 🤔
-
-  - 查看[Wiki](https://zh.wikipedia.org/wiki/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E)：[密码学](https://zh.wikipedia.org/wiki/密码学)中，**零知识证明**（英语：zero-knowledge proof）或**零知识协议**（zero-knowledge protocol）是一方（证明者）向另一方（检验者）证明某命题的方法，特点是过程中除“该命题为真”之事外，不泄露任何信息。因此，可理解成“零泄密证明”。
-
-    - 例如：欲向人证明自己拥有某情报，则直接公开该情报即可，但如此则会将该细节亦一并泄露；零知识证明的精粹在于，如何证明自己拥有该情报而不必透露情报内容。这也是零知识证明的难点。
-
-    - **零知识证明要具备下列三种性质：**
-
-      - **完备**（complete） 若所要证之事为真，则诚实（意即依协议行事）的证明者能说服诚实验证者。
-      - **健全**（sound） 若命题为假，则作弊证明者仅得极小机会能说服诚实验证者该事为真。
-      - **零知识（zero-knowledge）** 若命题为真，则验证者除此之外，过程中没有得悉任何其他信息。换言之，仅知命题为真（而不知秘密本身）已足以“想像”出一个交互的情境，其中证明者的确知道该秘密。此性质能严格定义为：每个验证者皆有相应的模拟器，输入欲证事实时，无需求助于证明者，已可输出一套通信誊本，看似诚实验证者与证明者的通信记录。
-
-      小结：前两种性质，更广义的[**交互式证明系统**](https://zh.wikipedia.org/wiki/交互式证明系统)亦应具备。第三种性质使该交互证明称为零知识。 零知识证明不算[**数学证明**](https://zh.wikipedia.org/wiki/數學證明)，因为尚允许有很少（但非零）概率，令作弊证明者能向验证者“证明”假命题。该概率称为可靠度误差（soundness error）。换言之，**零知识证明是概率“证明”**🤔，而非决定性。不过，也有技巧将可靠度误差压到忽略不计。
-
-
+看了20min的那个视频，视频通过对不同人群的访谈阐述了不同人对于zk的看法，从而展示zk的概念，对于我来说最直接关于zk的案例就是数字签名，非对称密钥私钥签名的哈希可以验证数据的来源。这两天都比较忙，可能还是一步一步追readme里的材料。。
 
 ### 2024.07.30
-
 
 <!-- Content_END -->

@@ -41,13 +41,13 @@ timezone: Asia/Shanghai
 
 ---
 
-# Oscar
-1. A eco-lifelong learner.
-
-   For the dream of  2 million😄. To surf🏄‍♀️ better in the Web3 world. Enjoy this challenging vibe and become cooler 🆒. 
-2. 你认为你会完成本次残酷学习吗？Yes
-
-3. 目前阶段对于 ZK 的了解？Have a little knowledge. 
+# {你的名字}
+1. 自我介绍  
+    CPP多年开发，学过Go、Rust，尝试搞Web3副业
+2. 你认为你会完成本次残酷学习吗？  
+    应该能
+3. 目前阶段对于 ZK 的了解？  
+    了解不多，仅限部分概念
 
 ## Notes
 
@@ -55,28 +55,23 @@ timezone: Asia/Shanghai
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：Introduction and History of ZKP
+- 学习主题：了解ZKP（零知识证明，Zero-Knowledge Proof），以及共学提供的资料
 - 学习内容小结：
 
-  - 看[视频](https://mp.weixin.qq.com/s/ZIXOxidlYZExzDZuEdg8Yg)：计算机科学家 Amit Sahai 分别向五类不同水平的人群（儿童、青少年、大学生、研究生和专家）讲解零知识证明。有趣的思考：**为什么叫零知识而不是零信息、零数据** ? 🤔
+1. Amit Sahai教授针对不同年龄和知识水平的人讲解ZKP的几个示例（Amit Sahai是UCLA的计算机方面的一位杰出教授，研究兴趣集中在密码学和安全等领域），初步了解零知识证明的作用。视频：[初步理解 ZK 是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c)
+2. 简单听了下介绍ZKP的中文播客，听得有点累，还是先看看文档吧
+3. [z2o-k7e社区](https://learn.z2o-k7e.world/)整理的学习ZKP资料，看起来质量很不错
 
-  - 查看[Wiki](https://zh.wikipedia.org/wiki/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E)：[密码学](https://zh.wikipedia.org/wiki/密码学)中，**零知识证明**（英语：zero-knowledge proof）或**零知识协议**（zero-knowledge protocol）是一方（证明者）向另一方（检验者）证明某命题的方法，特点是过程中除“该命题为真”之事外，不泄露任何信息。因此，可理解成“零泄密证明”。
+目前学习了：[1. 初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
 
-    - 例如：欲向人证明自己拥有某情报，则直接公开该情报即可，但如此则会将该细节亦一并泄露；零知识证明的精粹在于，如何证明自己拥有该情报而不必透露情报内容。这也是零知识证明的难点。
+番外：  
+找郭宇老师推特（[1dot2](https://twitter.com/1dot2)）过程中，看到已退推的[kurtpan.eth](https://twitter.com/kurtpan666)（复旦密码学博士，也是上面z2o-k7e项目的主要贡献者之一）博客上截取自《过河卒》的这篇文章：[过河卒·日出江花红胜火](https://zkfold.ing/guohezu-wd)。  
+周六去杭州的web3 summer线下，正好嘉宾也谈到比特币白皮书和国人的渊源，引用文献的第一篇就是一个华人的文章。也就是上面文章中的[Wei Dai](https://en.wikipedia.org/wiki/Wei_Dai)。
 
-    - **零知识证明要具备下列三种性质：**
-
-      - **完备**（complete） 若所要证之事为真，则诚实（意即依协议行事）的证明者能说服诚实验证者。
-      - **健全**（sound） 若命题为假，则作弊证明者仅得极小机会能说服诚实验证者该事为真。
-      - **零知识（zero-knowledge）** 若命题为真，则验证者除此之外，过程中没有得悉任何其他信息。换言之，仅知命题为真（而不知秘密本身）已足以“想像”出一个交互的情境，其中证明者的确知道该秘密。此性质能严格定义为：每个验证者皆有相应的模拟器，输入欲证事实时，无需求助于证明者，已可输出一套通信誊本，看似诚实验证者与证明者的通信记录。
-
-      小结：前两种性质，更广义的[**交互式证明系统**](https://zh.wikipedia.org/wiki/交互式证明系统)亦应具备。第三种性质使该交互证明称为零知识。 零知识证明不算[**数学证明**](https://zh.wikipedia.org/wiki/數學證明)，因为尚允许有很少（但非零）概率，令作弊证明者能向验证者“证明”假命题。该概率称为可靠度误差（soundness error）。换言之，**零知识证明是概率“证明”**🤔，而非决定性。不过，也有技巧将可靠度误差压到忽略不计。
-
-
+这里简单记录每日学习小结，具体内容放在[zk_learn_note笔记](https://github.com/xiaodongQ/devNoteBackup/blob/master/%E5%90%84%E5%88%86%E7%B1%BB%E8%AE%B0%E5%BD%95/blockchain/zk_learn_note.md)。
 
 ### 2024.07.30
+
 
 
 <!-- Content_END -->
