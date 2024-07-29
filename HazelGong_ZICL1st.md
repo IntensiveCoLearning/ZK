@@ -125,7 +125,22 @@ Polynomial time:
 NP-Language:
 L is an NP-language (or NP-decision problem) if there is a poly(|x|)-time verifier V with completeness (true claims with short proofs evaluates to 1) and soundness (false claims have no proof). 
 
+ZKP: prove that I have the knowledge without giving away the knowledge, using interactive probabilistic proof. 
+- through polynomial interactions
+- randomness: V is randomized, can err in accept/reject with small probability. 
+
+Interactive proof model
+- P, V know the claim x
+- V is probabilistic polynomial time
+- V takes in x, and all interactions between them to decide whether to accept or reject.
+
 
 ### 2024.07.30
+
+Examples of an interactive proof: 
+
+Intuitions of interactive proofs:
+
+Simulation: 
 
 <!-- Content_END -->
