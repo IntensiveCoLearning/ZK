@@ -101,9 +101,7 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 <!-- Content_START -->
 
 ### 2024.07.29
-
-举例示范：
-
+本身有zk基础，所以跳过前面部分，改为其他zk相关自学内容
 - 学习主题：BLS签名
 - 学习内容：
 1. BLS签名验证过程 即e(P, H(m)) = e(G, S)
