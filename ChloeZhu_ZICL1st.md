@@ -47,6 +47,7 @@ MoonMath
     - /usr/local/bin/sage
     - [https://www.sagemath.org/index.html](https://www.sagemath.org/index.html)
     - SageMath is a free open-source mathematics software system licensed under the GPL. It builds on top of many existing open-source packages: NumPy, SciPy, matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. Access their combined power through a common, Python-based language or directly via interfaces or wrappers.
+- Walked through Chapter 1 intro
 
 ### 2024.07.30
 
