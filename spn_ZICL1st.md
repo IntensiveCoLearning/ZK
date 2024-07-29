@@ -103,8 +103,8 @@ XDU大四学生，ZK在学。
 
 举例示范：
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：学习了plonk多项式  
+- 学习内容小结：之前有一些基础，今天接着看了安比实验室对应的[课程](https://www.youtube.com/watch?v=bNGac1CJEKM)与[资料](https://github.com/sec-bit/learning-zkp/blob/master/plonk-intro-notebook-zh/2-plonk-lagrange-basis.ipynb),想趁着这次活动将这个系列的课程接着看完，
 
 ### 2024.07.30
 
