@@ -98,8 +98,28 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 <!-- Content_START -->
 
 ### 2024.07.29
+1. finite field  有限域
+The finite field is the foundation of cryptography, and the motivation behind of that is because of precision problems. 
+In order to solve the precision problem, a new numbers system had been designed, and there are some objectives:
+1st: it will only use "whole number", such as 0, 1, 2, 3, ...;
+2nd: only a limited number of the "whole number", which means that it's a finite set.
+3rd：All arithmetic operations, like addition, subtraction, multiplication, division, exponentiation and logarithm, that can do with real number sould be defined with new number system.
 
-举例示范：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - 学习主题：XXXX
 - 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
