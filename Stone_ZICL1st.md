@@ -41,25 +41,19 @@ timezone: Asia/Shanghai
 
 ---
 
-# Kero
+# Stone
 
 1. 自我介绍
 
-
-昵称：Kero
-职业/擅长：区块链底层开发、区块链基础设施开发
+在Web3领域（底层链和应用）有丰富的经验，目前的工作和ZK相关，希望继续学习完善ZK相关的知识体系。
 
 2. 你认为你会完成本次残酷学习吗？
 
-100% 会
+能。
 
 3. 目前阶段对于 ZK 的了解？
 
-自学过一段时间，
-上过 https://github.com/sec-bit/learning-zkp/，
-对 Plonk 对理论有基础的了解，
-目前在 StarkNet 上做上层应用开发，
-想巩固和加深 zk。
+有一定的了解和设计开发经验。
 
 ## Notes
 

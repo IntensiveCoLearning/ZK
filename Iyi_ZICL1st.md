@@ -41,7 +41,7 @@ timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
 
 timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
 
-timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
+timezone: Asia/Shanghai 24.7.27.2.02
 
 timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
 
@@ -94,7 +94,7 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
    Iyi[奕] 主要从事架构设计、后端开发。学习的主要目的是进一步深入 Web3 , 未来从事 Web3 相关的职业。
 2. 你认为你会完成本次残酷学习吗？
    
-   会完成
+   100% 会完成
 3. 目前阶段对于 ZK 的了解？
 
    不了解
@@ -105,10 +105,8 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：学习 20min 视频 https://www.youtube.com/watch?v=fOGdb1CTu5c
+- 学习内容小结：ZK 是什么：证明某件事情成立，又不公布细节
 
 ### 2024.07.30
 

@@ -2,6 +2,14 @@
 timezone: Asia/Shanghai
 ---
 
+ # 中国标准时间 (UTC+8)
+
+timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
+
+timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
+
+timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
+
 # ZK 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
@@ -41,25 +49,13 @@ timezone: Asia/Shanghai
 
 ---
 
-# Kero
-
+# {你的名字}
 1. 自我介绍
-
-
-昵称：Kero
-职业/擅长：区块链底层开发、区块链基础设施开发
-
+最硬的男人
 2. 你认为你会完成本次残酷学习吗？
-
-100% 会
-
+必须能
 3. 目前阶段对于 ZK 的了解？
-
-自学过一段时间，
-上过 https://github.com/sec-bit/learning-zkp/，
-对 Plonk 对理论有基础的了解，
-目前在 StarkNet 上做上层应用开发，
-想巩固和加深 zk。
+懂一点点  
 
 ## Notes
 

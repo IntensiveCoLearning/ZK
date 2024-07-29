@@ -1,6 +1,8 @@
 ---
-timezone: Asia/Shanghai
+timezone: Pacific/Auckland
 ---
+
+timezone: Asia/Shanghai
 
 # ZK 残酷共学第 1 期残酷指引
 
@@ -41,25 +43,18 @@ timezone: Asia/Shanghai
 
 ---
 
-# Kero
-
+# Leo
 1. 自我介绍
-
-
-昵称：Kero
-职业/擅长：区块链底层开发、区块链基础设施开发
+    
+    在Web3领域有丰富的设计开发经验，想继续充实ZK相关的知识
 
 2. 你认为你会完成本次残酷学习吗？
 
-100% 会
+    会
 
 3. 目前阶段对于 ZK 的了解？
 
-自学过一段时间，
-上过 https://github.com/sec-bit/learning-zkp/，
-对 Plonk 对理论有基础的了解，
-目前在 StarkNet 上做上层应用开发，
-想巩固和加深 zk。
+    基本入门，做过一些ZK应用方面的项目
 
 ## Notes
 
