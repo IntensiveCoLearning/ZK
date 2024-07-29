@@ -62,10 +62,8 @@ timezone: Pacific/Auckland
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：初步了解ZK是什么
+- 学习内容小结：观看[学习视频-初步理解ZK是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c)
 
 ### 2024.07.30
 
