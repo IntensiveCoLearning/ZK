@@ -42,6 +42,12 @@ Notes
         - Why zero-knowledge, not zero-data or zero-info; nuance between knowledge, data, and info
         - Transition from theoretical to applied zk
 
+MoonMath
+- Installed SageMath
+    - /usr/local/bin/sage
+    - [https://www.sagemath.org/index.html](https://www.sagemath.org/index.html)
+    - SageMath is a free open-source mathematics software system licensed under the GPL. It builds on top of many existing open-source packages: NumPy, SciPy, matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. Access their combined power through a common, Python-based language or directly via interfaces or wrappers.
+
 ### 2024.07.30
 
 <!-- Content_END -->
