@@ -105,10 +105,8 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：学习 20min 视频 https://www.youtube.com/watch?v=fOGdb1CTu5c
+- 学习内容小结：ZK 是什么：证明某件事情成立，又不公布细节
 
 ### 2024.07.30
 

@@ -62,12 +62,33 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 <!-- Content_START -->
 
 ### 2024.07.29
+#### 用 5 种难度解释一个概念
 
-举例示范：
+1. Child:
+很喜欢这个例子：找一张海豹群照片里企鹅，我证明我找得到企鹅，但不透露企鹅的位置。
+此时只需要用一块大板子挡住照片，但只漏出企鹅即可。
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+2. Teen:
+一个带密码的秘密罐子，把秘密投进罐子里，此时除我以外没有人能知道秘密，除非有人知道密码。
+那么如果一个人说出了我的秘密就说明他知道密码。 
+关键是不能暴露秘密
 
-### 2024.07.30
+3. College Student:
+ZKP的核心是两个人的交互
+进行ZKP前得明确证明什么
+NP-Complete Problem: NP-complete problems are a class of computational problems where an efficient, algorithmic solution has yet to be found
+NP-Complete-三色问题
+ZKP不是第一步第二步第三步，而是在一定概率上可以证明某事
+（比如三色问题，不断的随机挑两个颜色，如果很多很多次都是对的，那么就可以证明三色设置是对的）
+
+4. Grad Student 
+ZKP解决人的不信任问题
+ZKP的瓶颈在验证者，但可以考分布式并行计算加快验证。
+
+5. Expert
+ZK!=ZK information
+非交互性但可验证性
+ZK的未来：
+量子计算下怎么增加难度
 
 <!-- Content_END -->
