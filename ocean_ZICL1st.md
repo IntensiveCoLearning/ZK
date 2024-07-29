@@ -1,5 +1,5 @@
 ---
-timezone: Pacific/Auckland
+timezone: Asia/Shanghai
 ---
 
 > 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
@@ -88,13 +88,13 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {Punkcan}
+# {ocean}
 1. 自我介绍
-	1. 现在是个普通上班族，编程，数据库，服务器，杂七杂八的都会一点点。
+infra engineer mainly on solana eco.
 2. 你认为你会完成本次残酷学习吗？
-	1. 这个较难，我降低一下预期55.335%
+sure!
 3. 目前阶段对于 ZK 的了解？
-	1. 还在理解公式中
+I've done some projects about zk poker game, zklogin with groth16. Nowadays, i will have some work related to zk-rollup on solana, maybe using zkcompaction.
 
 ## Notes
 

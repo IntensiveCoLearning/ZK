@@ -198,7 +198,7 @@ def check_weekly_status(user_status, date, user_tz):
 
 
 def get_all_user_files():
-    return [f.split('_')[0] for f in os.listdir('.')
+    return [f[:-len(FILE_SUFFIX)] for f in os.listdir('.')
             if f.endswith(FILE_SUFFIX) and not f.startswith('Template')]
 
 

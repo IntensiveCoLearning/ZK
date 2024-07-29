@@ -41,7 +41,7 @@ timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
 
 timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
 
-timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
+timezone: Asia/Shanghai 中国标准时间 (UTC+8)
 
 timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
 
@@ -88,13 +88,10 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {Punkcan}
-1. 自我介绍
-	1. 现在是个普通上班族，编程，数据库，服务器，杂七杂八的都会一点点。
-2. 你认为你会完成本次残酷学习吗？
-	1. 这个较难，我降低一下预期55.335%
-3. 目前阶段对于 ZK 的了解？
-	1. 还在理解公式中
+# {你的名字} cin
+1. 自我介绍 我是一名大学生，我对web3有着浓厚的兴趣，它构想的未来深深地吸引着我，在我对未来内卷的大厂工作失望之际，它给我带来了曙光
+2. 你认为你会完成本次残酷学习吗？会
+3. 目前阶段对于 ZK 的了解？不太了解
 
 ## Notes
 
