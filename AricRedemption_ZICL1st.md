@@ -1,5 +1,5 @@
 ---
-timezone: Asia/Shanghai
+timezone: Pacific/Auckland
 ---
 
 > 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
@@ -88,15 +88,17 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {陈明星}
-1. 自我介绍: learn zk
-2. 你认为你会完成本次残酷学习吗？竭尽全力
-3. 目前阶段对于 ZK 的了解？简单了解
+# {AricRedemption}
+1. 我是 AricRedemption , BTC layer2社区开发者
+2. 我认为会完成btc-starknet相关的zk验证开发，开源项目[bitcoin-circle-stark
+](https://github.com/Bitcoin-Wildlife-Sanctuary/bitcoin-circle-stark)
+3. 我需要系统学习zk开发相关的知识
 
 ## Notes
 
 <!-- Content_START -->
-
+### 2024.07.28
+注册 ZK 共学
 ### 2024.07.29
 
 举例示范：

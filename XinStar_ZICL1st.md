@@ -1,5 +1,5 @@
 ---
-timezone: Asia/Shanghai
+timezone: Pacific/Auckland
 ---
 
 > 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
@@ -88,10 +88,10 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {陈明星}
-1. 自我介绍: learn zk
-2. 你认为你会完成本次残酷学习吗？竭尽全力
-3. 目前阶段对于 ZK 的了解？简单了解
+# {XinStar}
+1. 多年的区块链工程师，ZK领域的新人。
+2. 会，有挑战的一个方向，很期待
+3. 了解一些承诺方案的部分理论（KZG），写过一丢丢电路，还处于学习阶段。
 
 ## Notes
 
