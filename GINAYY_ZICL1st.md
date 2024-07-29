@@ -1,5 +1,5 @@
 ---
-timezone: Asia/Shanghai
+timezone: Pacific/Auckland
 ---
 
 > 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
@@ -89,9 +89,9 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ---
 
 # {你的名字}
-1. 自我介绍
-2. 你认为你会完成本次残酷学习吗？
-3. 目前阶段对于 ZK 的了解？
+1. GINA
+2. 你认为你会完成本次残酷学习吗？当然
+3. 目前阶段对于 ZK 的了解？ 小白
 
 ## Notes
 

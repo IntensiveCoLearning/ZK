@@ -65,8 +65,8 @@ timezone: Asia/Shanghai
 
 举例示范：
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：[初步理解 ZK 是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c&ab_channel=WIRED)
+- 学习内容小结：zero-knowledge proof
 
 ### 2024.07.30
 
