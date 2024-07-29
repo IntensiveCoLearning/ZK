@@ -21,10 +21,26 @@ timezone: Europe/Paris # 中欧标准时间 (UTC+2)
 
 ### 2024.07.29
 
-举例示范：
+Video: [Computer Scientist Explains One Concept in 5 Levels of Difficulty | WIRED](https://www.youtube.com/watch?v=fOGdb1CTu5c)
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+Notes
+- zkp is a way for prover to convince the verifier that some statement is true, yet reveal no additional info beyond the fact the statement is true
+- 5 levels to explain zkp
+    - Child: The prover proves that there is a puffin within a group of penguins in the photo through a hole to the verifier, without revealing the location of the puffin.
+    - Teen: The prover proves he know the password to a box, without revealing the exact pwd.
+    - College student:
+        - NP-complete problems: a class of computational problems where an efficient, algorithmic solution has yet to be found
+        - 3-colour problem: Prove that no blocks that share the border will have same colour. Make it impossible to put the pieces together and guess the whole map.
+        - A probabilistic proof
+        - zkp is not about making sth more efficient, but about doing things that can’t be done before, i.e. proving things without revealing any additional info
+    - Grad student:
+        - Proof is an interactive game.
+        - Randomness can be useful for proving sth. The unpredictability can be utilized to generate proof and hide info.
+        - Challenge: The main bottleneck lies on the prover
+        - The power of MPC is to bring people together who are mutually distrustful
+    - Expert:
+        - Why zero-knowledge, not zero-data or zero-info; nuance between knowledge, data, and info
+        - Transition from theoretical to applied zk
 
 ### 2024.07.30
 
