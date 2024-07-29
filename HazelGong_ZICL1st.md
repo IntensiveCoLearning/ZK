@@ -105,11 +105,42 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ### 2024.07.29
 
-举例示范：
+学习主题：[Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
+学习内容小结：
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+Basic concepts: 
+
+Interactive proofs:
+- There is a prover and a verifier. Both are algorithms. The prover sends a string to the verifier. The verifier decides whether to accept or reject it. 
+
+Efficiently verifiable proofs (NP proofs):
+- Proof is short. Verifier has polynomial time to verify. 
+- claim x
+- short proof w: length |w| is polynomial in |x| (so |w|=|x|^a, a is a number? )
+- verifier V is a function. accepts x if V(x, w)=1, else reject. V takes time polynomial in |x|.
+
+Polynomial time: 
+- a class of problems whose running time grows polynomially with the size of the input. (用来形容算法复杂度，更加复杂的算法可能会是 exponential time，更简单的算法可能会是 linear time)
+
+NP-Language:
+L is an NP-language (or NP-decision problem) if there is a poly(|x|)-time verifier V with completeness (true claims with short proofs evaluates to 1) and soundness (false claims have no proof). 
+
+ZKP: prove that I have the knowledge without giving away the knowledge, using interactive probabilistic proof. 
+- through polynomial interactions
+- randomness: V is randomized, can err in accept/reject with small probability. 
+
+Interactive proof model
+- P, V know the claim x
+- V is probabilistic polynomial time
+- V takes in x, and all interactions between them to decide whether to accept or reject.
+
 
 ### 2024.07.30
+
+Examples of an interactive proof: 
+
+Intuitions of interactive proofs:
+
+Simulation: 
 
 <!-- Content_END -->

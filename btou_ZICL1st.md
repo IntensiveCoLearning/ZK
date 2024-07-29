@@ -1,6 +1,53 @@
 ---
-timezone: Asia/Shanghai
+timezone: Pacific/Auckland
 ---
+
+> 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
+> 时区请参考以下列表，请移除 # 以后的内容
+
+timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
+
+timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
+
+timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
+
+timezone: America/Denver # 山地标准时间 (UTC-7)
+
+timezone: America/Chicago # 中部标准时间 (UTC-6)
+
+timezone: America/New_York # 东部标准时间 (UTC-5)
+
+timezone: America/Halifax # 大西洋标准时间 (UTC-4)
+
+timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
+
+timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
+
+timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
+
+timezone: Europe/London # 格林威治标准时间 (UTC+0)
+
+timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
+
+timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
+
+timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
+
+timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
+
+timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
+
+timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
+
+timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
+
+timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
+
+timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
+
+timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
+
+timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 # ZK 残酷共学第 1 期残酷指引
 
@@ -41,42 +88,59 @@ timezone: Asia/Shanghai
 
 ---
 
-# Oscar
-1. A eco-lifelong learner.
-
-   For the dream of  2 million😄. To surf🏄‍♀️ better in the Web3 world. Enjoy this challenging vibe and become cooler 🆒. 
-2. 你认为你会完成本次残酷学习吗？Yes
-
-3. 目前阶段对于 ZK 的了解？Have a little knowledge. 
+# {你的名字}
+1. 自我介绍
+btou
+2. 你认为你会完成本次残酷学习吗？
+For sure.
+3. 目前阶段对于 ZK 的了解？
+zero.
 
 ## Notes
 
 <!-- Content_START -->
 
 ### 2024.07.29
+零知识证明的5个级别
+level 1 child
+零知识证明就是告诉你某件事是真的，但是不告诉你任何原因
+eg.企鹅与海雀
+为什么使用零知识证明？
+在更大程度的保护个人隐私的情况下来证明“我是我”这个问题
 
-举例示范：
+level 2 teen
+eg. 密码箱
 
-- 学习主题：Introduction and History of ZKP
+解决什么问题？
+隐私和信任的问题
+为什么使用零知识证明？
+证明有一个秘密，但是不去告诉这个秘密的具体信息
+
+level 3 college student
+在区块链领域，零知识证明只是一个开始
+eg. NP completed problems
+
+不是为了提效，是为了解决之前无法解决的问题
+
+具体应用：零知识证明下的选举
+
+level 4 grad student
+实际应用中，弄清楚哪里能用零知识是很困难的
+利用随机性来掩藏我们想要隐藏的信息
+
+level 5 expert
+
+知识和数据和信息
+知识作为哲学也解释不清的一个问题，怎样能够和数学&计算机联系起来
+
+从医药的领域来说，可以不揭示这个药的化合物，就能证明这个药有效
+
+非交互性和可验证性
+
+怎样将零知识证明来证明更复杂环境的更多问题
 - 学习内容小结：
-
-  - 看[视频](https://mp.weixin.qq.com/s/ZIXOxidlYZExzDZuEdg8Yg)：计算机科学家 Amit Sahai 分别向五类不同水平的人群（儿童、青少年、大学生、研究生和专家）讲解零知识证明。有趣的思考：**为什么叫零知识而不是零信息、零数据** ? 🤔
-
-  - 查看[Wiki](https://zh.wikipedia.org/wiki/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E)：[密码学](https://zh.wikipedia.org/wiki/密码学)中，**零知识证明**（英语：zero-knowledge proof）或**零知识协议**（zero-knowledge protocol）是一方（证明者）向另一方（检验者）证明某命题的方法，特点是过程中除“该命题为真”之事外，不泄露任何信息。因此，可理解成“零泄密证明”。
-
-    - 例如：欲向人证明自己拥有某情报，则直接公开该情报即可，但如此则会将该细节亦一并泄露；零知识证明的精粹在于，如何证明自己拥有该情报而不必透露情报内容。这也是零知识证明的难点。
-
-    - **零知识证明要具备下列三种性质：**
-
-      - **完备**（complete） 若所要证之事为真，则诚实（意即依协议行事）的证明者能说服诚实验证者。
-      - **健全**（sound） 若命题为假，则作弊证明者仅得极小机会能说服诚实验证者该事为真。
-      - **零知识（zero-knowledge）** 若命题为真，则验证者除此之外，过程中没有得悉任何其他信息。换言之，仅知命题为真（而不知秘密本身）已足以“想像”出一个交互的情境，其中证明者的确知道该秘密。此性质能严格定义为：每个验证者皆有相应的模拟器，输入欲证事实时，无需求助于证明者，已可输出一套通信誊本，看似诚实验证者与证明者的通信记录。
-
-      小结：前两种性质，更广义的[**交互式证明系统**](https://zh.wikipedia.org/wiki/交互式证明系统)亦应具备。第三种性质使该交互证明称为零知识。 零知识证明不算[**数学证明**](https://zh.wikipedia.org/wiki/數學證明)，因为尚允许有很少（但非零）概率，令作弊证明者能向验证者“证明”假命题。该概率称为可靠度误差（soundness error）。换言之，**零知识证明是概率“证明”**🤔，而非决定性。不过，也有技巧将可靠度误差压到忽略不计。
-
-
+初步从5个阶段由浅入深认识了零知识证明，某一些概念对于我来说还是有难度的，希望自己能坚持学习。
 
 ### 2024.07.30
-
 
 <!-- Content_END -->

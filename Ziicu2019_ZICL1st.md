@@ -2,11 +2,10 @@
 timezone: Pacific/Auckland
 ---
 
-timezone: Asia/Shanghai
 
 # ZK 残酷共学第 1 期残酷指引
 
-> ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为 ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
+> ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
 
 > ⚠️ 报名需要按要求认真填写下面 [ XXX ] 部分，方可通过报名审核，通过审核即可开始自主学习。
 
@@ -22,7 +21,7 @@ timezone: Asia/Shanghai
   - [（三）寻找「知识」](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html)
   - 100min 的视频：[ZKP Lecture 1: Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
 - 第二周：8 月 5 日 - 8 月 11 日：Overview of Modern SNARK Constructions
-  - 80min 的视频： [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+  - 80min的视频： [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
   - [1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
   - [2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
   - [3-General-Purpose-Computation](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html)
@@ -32,7 +31,7 @@ timezone: Asia/Shanghai
   - 基础电路：
     - [ZK Shanghai 基础电路教学](https://www.youtube.com/watch?v=CTJ1JkYLiyw&ab_channel=SutuLabs)
     - 编辑器：[zkREPL](https://zkrepl.dev/)
-    - [基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md) 这部分材料结合了 Circom 源码，可以多花时间来研究
+    - [基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md) 这部分材料结合了Circom源码，可以多花时间来研究
   - 实用电路：
     - [ZK Shanghai 实用电路教学](https://www.youtube.com/watch?v=smJz5RdY0Nc)
     - 课程资源：[snarkjs resources (zkiap.com)](https://zkiap.com/snarkjs)、[What Is Semaphore? | Semaphore](https://docs.semaphore.pse.dev/)
@@ -43,19 +42,19 @@ timezone: Asia/Shanghai
 
 ---
 
-# Cora
+# Ziicu2019
 
 1. 自我介绍
 
-   Cora, 前端技术经理，研发 tiktok 数据分析平台。参加的主要目的是学习 Web3 相关知识。
+    Ziicu，擅长前端和产品，目前带团队做企业内部应用，对web3比较感兴趣，这次参加是因为去年一起合作一个ordinals项目的朋友推荐的，希望能借此对web3更为了解。
 
 2. 你认为你会完成本次残酷学习吗？
 
-   YES
+    目标完成70%，争取100%完成
 
 3. 目前阶段对于 ZK 的了解？
 
-   完全不了解
+    0.00000009%
 
 ## Notes
 
@@ -65,8 +64,8 @@ timezone: Asia/Shanghai
 
 举例示范：
 
-- 学习主题：[初步理解 ZK 是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c&ab_channel=WIRED)
-- 学习内容小结：zero-knowledge proof
+- 学习主题：XXXX
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
 
 ### 2024.07.30
 
