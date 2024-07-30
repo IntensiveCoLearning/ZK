@@ -141,28 +141,74 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
   4. 研究生
 
-     
+     随机数具有不确定性，随机数的这种理念可以被ZKP利用，通过不确定性来隐藏我们所要隐藏的东西。（有点搞不明白）
+
+     ZKP最大的挑战还是在与不知道可以应用在什么地方，现有的主要还是在区块链上大放光彩。
+
+     ZKP的效率瓶颈在证明者上，要是可以把证明计算并行化，那就可以大大提高效率。正好这位研究生就是做多方计算的。
+
+     几十年前的ZKP系统到近些年才被应用，是由于算力得到了发展，有足够的算法支持落地。（云计算、分布式多方计算）
+
+     人类合作受到人与人间普遍存在的信任问题所阻碍，使用数学的方法去保证信任问题，将信任从不可确定的人身上转移到确定性的数学公式上，这是一件amazing的事！
 
   5. 专家
 
+     为什么不是zero-information proof或zero-data proof，而是zero-knowledge proof
+
+     教授：zero-knowledge意味着你可以提前预知某事，可以提前准确预知所以也就获取不到任何新的knowledge。（有点摸不着头脑，字面上的确，获取不到任何新knowledge的证明，证明者去提供这样的一种证明，可是为什么和可以准确预知挂钩呢？教授意思不就是提前预知了knowledge后面就没有新knowledge了，这样还是ZKP吗，你本来就是想去隐藏knowledge的）
+
+     专家：knowledge比information、data更重要，你获取了data，这些data蕴含了一个knowledge，你需要的是knowledge，而不是data，data要经过获取、挖掘然后才得到knowledge。
+
+     现实中机密货币、ZKP的未来方向会是什么？并且其中计算的数学部分又会有多少？教授和专家都没有给出答案，这是个未解之谜，也是值得期待的事
+
+     量子计算是密码学的大挑战，我们需要找到更难的问题，可以抵抗量子计算。在过去一段时期我们在密码学上的研究比过去几十年都要多，但事实上在基础研究上还收获的很少。（是不是说大多数都是在应用上，去用密码学的理论转化出实际中可用的加密算法程序、ZKP应用等等）
   
-
+     
+  
   Q：ZKP到底是什么？有什么特性？
-
+  
   A：
-
+  
   Q：ZKP目前发展情况？有什么实际应用？
-
+  
   A：
-
+  
   Q：在区块链领域中ZKP在哪些项目中落地？效果反响如何？
-
+  
   A：
-
+  
   Q：ZKP有哪些挑战和问题？
-
+  
   A：
 
 ### 2024.07.30
+
+- 学习主题：听小宇宙[【零知识证明：一场“无知”的游戏】](https://www.xiaoyuzhoufm.com/episode/6672a76bb6a8412729e0b103)
+
+- 学习内容小结：
+
+  1. ZKP在密码学领域已经研究了30多年，到如今才在区块链上大显身手主要是因为算力发展的问题。
+
+  2. 主播们讨论了上一节学习的视频内容，同时也给出了一些自己的例子和AI给出的例子。感觉交作业的那个例子其实还挺好，作业交上去，老师可以通过作业的填写内容这个证明来验证是否完成了作业，不过这个作业怎么完成的过程老师无从得知（假设没办法通过任何途径知道作业到底是不是我亲自完成的）。
+
+  3. ZKP存在两种角色prover、verifier，prover给出证明statement，verifier验证statement得到true或false两种情况
+
+  4. ZKP有三个基本特征：完整性（statement=true，诚实的verifier可以相信诚实的prover确实拥有正确的信息）、可靠性（statement=false，任何不诚实的prover都无法说服诚实的verifier相信他拥有正确的信息）、零知识性（除了知道statement为true或false外不再能够知道任何信息）
+
+     TODO：->
+
+  5. 不确定性和随机性在ZKP中的重要作用（待补、忘了）
+
+  6. ZKP的两种实现：ZK-SNARKs、ZK-STARKs，优缺点
+
+  7. 两种layer-2的Rollups交易验证方式：Optimistic Rollups、ZK Rollups
+
+  8. 三种ZKP的数据存储形式：Rollups、Validium、Volition
+
+  9. 案例分析：Loopring和zkSync
+
+  10. 案例分析：StarkWare和StarkEx和StarkNet
+
+  11. 游戏项目Immutable X如何使用zk-STARKs
 
 <!-- Content_END -->
