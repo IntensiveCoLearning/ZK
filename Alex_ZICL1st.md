@@ -108,5 +108,6 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 6. 视频对zkp未来预测：寻找harder problems
 
 ### 2024.07.30
-
+- 学习主题： [（一）初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+- 学习总结：zkp需要通过模拟第三方来达到证明的目的；文章还讲了地图三染色这种交互式的zkp，并以此引出信息和知识的区别；此外就是电路可满足问题，同样也是np问题，将程序转换为算术电路去验证，而像zksnark这样的零知识电路可满足性协议，则可以不暴露细节即可证明电路运算通过。
 <!-- Content_END -->
