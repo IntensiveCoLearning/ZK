@@ -2,6 +2,53 @@
 timezone: Asia/Shanghai
 ---
 
+> 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
+> 时区请参考以下列表，请移除 # 以后的内容
+
+timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
+
+timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
+
+timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
+
+timezone: America/Denver # 山地标准时间 (UTC-7)
+
+timezone: America/Chicago # 中部标准时间 (UTC-6)
+
+timezone: America/New_York # 东部标准时间 (UTC-5)
+
+timezone: America/Halifax # 大西洋标准时间 (UTC-4)
+
+timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
+
+timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
+
+timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
+
+timezone: Europe/London # 格林威治标准时间 (UTC+0)
+
+timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
+
+timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
+
+timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
+
+timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
+
+timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
+
+timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
+
+timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
+
+timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
+
+timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
+
+timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
+
+timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
+
 # ZK 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
@@ -41,31 +88,26 @@ timezone: Asia/Shanghai
 
 ---
 
-# Draculabo
-1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
-2. 你认为你会完成本次残酷学习吗？
-会
-3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
+# Alex
+1. 自我介绍: 学生开发者，后端+合约
+2. 你认为你会完成本次残酷学习吗？ 会
+3. 目前阶段对于 ZK 的了解？ 零基础
 
 ## Notes
 
 <!-- Content_START -->
 
 ### 2024.07.29
-
-举例示范：
-
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：20min 的视频：[初步理解 ZK 是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c)
+- 学习内容小结：
+1. zkp定义：交互式系统，涉及证明者和验证者，证明者能够不暴露自身知识即可向验证者证明知识存在
+2. zkp为什么有价值：人们本质上是不信任他人的，所以相比将秘密共享，zkp这种不暴露秘密即可达到证明某件事情成立的技术更令人激动 
+3. np问题与zkp：np问题是在多项式时间内难以解决的一类问题，但若是解决了其中一个，即可解决所有；zkp可以利用np的这种特性，只要其可以解决a问题（与秘密无直接关系），那就一定能解决b问题（与秘密有直接关系） 
+4. zkp应用场景：目前最广泛的使用场景是区块链 
+5. 注意区分information和knowledge： 后者是需要保护的 
+6. 视频对zkp未来预测：寻找harder problems
 
 ### 2024.07.30
-- 学习主题：零知识证明理论
-- 学习内容小结：
-1. 零知识证明是一种主要用在保护隐私方面的论证，用于告诉他人某些信息，而不透露信息本身的内容。
-2. 零知识证明可以分为交互式零知识证明和非交互式零知识证明，交互式证明需要两个角色：验证者和证明者，而非交互式证明只有证明者，证明者会向验证者提出某种信息而不透露信息本身的内容，验证者将会去验证信息的合理性。
-3. 例子：地图三染色、数字签名、哈密尔顿环路、匿名投票
-4. 三个性质：零知识（证明者不会向验证者透露知识）、完备性（证明者如果有知识，验证者一定能验证该论证）、可靠性（如果证明者造假论证，验证者一定能够发现）
-5. zkSnark，一种零知识密码学工具，用于快速根据某个问题生成零知识证明。
+- 学习主题： [（一）初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+- 学习总结：zkp需要通过模拟第三方来达到证明的目的；文章还讲了地图三染色这种交互式的zkp，并以此引出信息和知识的区别；此外就是电路可满足问题，同样也是np问题，将程序转换为算术电路去验证，而像zksnark这样的零知识电路可满足性协议，则可以不暴露细节即可证明电路运算通过。
 <!-- Content_END -->

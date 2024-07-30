@@ -1,5 +1,5 @@
 ---
-timezone: Asia/Shanghai
+timezone: Asia/Bangkok
 ---
 
 # ZK 残酷共学第 1 期残酷指引
@@ -41,13 +41,13 @@ timezone: Asia/Shanghai
 
 ---
 
-# Draculabo
+# Lu Zhiyuan 路致远
 1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
+   参与过L2的空投，也做过L2的项目方。除了赚钱外，也想从技术上对ZK有更多了解。个人说明书见 https://p1i72gf0sn.feishu.cn/wiki/WdSMwvDOeiULi5kyhO9cXT5onGc
 2. 你认为你会完成本次残酷学习吗？
-会
+   会
 3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
+   仅限皮毛，知道这个东西存在和有用
 
 ## Notes
 
@@ -55,17 +55,38 @@ timezone: Asia/Shanghai
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：what is ZK?
+- 学习内容：
+1. What is ZK -> Zero-Knowledge?
+lt is a proof. A prover can convince a verifier that sth is true without additiona info.
+data -> info -> kowledge.
+it is called kowledge, not data or info, coz it could predict the future -> 像是哲学里的先验
+2. Why ZK and why it is good? 
+not for efficiency, but for building more trust& keep secret.
+Examples can be seen in elections, multi-partycomputation and so on.
+lt uses randomness to bring ppl together. Non-interactive nature + varifiability. lt is counter-intuitive·
+3. 遗留的问题:
+any other proofs?
+what's the diffrence btw blockchains &cryptocurrencies?
+Concept of NP-complete problems & map threecoloring
 
 ### 2024.07.30
-- 学习主题：零知识证明理论
-- 学习内容小结：
-1. 零知识证明是一种主要用在保护隐私方面的论证，用于告诉他人某些信息，而不透露信息本身的内容。
-2. 零知识证明可以分为交互式零知识证明和非交互式零知识证明，交互式证明需要两个角色：验证者和证明者，而非交互式证明只有证明者，证明者会向验证者提出某种信息而不透露信息本身的内容，验证者将会去验证信息的合理性。
-3. 例子：地图三染色、数字签名、哈密尔顿环路、匿名投票
-4. 三个性质：零知识（证明者不会向验证者透露知识）、完备性（证明者如果有知识，验证者一定能验证该论证）、可靠性（如果证明者造假论证，验证者一定能够发现）
-5. zkSnark，一种零知识密码学工具，用于快速根据某个问题生成零知识证明。
-<!-- Content_END -->
+
+**1. zkSNARK VS zkSTARK**
+1.1 zkSNARK
+S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
+利用：BA有保证金
+不太透明
+
+**1. zkSNARK VS zkSTARK**
+1.1 zkSNARK
+S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
+利用：BA有保证金。缺点是不太透明
+
+1.2 zkSTARK
+S: Scalable; T: Transparent
+够透明
+**2. ZK Rollups VS Optimistic Rollups**
+Optimistic Rollups 
+相信人本善
+quicker transaction processing

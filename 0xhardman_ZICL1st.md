@@ -2,6 +2,14 @@
 timezone: Asia/Shanghai
 ---
 
+ # 中国标准时间 (UTC+8)
+
+timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
+
+timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
+
+timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
+
 # ZK 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
@@ -41,31 +49,46 @@ timezone: Asia/Shanghai
 
 ---
 
-# Draculabo
+# {你的名字}
 1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
+最硬的男人
 2. 你认为你会完成本次残酷学习吗？
-会
+必须能
 3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
+懂一点点  
 
 ## Notes
 
 <!-- Content_START -->
 
 ### 2024.07.29
+#### 用 5 种难度解释一个概念
 
-举例示范：
+1. Child:
+很喜欢这个例子：找一张海豹群照片里企鹅，我证明我找得到企鹅，但不透露企鹅的位置。
+此时只需要用一块大板子挡住照片，但只漏出企鹅即可。
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+2. Teen:
+一个带密码的秘密罐子，把秘密投进罐子里，此时除我以外没有人能知道秘密，除非有人知道密码。
+那么如果一个人说出了我的秘密就说明他知道密码。 
+关键是不能暴露秘密
 
-### 2024.07.30
-- 学习主题：零知识证明理论
-- 学习内容小结：
-1. 零知识证明是一种主要用在保护隐私方面的论证，用于告诉他人某些信息，而不透露信息本身的内容。
-2. 零知识证明可以分为交互式零知识证明和非交互式零知识证明，交互式证明需要两个角色：验证者和证明者，而非交互式证明只有证明者，证明者会向验证者提出某种信息而不透露信息本身的内容，验证者将会去验证信息的合理性。
-3. 例子：地图三染色、数字签名、哈密尔顿环路、匿名投票
-4. 三个性质：零知识（证明者不会向验证者透露知识）、完备性（证明者如果有知识，验证者一定能验证该论证）、可靠性（如果证明者造假论证，验证者一定能够发现）
-5. zkSnark，一种零知识密码学工具，用于快速根据某个问题生成零知识证明。
+3. College Student:
+ZKP的核心是两个人的交互
+进行ZKP前得明确证明什么
+NP-Complete Problem: NP-complete problems are a class of computational problems where an efficient, algorithmic solution has yet to be found
+NP-Complete-三色问题
+ZKP不是第一步第二步第三步，而是在一定概率上可以证明某事
+（比如三色问题，不断的随机挑两个颜色，如果很多很多次都是对的，那么就可以证明三色设置是对的）
+
+4. Grad Student 
+ZKP解决人的不信任问题
+ZKP的瓶颈在验证者，但可以考分布式并行计算加快验证。
+
+5. Expert
+ZK!=ZK information
+非交互性但可验证性
+ZK的未来：
+量子计算下怎么增加难度
+
 <!-- Content_END -->

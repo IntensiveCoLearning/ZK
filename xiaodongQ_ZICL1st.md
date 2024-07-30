@@ -41,13 +41,13 @@ timezone: Asia/Shanghai
 
 ---
 
-# Draculabo
-1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
-2. 你认为你会完成本次残酷学习吗？
-会
-3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
+# {你的名字}
+1. 自我介绍  
+    CPP多年开发，学过Go、Rust，尝试搞Web3副业
+2. 你认为你会完成本次残酷学习吗？  
+    应该能
+3. 目前阶段对于 ZK 的了解？  
+    了解不多，仅限部分概念
 
 ## Notes
 
@@ -55,17 +55,26 @@ timezone: Asia/Shanghai
 
 ### 2024.07.29
 
-举例示范：
+- 学习主题：了解ZKP（零知识证明，Zero-Knowledge Proof），以及共学提供的资料
+- 学习内容小结：
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+1. Amit Sahai教授针对不同年龄和知识水平的人讲解ZKP的几个示例（Amit Sahai是UCLA的计算机方面的一位杰出教授，研究兴趣集中在密码学和安全等领域），初步了解零知识证明的作用。视频：[初步理解 ZK 是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c)
+2. 简单听了下介绍ZKP的中文播客，听得有点累，还是先看看文档吧
+3. [z2o-k7e社区](https://learn.z2o-k7e.world/)整理的学习ZKP资料，看起来质量很不错
+
+目前学习了：[1. 初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+
+番外：  
+找郭宇老师推特（[1dot2](https://twitter.com/1dot2)）过程中，看到已退推的[kurtpan.eth](https://twitter.com/kurtpan666)（复旦密码学博士，也是上面z2o-k7e项目的主要贡献者之一）博客上截取自《过河卒》的这篇文章：[过河卒·日出江花红胜火](https://zkfold.ing/guohezu-wd)。  
+周六去杭州的web3 summer线下，正好嘉宾也谈到比特币白皮书和国人的渊源，引用文献的第一篇就是一个华人的文章。也就是上面文章中的[Wei Dai](https://en.wikipedia.org/wiki/Wei_Dai)。
+
+这里简单记录每日学习小结，具体内容放在[zk_learn_note笔记](https://github.com/xiaodongQ/devNoteBackup/blob/master/%E5%90%84%E5%88%86%E7%B1%BB%E8%AE%B0%E5%BD%95/blockchain/zk_learn_note.md)。
 
 ### 2024.07.30
-- 学习主题：零知识证明理论
-- 学习内容小结：
-1. 零知识证明是一种主要用在保护隐私方面的论证，用于告诉他人某些信息，而不透露信息本身的内容。
-2. 零知识证明可以分为交互式零知识证明和非交互式零知识证明，交互式证明需要两个角色：验证者和证明者，而非交互式证明只有证明者，证明者会向验证者提出某种信息而不透露信息本身的内容，验证者将会去验证信息的合理性。
-3. 例子：地图三染色、数字签名、哈密尔顿环路、匿名投票
-4. 三个性质：零知识（证明者不会向验证者透露知识）、完备性（证明者如果有知识，验证者一定能验证该论证）、可靠性（如果证明者造假论证，验证者一定能够发现）
-5. zkSnark，一种零知识密码学工具，用于快速根据某个问题生成零知识证明。
+
+- 学习主题：学习 [2. 理解「模拟」](https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html)
+- 学习内容小结：主要讲述怎么证明系统是零知识的。真实世界和理想世界，模拟器可区分这两个世界，但是世界里的个体不可区分。这个模拟器可理解为计算机系统的快照。
+
+概念还有点晦涩，似懂非懂，还需继续往下学习。
+
 <!-- Content_END -->

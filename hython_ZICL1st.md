@@ -1,3 +1,54 @@
+---
+timezone: Asia/Tokyo
+---
+
+> 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
+> 时区请参考以下列表，请移除 # 以后的内容
+
+timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
+
+timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
+
+timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
+
+timezone: America/Denver # 山地标准时间 (UTC-7)
+
+timezone: America/Chicago # 中部标准时间 (UTC-6)
+
+timezone: America/New_York # 东部标准时间 (UTC-5)
+
+timezone: America/Halifax # 大西洋标准时间 (UTC-4)
+
+timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
+
+timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
+
+timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
+
+timezone: Europe/London # 格林威治标准时间 (UTC+0)
+
+timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
+
+timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
+
+timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
+
+timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
+
+timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
+
+timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
+
+timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
+
+timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
+
+timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
+
+timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
+
+timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
+
 # ZK 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
@@ -38,12 +89,14 @@
 ---
 
 # {你的名字}
-1. 自我介绍
-    - 自由职业，很多年前短暂的做过初级程序员，对WEB3感兴趣。
+1. 自我介绍   
+   hython web3自由职业者，量化交易员，希望通过学习web3知识，从而开发并提供好用的dapps，达到结识良友，共建web3良好生态的目的。
+
 2. 你认为你会完成本次残酷学习吗？
-    - YES
-3. 目前阶段对于 ZK 的了解？
-    - 在学习WEB3URL的路上发现了ZK的页面，做了预习。观看第一个YouTube视频感觉对这个概念很感兴趣。感觉里面涉及的技术很难不知道自己能跟到哪里。
+   目标达成完成率70%
+   
+4. 目前阶段对于 ZK 的了解？
+   仅限于概念，对于实现不了解
 
 ## Notes
 
@@ -51,9 +104,21 @@
 
 ### 2024.07.29
 
-- 学习主题：
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：视频学习 30分钟
+- 学习内容小结：
+  - 🔒 零知识证明是一种方法，使证明者在不透露额外信息的情况下，向验证者证明某一声明的真实性。
+  - 📈 零知识证明在区块链和加密货币中得到应用，具有重要的数学和实际意义。
+  - 🐧 通过找隐藏在企鹅中的海鹦的例子，展示零知识证明的概念。
+  - 🖥️ 零知识证明可以在不透露密码的情况下验证身份，提高安全性。
+  - 🗳️ 零知识证明可用于确保选举的透明和安全，而不暴露个人投票信息。
+  - 🌐 在区块链和互联网通信中，零知识证明有助于保护隐私和验证交易。
+  - 📊 学者和研究人员致力于探索零知识证明在多方计算和数据隐私中的应用。
 
+### 2024.07.30
 
+- 学习主题：播客学习 30分钟
+- 学习内容小结：
+    - 70min 的播客：零知识证明：一场”无知“的游戏
+    （一）初识「零知识」与「证明」
 
 <!-- Content_END -->

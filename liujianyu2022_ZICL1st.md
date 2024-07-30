@@ -2,6 +2,53 @@
 timezone: Asia/Shanghai
 ---
 
+> 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
+> 时区请参考以下列表，请移除 # 以后的内容
+
+timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
+
+timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
+
+timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
+
+timezone: America/Denver # 山地标准时间 (UTC-7)
+
+timezone: America/Chicago # 中部标准时间 (UTC-6)
+
+timezone: America/New_York # 东部标准时间 (UTC-5)
+
+timezone: America/Halifax # 大西洋标准时间 (UTC-4)
+
+timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
+
+timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
+
+timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
+
+timezone: Europe/London # 格林威治标准时间 (UTC+0)
+
+timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
+
+timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
+
+timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
+
+timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
+
+timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
+
+timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
+
+timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
+
+timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
+
+timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
+
+timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
+
+timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
+
 # ZK 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
@@ -41,31 +88,43 @@ timezone: Asia/Shanghai
 
 ---
 
-# Draculabo
-1. 自我介绍
-我叫 Draculabo，有 2 年的 WEB 工作经验，主要是 React，Vue。也搞过 WEB 全栈，后端主要是 NodeJs、Go、.NET。
-2. 你认为你会完成本次残酷学习吗？
-会
-3. 目前阶段对于 ZK 的了解？
-对ZK有初步的了解，目前正在看[WTF ZK](https://www.wtf.academy/docs/zk-101/)
+# liujianyu2022
+1. 一个练习时长两年半的前端开发者，通过自学，目前已掌握区块链相关的理论知识；掌握了solidity、ethersjs、hardhat等web3开发的常用技术栈。
+2. 会完成本次学习。
+3. 只知道一些zk的概念，了解一些简单的算术电路
 
 ## Notes
 
 <!-- Content_START -->
 
 ### 2024.07.29
+1. finite field  有限域
 
-举例示范：
+The finite field is the foundation of cryptography, and the motivation behind of that is because of precision problems. 
+In order to solve the precision problem, a new numbers system had been designed, and there are some objectives:
+1st: it will only use "whole number", such as 0, 1, 2, 3, ...;
+2nd: only a limited number of the "whole number", which means that it's a finite set.
+3rd：All arithmetic operations, like addition, subtraction, multiplication, division, exponentiation and logarithm, that can do with real number sould be defined with new number system.
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+
+
+- 学习主题：有限域
+- 学习内容小结：为什么需要提出有限域这个概念，以及有限域的一些特性
 
 ### 2024.07.30
-- 学习主题：零知识证明理论
-- 学习内容小结：
-1. 零知识证明是一种主要用在保护隐私方面的论证，用于告诉他人某些信息，而不透露信息本身的内容。
-2. 零知识证明可以分为交互式零知识证明和非交互式零知识证明，交互式证明需要两个角色：验证者和证明者，而非交互式证明只有证明者，证明者会向验证者提出某种信息而不透露信息本身的内容，验证者将会去验证信息的合理性。
-3. 例子：地图三染色、数字签名、哈密尔顿环路、匿名投票
-4. 三个性质：零知识（证明者不会向验证者透露知识）、完备性（证明者如果有知识，验证者一定能验证该论证）、可靠性（如果证明者造假论证，验证者一定能够发现）
-5. zkSnark，一种零知识密码学工具，用于快速根据某个问题生成零知识证明。
+离散对数
+离散对数（Discrete Logarithm）是数论和密码学中的一个重要概念。简单来说，离散对数是以下问题的解：
+
+给定一个素数 p 和一个整数 g 以及 g 的一个幂次 g ^ x = h mod p。
+找到整数 x。这个整数 x 就是离散对数。
+
+对于实数域中的指数方程，形如：a ^ x = b，对于给定了a和b，求解x可以使用类似于二分法的思想，因为指数函数在实数域中是单调函数。
+
+当把实数域转到有限域，并且对指数运算的结果取模运算之后，可以看到此时图中的点是无规律的分布的。那么此时给定了a和b，再想计算x就只能暴力枚举了。
+
+![image](https://github.com/user-attachments/assets/1329c65b-72b7-475e-940b-b69c7527401c)
+
+离散对数问题的结论：在有限域内解对数非常困难。
+解决离散对数问题是一个已知的困难问题，这也是这些密码学算法安全性的基础。
+
 <!-- Content_END -->
