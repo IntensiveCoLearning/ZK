@@ -55,11 +55,31 @@ timezone: Asia/Bangkok
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：what is ZK?
+- 学习内容：
+1. What is ZK -> Zero-Knowledge?
+lt is a proof. A prover can convince a verifier that sth is true without additiona info.
+data -> info -> kowledge.
+it is called kowledge, not data or info, coz it could predict the future -> 像是哲学里的先验
+2. Why ZK and why it is good? 
+not for efficiency, but for building more trust& keep secret.
+Examples can be seen in elections, multi-partycomputation and so on.
+lt uses randomness to bring ppl together. Non-interactive nature + varifiability. lt is counter-intuitive·
+3. 遗留的问题:
+any other proofs?
+what's the diffrence btw blockchains &cryptocurrencies?
+Concept of NP-complete problems & map threecoloring
 
 ### 2024.07.30
 
-<!-- Content_END -->
+**1. zkSNARK VS zkSTARK**
+1.1 zkSNARK
+S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
+利用：BA有保证金。缺点是不太透明
+1.2 zkSTARK
+S: Scalable; T: Transparent
+够透明
+**2. ZK Rollups VS Optimistic Rollups**
+Optimistic Rollups 
+相信人本善
+quicker transaction processing
