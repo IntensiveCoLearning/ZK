@@ -110,4 +110,9 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ### 2024.07.30
 
+- 学习主题：
+  - 阅读学习文章 [初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+  - 阅读学习文章 [理解「模拟」](https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html#%E7%90%86%E8%A7%A3%E6%A8%A1%E6%8B%9F)
+- 学习内容小结：什么是零知识证明，用模拟的思路来理解零知识证明
+
 <!-- Content_END -->
