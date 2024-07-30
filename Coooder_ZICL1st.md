@@ -1,5 +1,5 @@
 ---
-timezone: Pacific/Auckland
+timezone: Asia/Shanghai
 ---
 
 > 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
@@ -103,5 +103,11 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 - 学习内容小结：了解了一些关于 ZK 基础的内容，两个zkp方向 zk-stark，zk-snark。这些内容之前也或多或少了解过，重新过一遍，作为残酷共学相对温柔的开始hhh
 
 ### 2024.07.30
+
+- 学习主题：初识零知识与证明
+- 学习内容小结：
+  - 证明：证明在不同时代的含义
+  - 零知识证明：不泄露知识的前提下进行证明；三染色例子
+  - 信息 vs 知识
 
 <!-- Content_END -->

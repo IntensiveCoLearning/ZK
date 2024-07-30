@@ -71,11 +71,18 @@ what's the diffrence btw blockchains &cryptocurrencies?
 Concept of NP-complete problems & map threecoloring
 
 ### 2024.07.30
+
 **1. zkSNARK VS zkSTARK**
 1.1 zkSNARK
 S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
 利用：BA有保证金
 不太透明
+
+**1. zkSNARK VS zkSTARK**
+1.1 zkSNARK
+S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
+利用：BA有保证金。缺点是不太透明
+
 1.2 zkSTARK
 S: Scalable; T: Transparent
 够透明
