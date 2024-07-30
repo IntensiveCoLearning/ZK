@@ -88,7 +88,7 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {你的名字}
+# spn
 1. 自我介绍
 XDU大四学生，ZK在学。
 1. 你认为你会完成本次残酷学习吗？
@@ -107,5 +107,7 @@ XDU大四学生，ZK在学。
 - 学习内容小结：之前有一些基础，今天接着看了安比实验室对应的[课程](https://www.youtube.com/watch?v=bNGac1CJEKM)与[资料](https://github.com/sec-bit/learning-zkp/blob/master/plonk-intro-notebook-zh/2-plonk-lagrange-basis.ipynb),想趁着这次活动将这个系列的课程接着看完，
 
 ### 2024.07.30
+- 学习主题：学习了plonk中置换证明
+- 学习内容小结：接着看了上面课程的第四周以及对应的文章，感觉基础知识这块有很多还不太清楚的点，这两天计划补一下写个笔记
 
 <!-- Content_END -->
