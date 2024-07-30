@@ -52,8 +52,16 @@
 ### 2024.07.29
 
 - 学习主题：
+    - 观看两个课前阅读的视频
 - 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/8b22ca6e1a004b90af2e49283cf69a6b)
 
+### 2024.07.30
+
+- 学习主题：
+    - 阅读[初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/f5c57c7dfec349938b2e6a2c83e49469)
 
 
 <!-- Content_END -->

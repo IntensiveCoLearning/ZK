@@ -2,6 +2,52 @@
 timezone: Asia/Shanghai
 ---
 
+> 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
+> 时区请参考以下列表，请移除 # 以后的内容
+
+timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
+
+timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
+
+timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
+
+timezone: America/Denver # 山地标准时间 (UTC-7)
+
+timezone: America/Chicago # 中部标准时间 (UTC-6)
+
+timezone: America/New_York # 东部标准时间 (UTC-5)
+
+timezone: America/Halifax # 大西洋标准时间 (UTC-4)
+
+timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
+
+timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
+
+timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
+
+timezone: Europe/London # 格林威治标准时间 (UTC+0)
+
+timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
+
+timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
+
+timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
+
+timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
+
+timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
+
+timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
+
+timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
+
+timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
+
+timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
+
+timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
+
+timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 # ZK 残酷共学第 1 期残酷指引
 
@@ -42,16 +88,10 @@ timezone: Asia/Shanghai
 
 ---
 
-# Hansen
-1. 自我介绍
-   
-   学的东西比较杂，以 后端为主，对Web3有一定理解，看好web3。
-2. 你认为你会完成本次残酷学习吗？
-   
-   精力不是很多，但应该会，
-3. 目前阶段对于 ZK 的了解？
-
-   了解一些基本的概念
+# Ray
+1. 一个认为 ZK 很难但是还想学习的人
+2. 你认为你会完成本次残酷学习吗？会的
+3. 目前阶段对于 ZK 的了解？很浅
 
 ## Notes
 
@@ -59,30 +99,10 @@ timezone: Asia/Shanghai
 
 ### 2024.07.29
 
-- 学习主题：初识「零知识」与「证明」
-- 学习内容小结：
-	- 零知识证明：Zero-Knowledge Proof 
-		- 不泄露重要信息，而证明结果 
-	- 对证明的理解： 「编写程序」和「编写证明」实际在概念上是完全统一的，
-		- 循环对应于归纳 
-		- 码农实际不是在写代码， 是在做数学证明。 
-		
-	- 零知识证明的用处： 解决数据、计算的信任问题。
-		- 零知识证明技术可以「模拟」出一个第三方，来保证某一个论断是可信的
-		1. 数据的隐私保护
-		2. 计算压缩与区块链扩容
-		3. 端到端的通讯加密
-		4. 身份认证
-		5. 去中心化存储
-		6. 公平的数字化商品交易
-		7. 信用记录
-		
-	- 信息与知识
-		- 「知识」是与「计算难度」相关，而「信息」则不是
-		- 「知识」是与公共所知的东西有关，而「信息」主要与部分公开的东西有关
-		
-	- 我们平时跑的（没有死循环）代码，都可以用算术电路来表示。
-		
+举例示范：
+
+- 学习主题：XXXX
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
 
 ### 2024.07.30
 
