@@ -138,6 +138,7 @@ Interactive proof model
 ### 2024.07.30
 
 学习主题：[Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
+
 学习内容小结：
 
 Example of an interactive proof: Claim QR = {(N,y): there exists x such that $y=x^2$ mod N}. 
