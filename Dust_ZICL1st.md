@@ -112,5 +112,13 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ref: https://learnblockchain.cn/article/1711
 
 ### 2024.07.30
+- 学习主题：交互式GKR Sum-Check协议
+- 学习内容
+1. 交互式协议，需要进行多轮交互，每轮交互将推进一次证明，交互轮次等于多项式degree
+2. 初始阶段prover需要产生声明，其后进入交互证明过程
+3. 每一轮需要verifier生成挑战值，挑战值会被prover用来产生下一轮多项式
+4. 最后一轮verifier产生挑战值后，从Oracle处获取多项式取值进行对比，对比通过则完成
 
+https://learnblockchain.cn/article/6188
+ 
 <!-- Content_END -->
