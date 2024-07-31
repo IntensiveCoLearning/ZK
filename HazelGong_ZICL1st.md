@@ -137,10 +137,30 @@ Interactive proof model
 
 ### 2024.07.30
 
-Examples of an interactive proof: 
+学习主题：[Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
 
-Intuitions of interactive proofs:
+学习内容小结：
 
-Simulation: 
+Example of an interactive proof: Claim QR = {(N,y): there exists x such that $y=x^2$ mod N}. 
+
+P: choose random r such that $1 \leq r \leq N$ with $gcd(r,N)=1$. Send $s=r^2$ mod N. 
+
+- If P sends square root of both s and sy mod N, then V will know the claim is true but get $\sqrt{y} = x$ mod N. 
+- So P instead sends either s or sy mod N, but V chooses which one to send based on  a coin flip.
+- If heads, send z=r; if tails, send z=r$\sqrt{y}$ mod N. Here, the random r masks $\sqrt{y}$.
+- Then V accepts only if $z^2 = sy^b$ mod N. Since P has sent s.
+
+To show that a proof is a zero-knowledge interactive proof of knowledge, one must show:
+- completeness: if the claim is true, V accepts with probability $\geq c$ (usually it's 1). 
+- soundness: if the claim is false, V accepts with probability $\leq s$ (usually it's 1/2).
+- c and s are polynomial apart $c-s\geq \frac{1}{poly(|x|)}$ (notice that $\frac{1}{poly(|x|)}$ is a measure of magnitude, it's much bigger than $\frac{1}{e^{|x|}}$ for example. )
+- zero-knowledge: what the verifier V can compute after the proof = what V can compute before the proof. Prove that the verifier's view can be simulated by a zero-knowledge simulator (compuationally indistinguishable from a simulated view).
+- proof of knowledge: we need to make sure P really has the knowledge $x=\sqrt{y}$ given his actions (proof using an extractor who can use a rewinding technique, record the randomness, and perform both actions, then recover the knowledge of P. )
+
+Intuitions of the proof: 
+- There are many possible proofs, depending on the random r chosen by P.
+- Each proof has 2 parts, seeing either gives zero knowledge, seeing both implies 100% correctness.
+- Verifier chooses at random which of the two parts he wants. Verifies over and over again. The ability of the P to give him either part of the answer convinces V that P has the knowledge. But the whole process is zero-knowledge. 
+
 
 <!-- Content_END -->

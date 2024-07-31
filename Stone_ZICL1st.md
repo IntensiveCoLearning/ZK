@@ -66,4 +66,5 @@ timezone: Asia/Shanghai
 
 ### 2024.07.30
 
-<!-- Content_END -->
+- 学习主题：了解零知识证明的应用以及零、知识、证明的解释
+- 学习内容小结：了解zk-SNARKS和zk-STARKS，以及两者之间的区别；了解OP-Rollup和ZK-Rollup；了解基于零知识证明的rollup的三种存储方式，分别是传统的ZK-Rollup，Validium和Volition；了解多个基于零知识证明的案例，包括Loopring、zkSync和StarkWare及其两个产品StartEX和StartNet，ImmutableX。更详细地了解了知识、证明以及零知识，零知识证明的用处，和经典的三色地图问题。
