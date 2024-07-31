@@ -116,4 +116,12 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
     - 理解rollup的原理, optimistic rollup 和 zk rollup的区别
     - 理解optimistic rollup的安全性问题，为什么要引入 federation, 多签和预签机制
 
+### 2024.07.31
+
+- 学习主题：
+    - 看视频: [ZKP Lecture 1: Introduction and History of ZKP](`https://www.youtube.com/watch?v=uchjTIlPzFo`)
+- 学习内容小结：
+    - 以硬币和三色国土为例，理解零知识证明的概念
+    - 讲解了零知识证明的历史，本人理解不是很深，还需后续学习
+
 <!-- Content_END -->
