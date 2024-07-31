@@ -82,17 +82,17 @@ S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
 1.1 zkSNARK
 S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
 利用：BA有保证金。缺点是不太透明
-
 1.2 zkSTARK
 S: Scalable; T: Transparent
 够透明
 **2. ZK Rollups VS Optimistic Rollups**
-Optimistic Rollups 
-相信人本善
+Optimistic Rollups  相信人本善
 quicker transaction processing
 
 ### 2024.07.30
+
 今天学习的内容从文字格式、文章排版和信息密度三块都好喜欢。（对里面的例子理解与否则是另外一方面）
+
 **What is Proof, Knowledge, and Zero Knowledge**
 1. What is Proof
  1.1 Greece
@@ -100,10 +100,10 @@ quicker transaction processing
  1.2 二十世纪初
    proof = 符号 -> 人们试图让「理性」有迹可循/规范化/自动化
  1.3 六十年代
-   Proof = code -> 证明在计算机方面有概率被大规模运用，问题变成了「寻找Proof」和「验证proof」，后者可以交给机器辅助 
+   Proof = code -> 证明在计算机方面有概率被大规模运用，问题变成了「寻找Proof」和「验证proof」，后者可以交给机器辅助
  1.4 八十年代
    Proof = interactive -> 这有点像是科学实验中的可重复性，若证明成立，则这个证明在A和B那边当然得同时满足
-2. Benefits of ZKP 
+2. Benefits of ZKP
  略
 3. Info VS Knowlegde
  Info = randomness -> 用「无序」的「信息」保证「隐私」安全，以及交叉验证
