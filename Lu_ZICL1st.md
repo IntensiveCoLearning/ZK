@@ -55,11 +55,57 @@ timezone: Asia/Bangkok
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：what is ZK?
+- 学习内容：
+1. What is ZK -> Zero-Knowledge?
+lt is a proof. A prover can convince a verifier that sth is true without additiona info.
+data -> info -> kowledge.
+it is called kowledge, not data or info, coz it could predict the future -> 像是哲学里的先验
+2. Why ZK and why it is good? 
+not for efficiency, but for building more trust& keep secret.
+Examples can be seen in elections, multi-partycomputation and so on.
+lt uses randomness to bring ppl together. Non-interactive nature + varifiability. lt is counter-intuitive·
+3. 遗留的问题:
+any other proofs?
+what's the diffrence btw blockchains &cryptocurrencies?
+Concept of NP-complete problems & map threecoloring
 
 ### 2024.07.30
+
+**1. zkSNARK VS zkSTARK**
+1.1 zkSNARK
+S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
+利用：BA有保证金
+不太透明
+
+**1. zkSNARK VS zkSTARK**
+1.1 zkSNARK
+S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
+利用：BA有保证金。缺点是不太透明
+1.2 zkSTARK
+S: Scalable; T: Transparent
+够透明
+**2. ZK Rollups VS Optimistic Rollups**
+Optimistic Rollups  相信人本善
+quicker transaction processing
+
+### 2024.07.31
+
+今天学习的内容从文字格式、文章排版和信息密度三块都好喜欢。（对里面的例子理解与否则是另外一方面）
+
+**What is Proof, Knowledge, and Zero Knowledge**
+1. What is Proof
+   1.1 Greece
+   Proof的对立面是反权威 -> 理性思潮崛起
+   1.2 二十世纪初
+   proof = 符号 -> 人们试图让「理性」有迹可循/规范化/自动化
+   1.3 六十年代
+   Proof = code -> 证明在计算机方面有概率被大规模运用，问题变成了「寻找Proof」和「验证proof」，后者可以交给机器辅助
+   1.4 八十年代
+   Proof = interactive -> 这有点像是科学实验中的可重复性，若证明成立，则这个证明在A和B那边当然得同时满足
+2. Benefits of ZKP
+ 略
+3. Info VS Knowlegde
+ Info = randomness -> 用「无序」的「信息」保证「隐私」安全，以及交叉验证
 
 <!-- Content_END -->

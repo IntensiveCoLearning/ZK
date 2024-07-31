@@ -88,16 +88,25 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {你的名字}
-1. 自我介绍
-2. 你认为你会完成本次残酷学习吗？
-3. 目前阶段对于 ZK 的了解？
+# {Junhua}
+1. 我是 Junhua 以太坊智能合约开发者 后端开发 数据开发
+2. 我认为会完成
+3. 了解过一点zk相关
 
 ## Notes
 
 <!-- Content_START -->
+### 2024.07.27
+注册 ZK 共学
+### 2024.07.31
+学习内容:
+1. 学习[初步理解](https://www.youtube.com/watch?v=fOGdb1CTu5c)
+2. 搜集了些b站上的资料
 
-### 2024.07.29
+总结:
+1. 初步理解了zk的概念
+2. https://www.bilibili.com/video/BV1qj411g7ZA/?spm_id_from=333.337.search-card.all.click
+
 
 举例示范：
 

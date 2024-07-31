@@ -88,14 +88,13 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {ocean}
+# spn
 1. 自我介绍
-infra engineer mainly on solana eco.
-2. 你认为你会完成本次残酷学习吗？
-sure!
-3. 目前阶段对于 ZK 的了解？
-I've done some projects about zk poker game, zklogin with groth16. Want to known more about zkp.
-
+XDU大四学生，ZK在学。
+1. 你认为你会完成本次残酷学习吗？
+会
+1. 目前阶段对于 ZK 的了解？
+会一些基础部分，希望巩固并继续深入学习。
 ## Notes
 
 <!-- Content_START -->
@@ -104,17 +103,11 @@ I've done some projects about zk poker game, zklogin with groth16. Want to known
 
 举例示范：
 
-- 学习主题：(二)理解模拟 （三）寻找知识
-- 学习内容小结：
-1. 所谓「模拟条件」是指，通过「模拟」方法来实现一个「理想世界」，使之与「现实世界」不可区分；而由于在理想世界中不存在知识，所以可以推导出结论：现实世界满足「零知识」。
-2. 「零知识」保证了 验证者 Bob 没有（计算）能力来把和「知识」有关的信息「抽取」出来。不能抽取的「知识」不代表不存在。「可靠性」保证了知识的「存在性」。
-3. Schnorr协议 verifier： z*G = (r+c*sk)*G = R + c*(sk*G)= R + c* PK， prover 用随机数 r 保护私钥sk，因为任何一个秘密当和一个符合「一致性分布」的随机数相加之后的和仍然符合「一致性分布」
-4. Schwatz-Zippel 定理：如果 r + a*x = r' + a'*x 要成立，极大概率上 r=r'，a=a' 都成立。也就是说， Alice 在 c 未知的前提下，想找到另一对不同的 r',a' 来计算 z 骗过 Bob 是几乎不可能
-5. 知识提取器：同一个随机数 r ，发送两个c, c'得到两个z, z' 能反推出私钥
+- 学习主题：学习了plonk多项式  
+- 学习内容小结：之前有一些基础，今天接着看了安比实验室对应的[课程](https://www.youtube.com/watch?v=bNGac1CJEKM)与[资料](https://github.com/sec-bit/learning-zkp/blob/master/plonk-intro-notebook-zh/2-plonk-lagrange-basis.ipynb),想趁着这次活动将这个系列的课程接着看完，
 
 ### 2024.07.30
-- 学习主题：(四）随机挑战
-- 学习内容小结：
-1. 交互式证明系统需要验证者 Bob 在交互中提供一个或若干个「随机数」来挑战。所谓的非交互可以看成是只有「一轮」的证明过程，即Alice 直接发一个证明给 Bob 进行验证。
-2. 采用 Hash 函数的方法来把一个交互式的证明系统变成非交互式的方法被称为 Fiat-Shamir 变换
+- 学习主题：学习了plonk中置换证明
+- 学习内容小结：接着看了上面课程的第四周以及对应的文章，感觉基础知识这块有很多还不太清楚的点，这两天计划补一下写个笔记
+
 <!-- Content_END -->

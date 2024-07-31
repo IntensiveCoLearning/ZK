@@ -1,54 +1,3 @@
----
-timezone: Asia/Shanghai
----
-
-> 请在上边的 timezone 添加你的当地时区，这会有助于你的打卡状态的自动化更新，如果没有添加，默认为北京时间 UTC+8 时区
-> 时区请参考以下列表，请移除 # 以后的内容
-
-timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
-
-timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
-
-timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
-
-timezone: America/Denver # 山地标准时间 (UTC-7)
-
-timezone: America/Chicago # 中部标准时间 (UTC-6)
-
-timezone: America/New_York # 东部标准时间 (UTC-5)
-
-timezone: America/Halifax # 大西洋标准时间 (UTC-4)
-
-timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
-
-timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
-
-timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
-
-timezone: Europe/London # 格林威治标准时间 (UTC+0)
-
-timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
-
-timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
-
-timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
-
-timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
-
-timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
-
-timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
-
-timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
-
-timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
-
-timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
-
-timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
-
-timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
-
 # ZK 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
@@ -88,13 +37,13 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ---
 
-# {ocean}
+# {Zedz}
 1. 自我介绍
-infra engineer mainly on solana eco.
+    - 自由职业，很多年前短暂的做过初级程序员，对WEB3感兴趣。
 2. 你认为你会完成本次残酷学习吗？
-sure!
+    - YES
 3. 目前阶段对于 ZK 的了解？
-I've done some projects about zk poker game, zklogin with groth16. Want to known more about zkp.
+    - 在学习WEB3URL的路上发现了ZK的页面，做了预习。观看第一个YouTube视频感觉对这个概念很感兴趣。感觉里面涉及的技术很难不知道自己能跟到哪里。
 
 ## Notes
 
@@ -102,19 +51,23 @@ I've done some projects about zk poker game, zklogin with groth16. Want to known
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：(二)理解模拟 （三）寻找知识
-- 学习内容小结：
-1. 所谓「模拟条件」是指，通过「模拟」方法来实现一个「理想世界」，使之与「现实世界」不可区分；而由于在理想世界中不存在知识，所以可以推导出结论：现实世界满足「零知识」。
-2. 「零知识」保证了 验证者 Bob 没有（计算）能力来把和「知识」有关的信息「抽取」出来。不能抽取的「知识」不代表不存在。「可靠性」保证了知识的「存在性」。
-3. Schnorr协议 verifier： z*G = (r+c*sk)*G = R + c*(sk*G)= R + c* PK， prover 用随机数 r 保护私钥sk，因为任何一个秘密当和一个符合「一致性分布」的随机数相加之后的和仍然符合「一致性分布」
-4. Schwatz-Zippel 定理：如果 r + a*x = r' + a'*x 要成立，极大概率上 r=r'，a=a' 都成立。也就是说， Alice 在 c 未知的前提下，想找到另一对不同的 r',a' 来计算 z 骗过 Bob 是几乎不可能
-5. 知识提取器：同一个随机数 r ，发送两个c, c'得到两个z, z' 能反推出私钥
+- 学习主题：
+    - 观看两个课前阅读的视频
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/8b22ca6e1a004b90af2e49283cf69a6b)
 
 ### 2024.07.30
-- 学习主题：(四）随机挑战
-- 学习内容小结：
-1. 交互式证明系统需要验证者 Bob 在交互中提供一个或若干个「随机数」来挑战。所谓的非交互可以看成是只有「一轮」的证明过程，即Alice 直接发一个证明给 Bob 进行验证。
-2. 采用 Hash 函数的方法来把一个交互式的证明系统变成非交互式的方法被称为 Fiat-Shamir 变换
+
+- 学习主题：
+    - 阅读[初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/f5c57c7dfec349938b2e6a2c83e49469)
+
+### 2024.07.31
+
+- 学习主题：
+    - 阅读[理解「模拟」](https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html)
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/303559e9d8174e3b80e8bbf27e63e1dc)
+
 <!-- Content_END -->
