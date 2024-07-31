@@ -65,6 +65,9 @@ timezone: Pacific/Auckland
 - 学习主题：初步了解ZK是什么
 - 学习内容小结：观看[学习视频-初步理解ZK是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c)
 
-### 2024.07.30
+### 2024.07.31
+
+- 学习主题：初步了解ZK
+- 学习内容小结：[零知识证明：一场”无知“的游戏](https://www.xiaoyuzhoufm.com/episode/6672a76bb6a8412729e0b103)
 
 <!-- Content_END -->

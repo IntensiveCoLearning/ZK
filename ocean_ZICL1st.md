@@ -117,4 +117,12 @@ I've done some projects about zk poker game, zklogin with groth16. Want to known
 - 学习内容小结：
 1. 交互式证明系统需要验证者 Bob 在交互中提供一个或若干个「随机数」来挑战。所谓的非交互可以看成是只有「一轮」的证明过程，即Alice 直接发一个证明给 Bob 进行验证。
 2. 采用 Hash 函数的方法来把一个交互式的证明系统变成非交互式的方法被称为 Fiat-Shamir 变换
+### 2024.07.31
+- 学习主题：(五）埋藏「秘密」
+- 学习内容小结：
+1. witness 其实是知识，零知识证明系统正是为了保护 witness 不泄露的前提下，实现 NP 问题的验证
+2. zk 几乎正交地提供了另外一种创造信任的方式，就是通过交互进行概率性证明，同时提供信任。正如 Vitalik 所说，他们是正交于共识协议的另外一种非常重要的区块链核心技术。
+3. 密码学基础 https://zkiap.com/
+4. 密码学基础 https://toc.cryptobook.us/
+5. 计算理论 Computational Complexity: A Modern Approach》，另一本是《Computational Complexity: A Conceptual Perspective by Oded Goldreich》
 <!-- Content_END -->
