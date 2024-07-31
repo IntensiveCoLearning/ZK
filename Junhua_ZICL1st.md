@@ -98,7 +98,15 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 <!-- Content_START -->
 ### 2024.07.27
 注册 ZK 共学
-### 2024.07.29
+### 2024.07.31
+学习内容:
+1. 学习[初步理解](https://www.youtube.com/watch?v=fOGdb1CTu5c)
+2. 搜集了些b站上的资料
+
+总结:
+1. 初步理解了zk的概念
+2. https://www.bilibili.com/video/BV1qj411g7ZA/?spm_id_from=333.337.search-card.all.click
+
 
 举例示范：
 
