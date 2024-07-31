@@ -113,5 +113,8 @@ I've done some projects about zk poker game, zklogin with groth16. Want to known
 5. 知识提取器：同一个随机数 r ，发送两个c, c'得到两个z, z' 能反推出私钥
 
 ### 2024.07.30
-
+- 学习主题：(四）随机挑战
+- 学习内容小结：
+1. 交互式证明系统需要验证者 Bob 在交互中提供一个或若干个「随机数」来挑战。所谓的非交互可以看成是只有「一轮」的证明过程，即Alice 直接发一个证明给 Bob 进行验证。
+2. 采用 Hash 函数的方法来把一个交互式的证明系统变成非交互式的方法被称为 Fiat-Shamir 变换
 <!-- Content_END -->

@@ -102,11 +102,26 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ### 2024.07.29
 
-举例示范：
-
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 学习主题：
+  - 观看youtube视频: [初步理解 ZK 是什么](https://www.youtube.com/watch?v=fOGdb1CTu5c)
+- 学习内容小结：
+  - 理解zk的本质是一个P = NP 的问题，zk是一个证明系统，可以证明一个事情是正确的，但是不会泄露任何信息。
 
 ### 2024.07.30
+
+- 学习主题：
+    - 听播客: [零知识证明：一场”无知“的游戏](https://www.xiaoyuzhoufm.com/episode/6672a76bb6a8412729e0b103)
+- 学习内容小结：
+    - 理解zk-SNARK 和 zk-STARK的不同
+    - 理解rollup的原理, optimistic rollup 和 zk rollup的区别
+    - 理解optimistic rollup的安全性问题，为什么要引入 federation, 多签和预签机制
+
+### 2024.07.31
+
+- 学习主题：
+    - 看视频: [ZKP Lecture 1: Introduction and History of ZKP](`https://www.youtube.com/watch?v=uchjTIlPzFo`)
+- 学习内容小结：
+    - 以硬币和三色国土为例，理解零知识证明的概念
+    - 讲解了零知识证明的历史，本人理解不是很深，还需后续学习
 
 <!-- Content_END -->

@@ -37,7 +37,7 @@
 
 ---
 
-# {你的名字}
+# {Zedz}
 1. 自我介绍
     - 自由职业，很多年前短暂的做过初级程序员，对WEB3感兴趣。
 2. 你认为你会完成本次残酷学习吗？
@@ -63,5 +63,11 @@
 - 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
     - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/f5c57c7dfec349938b2e6a2c83e49469)
 
+### 2024.07.31
+
+- 学习主题：
+    - 阅读[理解「模拟」](https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html)
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/303559e9d8174e3b80e8bbf27e63e1dc)
 
 <!-- Content_END -->

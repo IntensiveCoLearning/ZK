@@ -127,4 +127,94 @@ In order to solve the precision problem, a new numbers system had been designed,
 离散对数问题的结论：在有限域内解对数非常困难。
 解决离散对数问题是一个已知的困难问题，这也是这些密码学算法安全性的基础。
 
+
+### 2024.07.31
+circom的初次尝试。
+安装相关依赖       npm install --save circom snarkjs
+
+// 1. all the inputs are the signals;
+// 2. every time you multiply two signals together, you have to define a new signal;
+// 3. only two signals can be multiplied at once
+// 4. all the outputs are the signals
+
+//  =   用于定义常量或固定值的信号。                
+//          signal x = 10;                              x 是一个信号，它的值被固定为 10
+//          component poseidon = Poseidon(1);           实例化 Poseidon 哈希函数组件
+
+// <==  赋值运算符。用于将右侧表达式的值赋给左侧信号。
+//          signal x;
+//          signal y;
+//          y <== x + 1;                                将 x + 1 的值赋给 y
+
+// ===  约束运算符。用于表示电路中的约束，要求两边的值相等。
+
+// <--  输入运算符。用于表示电路的外部输入信号。
+//          signal input x <-- 10;                      x 是一个输入信号，值由外部输入，这里设定为 10（在实际应用中，这个值是由调用电路的外部系统提供的）
+
+// f(x, y) = x^2 * y + x * y^2 + 17
+
+template F(){
+    signal input x;         // 2
+    signal input y;         // 3
+    signal output o;
+
+    signal m1 <== x * x;    // 4
+    signal m2 <== m1 * y;   // 12
+
+    signal m3 <== y * y;    // 9
+    signal m4 <== m3 * x;   // 18
+
+    o <== m2 + m4 + 17; 
+}
+
+component main = F();
+
+
+
+// compile     npx circom circuit.circom --r1cs --wasm --sym
+// run         npx snarkjs wtns calculate circuit.wasm input.json witness.wtns
+//             npx snarkjs wtns export json witness.wtns witness.json
+
+
+下面是一个简单的 mimc5 加密算法：
+
+template MiMC5(){
+    signal input x;         // 输入的明文或初始值
+    signal input k;         // 密钥
+    signal output h;        // 输出的哈希值
+
+    var rounds = 10;                                        // 总共进行 10 轮加密操作
+    var c[rounds] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];         // 
+
+    signal lastOutput[rounds + 1];                          // 存储每一轮的中间输出值
+    var base[rounds];                                       // 每一轮的基数，即当前值加上 密钥k 和 轮常数c[i] 的结果
+    signal base2[rounds];                                   // 每一轮基数的平方值
+    signal base4[rounds];                                   // 每一轮基数的四次方值
+
+    lastOutput[0] <== x;
+
+    for(var i = 0; i < rounds; i++){
+        base[i] = lastOutput[i] + k + c[i];                 // 当前轮的基数 base，即 前一轮的输出值 加上 密钥 和 轮常数
+        base2[i] <== base[i] * base[i];
+        base4[i] <== base2[i] * base2[i];
+
+        lastOutput[i + 1] <== base4[i] * base[i];           // 5th power
+    }
+
+    h <== lastOutput[rounds] + k;                           // 最后一轮的输出值加上密钥，得到最终的哈希值 h
+}
+
+
+component main = MiMC5()
+
+
+// compile     npx circom .\circuit.circom --r1cs --wasm
+// run         npx snarkjs wtns calculate circuit.wasm input.json witness.wtns
+//             npx snarkjs wtns export json witness.wtns output.json
+
+
+- 学习主题：circom
+- 学习内容小结：circom目前还是比较low level的层次，没有太多的语法糖。需要注意：=  <==  ===  <-- 运算符的使用
+
+
 <!-- Content_END -->
