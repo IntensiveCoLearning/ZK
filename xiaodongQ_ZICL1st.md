@@ -77,4 +77,20 @@ timezone: Asia/Shanghai
 
 概念还有点晦涩，似懂非懂，还需继续往下学习。
 
+### 2024.07.31
+
+- 学习主题：学习 [3. 寻找「知识」](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html)
+- 学习内容小结：
+    - 描述了可靠性和零知识，里面用数学知识来描述和证明加密算法，有点抽象，先放一放。
+    - 通过里面的`单向映射`举例，对椭圆曲线加密算法（ECC）理解更直观了一点
+
+### 2024.08.01
+
+- 学习主题：密码学相关概念学习
+- 学习内容小结：
+    - 对称/非对称加密算法有哪些；
+    - 数字签名、数字证书、数字信封、PKI、PMI等概念；
+    - 国密标准
+    - 相关笔记：[密码学相关学习笔记](https://github.com/xiaodongQ/devNoteBackup/blob/master/%E5%90%84%E5%88%86%E7%B1%BB%E8%AE%B0%E5%BD%95/blockchain/%E5%AF%86%E7%A0%81%E5%AD%A6_%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
+
 <!-- Content_END -->

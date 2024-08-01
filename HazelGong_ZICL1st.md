@@ -160,7 +160,16 @@ To show that a proof is a zero-knowledge interactive proof of knowledge, one mus
 Intuitions of the proof: 
 - There are many possible proofs, depending on the random r chosen by P.
 - Each proof has 2 parts, seeing either gives zero knowledge, seeing both implies 100% correctness.
-- Verifier chooses at random which of the two parts he wants. Verifies over and over again. The ability of the P to give him either part of the answer convinces V that P has the knowledge. But the whole process is zero-knowledge. 
+- Verifier chooses at random which of the two parts he wants. Verifies over and over again. The ability of the P to give him either part of the answer convinces V that P has the knowledge. But the whole process is zero-knowledge.
 
+
+### 2024.07.31
+学习主题： 
+1. Lecture 1 最后 40min 没有完全理解，也许看一些别的材料里面的例子，再回来理解。
+2. 略读 Week 1 blog article #4: https://learn.z2o-k7e.world/zkp-intro/4/zkp-rom.html#%E9%87%8D%E5%BB%BA%E4%BF%A1%E4%BB%BB--%E9%9A%8F%E6%9C%BA%E9%A2%84%E8%A8%80%E7%B2%BE%E7%81%B5
+
+学习内容小结：
+1. Every NP-decision problem has a zero-knowledge interactive proof (I skipped the proof for this). Applications.
+2. Interactive ZK 可以通过多轮交互来确保 prover 作弊成功的可能性可忽略不计。随机数挑战是交互式证明的信任根基。NIZK 是单轮交互的证明。在这里面，prover 通过单向函数 hash function 生成一个难以事先预测的随机数，来代替在 interactive ZK 中 verifier 提供的随机数。
 
 <!-- Content_END -->
