@@ -76,4 +76,9 @@ timezone: Asia/Shanghai
 - 学习主题：[零知识证明：一场“无知“的游戏](https://www.xiaoyuzhoufm.com/episode/6672a76bb6a8412729e0b103)
 - 学习内容小结：播客听了后半段，大约 35min~
 
+### 2024.08.01
+
+- 学习主题：[（一）初识「零知识」与「证明」]
+- 学习内容小结：浏览文档~
+
 <!-- Content_END -->
