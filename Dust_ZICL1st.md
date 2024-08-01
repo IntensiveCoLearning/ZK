@@ -129,5 +129,13 @@ https://learnblockchain.cn/article/6188
 2. SSS算法基于多项式实现，秘密隐藏于多项式常数项中，在3-5的SSS方案中，会产生一个degree为2的多项式，每个人持有多项式上的一个点，因此任意三个人通过插值均可以还原出该多项式
 3. 关键问题：秘密/多项式系数的产生和销毁，重建过程中每个人需要暴露自己的知识？
 
+### 2024.08.01
+
+- 学习主题: circom-mp-mpdz学习
+- 学习内容:
+1. example native-search中circom用于对于input1数组进行查找，查找目标为input2单个数字
+2. example 流程中第一步使用circom-2-arithc进行circom到电路的转换，转换后生成4个目标文件 circuit.txt debug.json circuit_info.json report.json
+3. 每次输入参数由example下py文件生成，output记录了正确匹配的次数
+4. 函数的调用为直接通过命令行调用，因此不存在跨语言调用的问题
 
 <!-- Content_END -->
