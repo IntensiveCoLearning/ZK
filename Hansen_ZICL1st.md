@@ -57,6 +57,13 @@ timezone: Asia/Shanghai
 
 <!-- Content_START -->
 
+### 2024.08.01
+
+- 学习主题：寻找「知识」
+- 学习内容小结：
+	- 算法和证明没有看懂，但是 更加认定，*我们的世界是一个虚拟的世界*。
+ 	- If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things. 如果你是一个真正的真理探求者，在你人生中至少要有一次，尽可能地质疑所有的事情。 —— 笛卡尔
+
 ### 2024.07.30
 
 - 学习主题：理解「模拟」
