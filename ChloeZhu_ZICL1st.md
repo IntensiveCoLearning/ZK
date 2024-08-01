@@ -1,5 +1,5 @@
 ---
-timezone: Europe/Paris # 中欧标准时间 (UTC+2)
+timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
 ---
 
 # Chloe
