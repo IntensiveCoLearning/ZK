@@ -1,7 +1,3 @@
----
-timezone: Asia/Bangkok
----
-
 # ZK 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First ZK Intensive CoLearning 简写为 ZICL1st，第 2 期即为ZICL2nd，第 3 期即为 ZICL3rd，以此类推。
@@ -41,13 +37,13 @@ timezone: Asia/Bangkok
 
 ---
 
-# Lu Zhiyuan 路致远
+# {Zedz}
 1. 自我介绍
-   参与过L2的空投，也做过L2的项目方。除了赚钱外，也想从技术上对ZK有更多了解。个人说明书见 https://p1i72gf0sn.feishu.cn/wiki/WdSMwvDOeiULi5kyhO9cXT5onGc
+    - 自由职业，很多年前短暂的做过初级程序员，对WEB3感兴趣。
 2. 你认为你会完成本次残酷学习吗？
-   会
+    - YES
 3. 目前阶段对于 ZK 的了解？
-   仅限皮毛，知道这个东西存在和有用
+    - 在学习WEB3URL的路上发现了ZK的页面，做了预习。观看第一个YouTube视频感觉对这个概念很感兴趣。感觉里面涉及的技术很难不知道自己能跟到哪里。
 
 ## Notes
 
@@ -55,57 +51,50 @@ timezone: Asia/Bangkok
 
 ### 2024.07.29
 
-- 学习主题：what is ZK?
-- 学习内容：
-1. What is ZK -> Zero-Knowledge?
-lt is a proof. A prover can convince a verifier that sth is true without additiona info.
-data -> info -> kowledge.
-it is called kowledge, not data or info, coz it could predict the future -> 像是哲学里的先验
-2. Why ZK and why it is good? 
-not for efficiency, but for building more trust& keep secret.
-Examples can be seen in elections, multi-partycomputation and so on.
-lt uses randomness to bring ppl together. Non-interactive nature + varifiability. lt is counter-intuitive·
-3. 遗留的问题:
-any other proofs?
-what's the diffrence btw blockchains &cryptocurrencies?
-Concept of NP-complete problems & map threecoloring
+- 学习主题：
+    - 观看两个课前阅读的视频
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/8b22ca6e1a004b90af2e49283cf69a6b)
 
 ### 2024.07.30
 
-**1. zkSNARK VS zkSTARK**
-1.1 zkSNARK
-S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
-利用：BA有保证金
-不太透明
-
-**1. zkSNARK VS zkSTARK**
-1.1 zkSNARK
-S: Succinct; N: Non-interactive; ARK: ARgument of Knowledge
-利用：BA有保证金。缺点是不太透明
-1.2 zkSTARK
-S: Scalable; T: Transparent
-够透明
-**2. ZK Rollups VS Optimistic Rollups**
-Optimistic Rollups  相信人本善
-quicker transaction processing
+- 学习主题：
+    - 阅读[初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/f5c57c7dfec349938b2e6a2c83e49469)
 
 ### 2024.07.31
 
-今天学习的内容从文字格式、文章排版和信息密度三块都好喜欢。（对里面的例子理解与否则是另外一方面）
+- 学习主题：
+    - 阅读[理解「模拟」](https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html)
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/303559e9d8174e3b80e8bbf27e63e1dc)
+ 
 
-**What is Proof, Knowledge, and Zero Knowledge**
-1. What is Proof
-   1.1 Greece
-   Proof的对立面是反权威 -> 理性思潮崛起
-   1.2 二十世纪初
-   proof = 符号 -> 人们试图让「理性」有迹可循/规范化/自动化
-   1.3 六十年代
-   Proof = code -> 证明在计算机方面有概率被大规模运用，问题变成了「寻找Proof」和「验证proof」，后者可以交给机器辅助
-   1.4 八十年代
-   Proof = interactive -> 这有点像是科学实验中的可重复性，若证明成立，则这个证明在A和B那边当然得同时满足
-2. Benefits of ZKP
- 略
-3. Info VS Knowlegde
- Info = randomness -> 用「无序」的「信息」保证「隐私」安全，以及交叉验证
+### 2024.08.01
+
+- 学习主题：
+    - 阅读自己的往期笔记 复习
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+    - [今日笔记](https://gigantic-bandicoot-5c1.notion.site/75e079442472414e92a97f120e02447d?pvs=4)
+    - 有点学不动，能看懂一些，但还是模模糊糊的。
+
+### 2024.08.02
+
+- 学习主题：
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+
+
+### 2024.08.03
+
+- 学习主题：
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+
+
+### 2024.08.04
+
+- 学习主题：
+- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+- 
 
 <!-- Content_END -->
