@@ -125,4 +125,8 @@ I've done some projects about zk poker game, zklogin with groth16. Want to known
 3. 密码学基础 https://zkiap.com/
 4. 密码学基础 https://toc.cryptobook.us/
 5. 计算理论 Computational Complexity: A Modern Approach》，另一本是《Computational Complexity: A Conceptual Perspective by Oded Goldreich》
+
+### 2024.07.31
+- 学习主题：ZKP Lecture 1: Introduction and History of ZKP
+- 学习内容小结：以前第一次听是一句也听不懂，现在居然能听懂了
 <!-- Content_END -->
