@@ -78,7 +78,7 @@ timezone: Asia/Shanghai
 
 ### 2024.08.01
 
-- 学习主题：[（一）初识「零知识」与「证明」]
+- 学习主题：[（一）初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
 - 学习内容小结：浏览文档~
 
 <!-- Content_END -->
