@@ -122,4 +122,12 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ### 2024.08.01
 - 学习主题：  [（三）寻找「知识」](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html)
 - 学习总结:  开头讲解了一番可靠性的定义：用于保证若是验证通过则知识一定存在；介绍了schnorr这一零知识证明协议，利用了交互性+同态加密（有限域到循环群）+随机数；后面又简单介绍了ecdsa，其中强调了随机数必须随机，不然知识是可以被推出来的；关于最后的脑洞，我认为是的，所谓科学是一种更抽象的程序，所谓幻象往往就是bug
+
+### 2024.08.02
+- 学习主题：[1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)部分内容
+- 学习总结：
+1. 多项式是zksnark的核心，本质是因为当阶数较多时，多项式在任意点的计算结果一致的可能性几乎为0；
+2. 多项式中的知识指的是item的系数
+3. 基本的利用多项式的因式分解来构造的证明系统有一些问题，本质是因为暴露了原始值，所以可以用同态加密来解决，此处利用到了模运算
+
 <!-- Content_END -->
