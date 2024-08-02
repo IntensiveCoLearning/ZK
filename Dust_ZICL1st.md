@@ -138,4 +138,26 @@ https://learnblockchain.cn/article/6188
 3. 每次输入参数由example下py文件生成，output记录了正确匹配的次数
 4. 函数的调用为直接通过命令行调用，因此不存在跨语言调用的问题
 
+### 2024.08.02
+
+- 学习主题: bristol format
+- 学习内容：
+1. 
+### 2024.08.02
+
+- 学习主题: bristol format
+- 学习内容：
+1. 
+### 2024.08.02
+
+- 学习主题: bristol format
+- 学习内容：
+1. 主要分成nodes、signals、gates三个结构
+2. gates代表操作，比如Add，gate下id关联到nodes
+3. node下signals id关联到signals下
+4. signals下主要包含in、out等signal、常量以及中间变量以random命名
+
+
+
+
 <!-- Content_END -->
