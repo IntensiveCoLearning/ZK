@@ -93,4 +93,11 @@ timezone: Asia/Shanghai
     - 国密标准
     - 相关笔记：[密码学相关学习笔记](https://github.com/xiaodongQ/devNoteBackup/blob/master/%E5%90%84%E5%88%86%E7%B1%BB%E8%AE%B0%E5%BD%95/blockchain/%E5%AF%86%E7%A0%81%E5%AD%A6_%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
 
+### 2024.08.02
+
+- 学习主题：[1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
+- 学习内容小结：
+    - 了解 zk-snarks 这种零知识证明协议的概念
+    - 简单跟踪了下多项式因式分解对应的协议过程，大致有个了解
+
 <!-- Content_END -->
