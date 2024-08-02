@@ -100,4 +100,13 @@ timezone: Asia/Shanghai
     - 了解 zk-snarks 这种零知识证明协议的概念
     - 简单跟踪了下多项式因式分解对应的协议过程，大致有个了解
 
+剩下的几篇大概浏览了下，都是关于zk-SNARK的数学知识，第一篇还能大概跟上，剩下的理解还是比较费劲。
+
+* [2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
+* [3-General-Purpose-Computation](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html)
+* [4-Construction-Properties.md](https://learn.z2o-k7e.world/zk-snarks/4-Construction-Properties.html)
+* [5-Pinocchio-Protocol](https://learn.z2o-k7e.world/zk-snarks/5-Pinocchio-Protocol.html)
+
+先大概有个概念，看后面比较偏实践的内容，工程上如何利用零知识。
+
 <!-- Content_END -->
