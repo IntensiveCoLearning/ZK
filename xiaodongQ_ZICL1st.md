@@ -109,4 +109,12 @@ timezone: Asia/Shanghai
 
 先大概有个概念，看后面比较偏实践的内容，工程上如何利用零知识。
 
+### 2024.08.03
+
+- 学习主题：视频学习，[ZK Shanghai 基础电路教学](https://www.youtube.com/watch?v=CTJ1JkYLiyw)，暂学到45min
+- 学习内容小结：
+    - 算术电路的概念（区别于电子电路）
+    - 初步了解zkREPL，demo运行
+    - 零知识证明电路的常见设计方法，了解各方法背后对应的数学运算
+
 <!-- Content_END -->
