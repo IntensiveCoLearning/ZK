@@ -105,11 +105,71 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ### 2024.07.29
 
-举例示范：
+学习主题：[Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
+学习内容小结：
 
-- 学习主题：XXXX
-- 学习内容小结：XXXX（鼓励用自己的语言描述学到的知识）
+Basic concepts: 
+
+Interactive proofs:
+- There is a prover and a verifier. Both are algorithms. The prover sends a string to the verifier. The verifier decides whether to accept or reject it. 
+
+Efficiently verifiable proofs (NP proofs):
+- Proof is short. Verifier has polynomial time to verify. 
+- claim x
+- short proof w: length |w| is polynomial in |x| (so |w|=|x|^a, a is a number? )
+- verifier V is a function. accepts x if V(x, w)=1, else reject. V takes time polynomial in |x|.
+
+Polynomial time: 
+- a class of problems whose running time grows polynomially with the size of the input. (用来形容算法复杂度，更加复杂的算法可能会是 exponential time，更简单的算法可能会是 linear time)
+
+NP-Language:
+L is an NP-language (or NP-decision problem) if there is a poly(|x|)-time verifier V with completeness (true claims with short proofs evaluates to 1) and soundness (false claims have no proof). 
+
+ZKP: prove that I have the knowledge without giving away the knowledge, using interactive probabilistic proof. 
+- through polynomial interactions
+- randomness: V is randomized, can err in accept/reject with small probability. 
+
+Interactive proof model
+- P, V know the claim x
+- V is probabilistic polynomial time
+- V takes in x, and all interactions between them to decide whether to accept or reject.
+
 
 ### 2024.07.30
+
+学习主题：[Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
+
+学习内容小结：
+
+Example of an interactive proof: Claim QR = {(N,y): there exists x such that $y=x^2$ mod N}. 
+
+P: choose random r such that $1 \leq r \leq N$ with $gcd(r,N)=1$. Send $s=r^2$ mod N. 
+
+- If P sends square root of both s and sy mod N, then V will know the claim is true but get $\sqrt{y} = x$ mod N. 
+- So P instead sends either s or sy mod N, but V chooses which one to send based on  a coin flip.
+- If heads, send z=r; if tails, send z=r$\sqrt{y}$ mod N. Here, the random r masks $\sqrt{y}$.
+- Then V accepts only if $z^2 = sy^b$ mod N. Since P has sent s.
+
+To show that a proof is a zero-knowledge interactive proof of knowledge, one must show:
+- completeness: if the claim is true, V accepts with probability $\geq c$ (usually it's 1). 
+- soundness: if the claim is false, V accepts with probability $\leq s$ (usually it's 1/2).
+- c and s are polynomial apart $c-s\geq \frac{1}{poly(|x|)}$ (notice that $\frac{1}{poly(|x|)}$ is a measure of magnitude, it's much bigger than $\frac{1}{e^{|x|}}$ for example. )
+- zero-knowledge: what the verifier V can compute after the proof = what V can compute before the proof. Prove that the verifier's view can be simulated by a zero-knowledge simulator (compuationally indistinguishable from a simulated view).
+- proof of knowledge: we need to make sure P really has the knowledge $x=\sqrt{y}$ given his actions (proof using an extractor who can use a rewinding technique, record the randomness, and perform both actions, then recover the knowledge of P. )
+
+Intuitions of the proof: 
+- There are many possible proofs, depending on the random r chosen by P.
+- Each proof has 2 parts, seeing either gives zero knowledge, seeing both implies 100% correctness.
+- Verifier chooses at random which of the two parts he wants. Verifies over and over again. The ability of the P to give him either part of the answer convinces V that P has the knowledge. But the whole process is zero-knowledge.
+
+
+### 2024.07.31
+学习主题： 
+1. Lecture 1 最后 40min 没有完全理解，也许看一些别的材料里面的例子，再回来理解。
+2. 略读 Week 1 blog article #4: https://learn.z2o-k7e.world/zkp-intro/4/zkp-rom.html#%E9%87%8D%E5%BB%BA%E4%BF%A1%E4%BB%BB--%E9%9A%8F%E6%9C%BA%E9%A2%84%E8%A8%80%E7%B2%BE%E7%81%B5
+
+学习内容小结：
+1. Every NP-decision problem has a zero-knowledge interactive proof (I skipped the proof for this). Applications.
+2. Interactive ZK 可以通过多轮交互来确保 prover 作弊成功的可能性可忽略不计。随机数挑战是交互式证明的信任根基。NIZK 是单轮交互的证明。在这里面，prover 通过单向函数 hash function 生成一个难以事先预测的随机数，来代替在 interactive ZK 中 verifier 提供的随机数。
 
 <!-- Content_END -->
