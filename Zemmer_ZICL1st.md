@@ -280,4 +280,163 @@ verifier在不看页面的前提下，通过交互式来判断页面只有一个
 1、zk需要将一个复杂问题从数学上转化为概率问题。
 2、而且这个概率问题需要通过多轮独立的挑战验证来实现统计。
 
+
+### 2024.08.01
+学不动了，直接先磕circom，从后往前捯饬吧。
+# Circom
+
+## 相关定义
+
+### signals：
+
+1、信号，感觉就是参数
+
+2、每个参数是一个多项式的未知数（元）
+
+3、不仅仅是输入的参数，包括整个电路过程中所有的变量在不同时候值都算是signal。
+
+### R1CS
+
+1、Rank-1 constraint system，称之为：秩 1 约束系统。
+
+2、一个电路代码的限制系统
+
+3、要求所有的参数都符合二次、线性等式。而且可以通过公式消元。
+
+4、所有多项式的计算都是在有限域上的运算，也就是模运算。
+
+### witness
+
+1、一组可以满足电路的信号
+
+2、也就是R1CS的解决方案之一
+
+3、简单的说就是一组有效的输入参数args。
+
+### 输入input和输出out put
+
+1、都属于signals
+
+2、输入分为私有输入private和公开输入public input
+
+3、私有输入就是不能透露的信息，也就是零知识的那部分。比如私钥。
+
+### 可信设置trusted setup
+
+1、
+
+## 安装步骤
+
+### 安装rust
+
+```
+cd ~
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+```
+
+### 安装circom
+
+```
+git clone https://github.com/iden3/circom.git
+```
+
+```
+cd circom
+cargo build --release
+cargo install --path circom
+```
+
+circus binary将安装在$HOME/.cargo/bin下。
+
+### 测试
+
+```
+circom --help
+```
+
+### 安装snark.js
+
+```
+npm install -g snarkjs
+```
+
+## 使用circom的整体步骤
+
+### 1、撰写circom
+
+得到一个.circom文件，该文件内部建立了template的实例。
+
+### 2、编译circom
+
+编译命令：circom 文件名
+
+```
+circom multiplier2.circom --r1cs --wasm --sym --c
+```
+
+#### 参数解释
+
+##### --r1cs
+
+1、生成 fileName.r1cs文件
+
+2、该文件是电路中R1CS的二进制
+
+##### --wasm
+
+1、生成了fileName_js文件夹
+
+2、该文件夹内包含fileName.wasm文件，以及其它文件
+
+3、这些文件的内容是在JavaScript环境下生成见证人witness
+
+##### --sym
+
+1、生成了fileName.sym文件
+
+2、用于调试和以注释模式打印约束系统。
+
+##### --c
+
+1、生成了fileName_cpp文件夹
+
+2、该文件夹包含了fileName.cpp和fileName.dat等文件
+
+3、这些文件也是用来在C++环境下生成见证人witness的。性能更好（但每个证明的生成时间里见证人只是其中一部分）
+
+##### -o
+
+1、用于指定输出文件的目录。
+
+2、默认是当前目录
+
+##### -l
+
+添加库搜索路径，即指定额外的目录，circom会在这些目录中查找include指令引用的电路文件。
+
+### 3、计算见证人witness
+
+1、设计一组和wasm文件对应的实参，并将参数放入自定义的json文件中，比如命名为input.json。
+
+```json
+{"a": "3", "b": "11"}
+```
+
+2、将这个文件放入fileName_js文件夹中，即和fileName.wasm同一目录下。
+
+3、在该文件目录下，运行以下文件生成证明文件.wtns。此命令使用 Node.js 运行 generate_witness.js，参数依次是输入的fileName.wasm文件、电路输入的 JSON 文件input.json，和生成的自定义的witness文件witness.wtns。
+
+```bash
+node generate_witness.js multiplier2.wasm input.json witness.wtns
+```
+
+### 4、证明电路
+
+#### 生成电路所需的文件
+
+1、wtns文件：见证人文件，包含所有的信号。
+
+2、r1cs文件：约束文件，包含电路约束
+
+
 <!-- Content_END -->

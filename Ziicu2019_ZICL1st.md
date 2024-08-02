@@ -70,4 +70,12 @@ timezone: Pacific/Auckland
 - 学习主题：初步了解ZK
 - 学习内容小结：[零知识证明：一场”无知“的游戏](https://www.xiaoyuzhoufm.com/episode/6672a76bb6a8412729e0b103)
 
+### 2024.08.01
+
+- 学习主题：ZK相关知识
+- 学习内容小结：
+  - [（一）初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
+  - [（二）理解「模拟」](https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html)
+  - [（三）寻找「知识」](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html)
+
 <!-- Content_END -->

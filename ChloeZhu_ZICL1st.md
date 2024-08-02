@@ -1,5 +1,5 @@
 ---
-timezone: Europe/Paris # 中欧标准时间 (UTC+2)
+timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
 ---
 
 # Chloe
@@ -81,3 +81,11 @@ MoonMath
             - 劣势
                 - 通常通过 sequencer 生成证明，对 sequencer 的硬件软件设备要求很高，因此可能会存在单点故障
                 - 以及额外攻击，如 mev、针对交易的审查
+### 2024.08.01
+- ZKP MOOC Lecture 1: Introduction and History of ZKP：https://www.youtube.com/watch?v=uchjTIlPzFo
+- Section: intro, zk interactive proofs
+- Notes
+![Home Feishu Docs Screenshot 0074](https://github.com/user-attachments/assets/b6e04b0c-dd2e-419e-85d9-bd0e792b29d8)
+![Home Feishu Docs Screenshot 0075](https://github.com/user-attachments/assets/d4d291aa-b96e-4f56-9b7b-06d92bfc1d3f)
+
+
