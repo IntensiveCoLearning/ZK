@@ -81,4 +81,8 @@ timezone: Asia/Shanghai
 - 学习主题：[（一）初识「零知识」与「证明」](https://learn.z2o-k7e.world/zkp-intro/1/zkp-back.html)
 - 学习内容小结：浏览文档~
 
+### 2024.08.02
+
+- 学习主题：看视频 [ZKP Lecture 1: Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo&ab_channel=Blockchain-Web3MOOCs)
+
 <!-- Content_END -->
