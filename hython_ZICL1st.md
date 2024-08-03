@@ -126,4 +126,9 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 - 学习内容小结：
     - 70min 的播客：零知识证明：一场”无知“的游戏
     - 补充视频内容的学习
+
+### 2024.08.02
+- 学习主题：视频及播客学习 40分钟
+- 学习内容小结：
+    - ZKP Lecture 1: Introduction and History of ZKP
 <!-- Content_END -->
