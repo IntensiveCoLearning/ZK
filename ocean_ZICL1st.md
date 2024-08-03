@@ -129,4 +129,12 @@ I've done some projects about zk poker game, zklogin with groth16. Want to known
 ### 2024.07.31
 - 学习主题：ZKP Lecture 1: Introduction and History of ZKP
 - 学习内容小结：以前第一次听是一句也听不懂，现在居然能听懂了
+
+### 2024.08.03
+- 学习主题：ZKP Lecture 1: Introduction and History of ZKP
+- 学习内容小结：零知识二次剩余，Bob 能够验证 
+ 是二次剩余，但无法了解到 
+ 具体是多少。即使交互多次，由于每次 Alice 都会随机选择一个新的 ，Bob 无法构造出 ，得到的仅是一串随机数。
+
+
 <!-- Content_END -->
