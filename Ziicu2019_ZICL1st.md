@@ -78,4 +78,16 @@ timezone: Pacific/Auckland
   - [（二）理解「模拟」](https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html)
   - [（三）寻找「知识」](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html)
 
+### 2024.08.02
+
+- 学习主题：zk相关知识
+- 学习内容小结：
+- [ZKP Lecture 1: Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
+
+### 2024.08.03
+
+- 学习主题：ZK相关知识
+- 学习内容小结：
+  - [ZKP Lecture 1: Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
+
 <!-- Content_END -->
