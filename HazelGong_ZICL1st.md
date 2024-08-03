@@ -172,4 +172,14 @@ Intuitions of the proof:
 1. Every NP-decision problem has a zero-knowledge interactive proof (I skipped the proof for this). Applications.
 2. Interactive ZK 可以通过多轮交互来确保 prover 作弊成功的可能性可忽略不计。随机数挑战是交互式证明的信任根基。NIZK 是单轮交互的证明。在这里面，prover 通过单向函数 hash function 生成一个难以事先预测的随机数，来代替在 interactive ZK 中 verifier 提供的随机数。
 
+
+
+### 2024.08.03
+学习主题：https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html 博客文章第二篇
+
+学习内容小结：用模拟来证明零知识。Prover Alice 与无知识的 Simulator Zlice 不可区分，而后者没有知识，只有超能力。这是在证明，所谓「零知识证明」确实零知识。「证明的零知识过程，等价于构造（寻找）一个「模拟」算法，这个算法能够让模拟器来模拟出一个「没有知识」的理想世界。如果这个算法存在，而且两个世界不可区分，那么就证明完毕。」
+所谓模拟器不能是全能的，它是一个图灵机、模拟机，可以做到时光倒流，但不能篡改 Verifier Bob 收到的答案。
+证明零知识，就是寻找一个算法，它运行在外部真实的计算系统，但却实现了零知识的模拟机的功能，因此等价于一个零知识的系统，所以它是零知识的。
+模拟证明了零知识，定义了安全性。
+
 <!-- Content_END -->
