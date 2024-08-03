@@ -130,4 +130,7 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 2. 多项式中的知识指的是item的系数
 3. 基本的利用多项式的因式分解来构造的证明系统有一些问题，本质是因为暴露了原始值，所以可以用同态加密来解决，此处利用到了模运算
 
+### 2024.08.03
+- 学习主题：80min的视频： [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+- 学习总结：首先学习了snarks是什么：一种非交互式零知识证明系统，一般是将functional commitment scheme和interactive oracle proof结合；还讲了交互式语言IOP，以及多项式承诺和IOP相结合
 <!-- Content_END -->
