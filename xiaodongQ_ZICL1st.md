@@ -93,4 +93,28 @@ timezone: Asia/Shanghai
     - 国密标准
     - 相关笔记：[密码学相关学习笔记](https://github.com/xiaodongQ/devNoteBackup/blob/master/%E5%90%84%E5%88%86%E7%B1%BB%E8%AE%B0%E5%BD%95/blockchain/%E5%AF%86%E7%A0%81%E5%AD%A6_%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
 
+### 2024.08.02
+
+- 学习主题：[1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
+- 学习内容小结：
+    - 了解 zk-snarks 这种零知识证明协议的概念
+    - 简单跟踪了下多项式因式分解对应的协议过程，大致有个了解
+
+剩下的几篇大概浏览了下，都是关于zk-SNARK的数学知识，第一篇还能大概跟上，剩下的理解还是比较费劲。
+
+* [2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
+* [3-General-Purpose-Computation](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html)
+* [4-Construction-Properties.md](https://learn.z2o-k7e.world/zk-snarks/4-Construction-Properties.html)
+* [5-Pinocchio-Protocol](https://learn.z2o-k7e.world/zk-snarks/5-Pinocchio-Protocol.html)
+
+先大概有个概念，看后面比较偏实践的内容，工程上如何利用零知识。
+
+### 2024.08.03
+
+- 学习主题：视频学习，[ZK Shanghai 基础电路教学](https://www.youtube.com/watch?v=CTJ1JkYLiyw)，暂学到45min
+- 学习内容小结：
+    - 算术电路的概念（区别于电子电路）
+    - 初步了解zkREPL，demo运行
+    - 零知识证明电路的常见设计方法，了解各方法背后对应的数学运算
+
 <!-- Content_END -->

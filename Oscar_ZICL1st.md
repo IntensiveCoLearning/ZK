@@ -116,6 +116,10 @@ timezone: Asia/Shanghai
 
 - 学习内容小结：
 
+  - **PLONK**：是一种高效的零知识证明协议，特别适用于构建可扩展的和高效的零知识证明系统。PLONK的全称是“Permutation Argument for Linearized Polynomial Commitments”，是对之前的zk-SNARKs（简洁非交互式零知识论证）的一种改进。**PLONK支持通用电路，这意味着它可以用于多种类型的计算任务，而不仅限于特定的应用。**
+
+  - **Circom**：是一个用于构建和编译零知识证明电路（比如PLONK电路）的框架。它允许开发者使用一种简化的结构化语言来定义电路，然后将这些电路转换为零知识证明所需的逻辑形式。Circom 通常与 PLONK协议结合使用，以生成所需的证明和验证机制。PLONK 协议是实现 ZKP 的一种具体协议，而 Circom 是开发和构建与 PLONK 兼容的电路的工具。在零知识证明的生态系统中，它们各自发挥着重要的作用。
+
 
 
 <!-- Content_END -->
