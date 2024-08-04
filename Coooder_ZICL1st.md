@@ -126,4 +126,13 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - 完备性
   - 模拟器
 
+### 2024.8.4
+
+- 学习主题：
+  - 看文档: [寻找「知识」](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html#%E5%AF%BB%E6%89%BE%E7%9F%A5%E8%AF%86)
+  - 看文档: [证明零知识](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html#%E8%AF%81%E6%98%8E%E9%9B%B6%E7%9F%A5%E8%AF%86)
+- 学习内容小结：
+  - 零知识证明性质： Completeness（完备性）、Soundness（可靠性）、Zero-Knowledge（零知识）
+  - Schnorr协议公式： z*G ?= R + c*PK = rG + c*(aG)
+
 <!-- Content_END -->
