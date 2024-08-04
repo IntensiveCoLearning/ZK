@@ -161,4 +161,12 @@ Sony PlayStation 3的事情可以看这个链接，主要讲的是「乔治·霍
 
 思考一下还是不花力气试图理解这节的例子了，明天继续推进新的章节学习。
 
+### 2024.08.04
+
+- Proofs -> Classical Proofs VS ZKP - proof as an interactive process, prover + verifier
+- focus on verifier
+- intro: 用了三个NP的例子
+- New Proof Modle: interaction + randomness
+看了27分钟，明天间断性再继续吧。
+
 <!-- Content_END -->

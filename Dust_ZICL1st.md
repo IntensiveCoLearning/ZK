@@ -167,4 +167,14 @@ https://learnblockchain.cn/article/6188
 3. 在上文MP-SPDZ的学习中可以看到，其接收MPC文件的电路格式以及PlayerData下的InputData，但是对于lattigo来说好像并不能很好支持对电路的理解，所以可能需要手动解析对于mpc文件的理解
 4. 在mpc的计算过程中，仅需要进行计算，而不像zk一样要产生proof以及验证，即使同样是circom电路
 
+
+### 2024.08.04
+
+- 学习主题: circom学习
+- 学习内容: 
+1. circom证明电路常见设计方式，包括为0判断、选择等
+2. circom 二进制约束代码
+
+
 <!-- Content_END -->
+
