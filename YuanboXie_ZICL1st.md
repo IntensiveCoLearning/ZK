@@ -146,8 +146,9 @@ timezone: Asia/Shanghai
 
 ### 2024.08.04
 
-- 学习主题：
-- 学习内容小结：
+- 学习主题：ZKP video
+    -  100min 的视频：[ZKP Lecture 1: Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
+- 学习内容小结：回顾了一下前几天学的 ZK 相关的知识。
 
 
 ### 2024.08.05
