@@ -142,8 +142,26 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - 零知识证明性质： Completeness（完备性）、Soundness（可靠性）、Zero-Knowledge（零知识）
   - Schnorr协议公式： z*G ?= R + c*PK = rG + c*(aG)
 
+### 2024.08.03
 
+- 学习主题：
+  - 看文档: [证明零知识](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html#%E8%AF%81%E6%98%8E%E9%9B%B6%E7%9F%A5%E8%AF%86)
+  - 学习内容小结：
+    - 通过弱版本的协议SHVZK证明Schnorr的安全性
+    - 「抽取器」需要利用「时间倒流」的超能力才能计算出Schnorr的签名私钥
+    
+### 2024.08.04
 
-
+- 学习主题：
+  - 看文档: [证明零知识](https://learn.z2o-k7e.world/zkp-intro/3/zkp-pok.html#%E8%AF%81%E6%98%8E%E9%9B%B6%E7%9F%A5%E8%AF%86)
+- 学习内容小结：
+  - ecdsa和Schnorr算法类似
+  - ecdsa和Schnorr算法都存在的缺点：两次签名中使用同一个随机数，那么签名者的私钥将会暴露出来，计算公式
+      ```shell
+      k = (c - c')/(s - s')
+      a = (k * s - c)/e
+      ```
+  - 随机数必须是具有密码学安全强度的随机数，否则会导致私钥泄露
+  - 作者脑洞我们生活是否在模拟世界中生存
 
 <!-- Content_END -->
