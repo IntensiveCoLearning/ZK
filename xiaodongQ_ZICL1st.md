@@ -117,4 +117,12 @@ timezone: Asia/Shanghai
     - 初步了解zkREPL，demo运行
     - 零知识证明电路的常见设计方法，了解各方法背后对应的数学运算
 
+### 2024.08.04
+
+- 学习主题：视频学习，下半部分 [ZK Shanghai 基础电路教学](https://www.youtube.com/watch?v=CTJ1JkYLiyw)
+- 学习内容小结：
+    - 了解 Circom，可定义可用于生成零知识证明的算术电路，[circom语言中文教程](https://suyanlong.github.io/circom-language-ch/)
+    - `CircomLib`是一个公开可用的库，带有数百个电路，例如比较器、哈希函数、数字签名、二进制和十进制转换器等等。
+
+
 <!-- Content_END -->
