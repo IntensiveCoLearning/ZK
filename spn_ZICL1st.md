@@ -128,4 +128,9 @@ XDU大四学生，ZK在学。
 
 - 学习主题：plonk等式验证
 - 学习内容小结:将plonk遗留的几个等式照着推导验证了一下（安全规约太重要了）
+
+### 2024.08.03
+
+- 学习主题：cairo学习
+- 学习内容小结:参考[WTF-cairo](https://github.com/WTFAcademy/WTF-Cairo)学习了一下前14讲
 <!-- Content_END -->

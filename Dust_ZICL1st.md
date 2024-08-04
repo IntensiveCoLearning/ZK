@@ -150,7 +150,7 @@ https://learnblockchain.cn/article/6188
 1. 
 ### 2024.08.02
 
-- 学习主题: bristol format
+- 学习主题: circuit debug 文件
 - 学习内容：
 1. 主要分成nodes、signals、gates三个结构
 2. gates代表操作，比如Add，gate下id关联到nodes
@@ -158,6 +158,13 @@ https://learnblockchain.cn/article/6188
 4. signals下主要包含in、out等signal、常量以及中间变量以random命名
 
 
+### 2024.08.03
 
+- 学习主题: lattigo学习
+- 学习内容：
+1. lattigo为一个实现基于格的同态加密工具
+2. lattigo支持BFV、CKKS、RLWE、BTP方案
+3. 在上文MP-SPDZ的学习中可以看到，其接收MPC文件的电路格式以及PlayerData下的InputData，但是对于lattigo来说好像并不能很好支持对电路的理解，所以可能需要手动解析对于mpc文件的理解
+4. 在mpc的计算过程中，仅需要进行计算，而不像zk一样要产生proof以及验证，即使同样是circom电路
 
 <!-- Content_END -->
