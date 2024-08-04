@@ -121,8 +121,15 @@ timezone: Asia/Shanghai
 
 - 学习主题：视频学习，下半部分 [ZK Shanghai 基础电路教学](https://www.youtube.com/watch?v=CTJ1JkYLiyw)
 - 学习内容小结：
-    - 了解 Circom，可定义可用于生成零知识证明的算术电路，[circom语言中文教程](https://suyanlong.github.io/circom-language-ch/)
+    - 了解 Circom，可定义可用于生成零知识证明的算术电路
+        - [官网文档](https://docs.circom.io/circom-language/signals/)
+        - [circom语言中文教程](https://suyanlong.github.io/circom-language-ch/)
     - `CircomLib`是一个公开可用的库，带有数百个电路，例如比较器、哈希函数、数字签名、二进制和十进制转换器等等。
 
+### 2024.08.05
+
+- 学习主题：[基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md)
+- 学习内容小结：
+    - 跟踪里面的练习代码，查看[官网文档](https://docs.circom.io/circom-language/signals/)熟悉语法
 
 <!-- Content_END -->
