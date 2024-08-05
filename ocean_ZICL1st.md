@@ -139,5 +139,13 @@ I've done some projects about zk poker game, zklogin with groth16. Want to known
 - 学习主题：zkcompression
 - 学习内容小结：
 1. 核心思想：交易可以将帐户数据作为交易负载的一部分传递，而不是将所有帐户存储在磁盘上并在需要时读取它们。我们可以通过使用 Merkle 树来确保提交交易的用户提供正确的状态。 Merkle 证明是提交某些数据的一种方法。这样，可以根据承诺来验证证据，以验证已传入正确的状态并且用户对所提供的状态没有不诚实。
+### 2024.08.05
+- 学习主题：state compression
+- 学习内容小结：
+1. 先学习没有zk的情况，solana account state 存在validator的rocksdb中，是可信的，长期账本存储在归档节点中如Google Bigtable或者IPFS或者中心化存储，不可信需要验证，但是账本数据更便宜，所以将state数据存在账本中，计算Merkle root并存储在account state中做验证。
+2. 压缩nft 存储metadata在ledger，没有token account, mint account。account state 由metaplex提供程序管理，除了concurrent merkle tree 账户还有一个账户存储必要的信息，我猜是和ledger信息有关，ts客户端根据这些信息可以找到nft的ledger。我们写ts就能创建压缩nft了。ledger 会被 rpc provider 转移到 archival node，但是对rpc请求是透明的
+3. zk compress 非常类似了，压缩nft由于是新发行的，所以不需要基于历史account state变更。如果希望压缩一些已经存在的账户余额呢？首先就需要证明初始余额的正确性。merkle proof 随着叶子结点增加而变大，zk compression 的证明大小是恒定的，zk可以证明您进行了一定的计算并得到了一定的结果。一旦有人得到结果和证明，他们就可以验证你是否正确地完成了计算，而无需实际运行计算。zk 可以做隐藏，另外zk即使不用来隐藏也是可以的，Because you’re turning a problem that requires running 1000 computation steps (or even a million) into a problem that requires just verifying one proof to know that the computation has been done correctly.
+4. ZK Compression uses the same technology to run the actual Merkle tree membership logic. So, it has a circuit that can take the account data, a proof (128 bytes), and verify that the data is indeed part of the "commitment" on the chain. 虽然普通的 Merkle 证明是 Log 2 (N)，但 ZK 压缩始终是恒定的，因此您可以在一次承诺下拥有大量账户。生成此证明可以在链外完成，但验证此证明必须在链上完成，因为程序需要知道您为帐户提供了正确的数据，然后才能继续执行。
+
 
 <!-- Content_END -->
