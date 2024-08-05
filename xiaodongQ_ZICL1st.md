@@ -93,4 +93,43 @@ timezone: Asia/Shanghai
     - 国密标准
     - 相关笔记：[密码学相关学习笔记](https://github.com/xiaodongQ/devNoteBackup/blob/master/%E5%90%84%E5%88%86%E7%B1%BB%E8%AE%B0%E5%BD%95/blockchain/%E5%AF%86%E7%A0%81%E5%AD%A6_%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
 
+### 2024.08.02
+
+- 学习主题：[1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
+- 学习内容小结：
+    - 了解 zk-snarks 这种零知识证明协议的概念
+    - 简单跟踪了下多项式因式分解对应的协议过程，大致有个了解
+
+剩下的几篇大概浏览了下，都是关于zk-SNARK的数学知识，第一篇还能大概跟上，剩下的理解还是比较费劲。
+
+* [2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
+* [3-General-Purpose-Computation](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html)
+* [4-Construction-Properties.md](https://learn.z2o-k7e.world/zk-snarks/4-Construction-Properties.html)
+* [5-Pinocchio-Protocol](https://learn.z2o-k7e.world/zk-snarks/5-Pinocchio-Protocol.html)
+
+先大概有个概念，看后面比较偏实践的内容，工程上如何利用零知识。
+
+### 2024.08.03
+
+- 学习主题：视频学习，[ZK Shanghai 基础电路教学](https://www.youtube.com/watch?v=CTJ1JkYLiyw)，暂学到45min
+- 学习内容小结：
+    - 算术电路的概念（区别于电子电路）
+    - 初步了解zkREPL，demo运行
+    - 零知识证明电路的常见设计方法，了解各方法背后对应的数学运算
+
+### 2024.08.04
+
+- 学习主题：视频学习，下半部分 [ZK Shanghai 基础电路教学](https://www.youtube.com/watch?v=CTJ1JkYLiyw)
+- 学习内容小结：
+    - 了解 Circom，可定义可用于生成零知识证明的算术电路
+        - [官网文档](https://docs.circom.io/circom-language/signals/)
+        - [circom语言中文教程](https://suyanlong.github.io/circom-language-ch/)
+    - `CircomLib`是一个公开可用的库，带有数百个电路，例如比较器、哈希函数、数字签名、二进制和十进制转换器等等。
+
+### 2024.08.05
+
+- 学习主题：[基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md)
+- 学习内容小结：
+    - 跟踪里面的练习代码，查看[官网文档](https://docs.circom.io/circom-language/signals/)熟悉语法
+
 <!-- Content_END -->

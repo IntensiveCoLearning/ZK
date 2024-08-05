@@ -172,4 +172,31 @@ Intuitions of the proof:
 1. Every NP-decision problem has a zero-knowledge interactive proof (I skipped the proof for this). Applications.
 2. Interactive ZK 可以通过多轮交互来确保 prover 作弊成功的可能性可忽略不计。随机数挑战是交互式证明的信任根基。NIZK 是单轮交互的证明。在这里面，prover 通过单向函数 hash function 生成一个难以事先预测的随机数，来代替在 interactive ZK 中 verifier 提供的随机数。
 
+
+
+### 2024.08.03
+学习主题：https://learn.z2o-k7e.world/zkp-intro/2/zkp-simu.html 博客文章第二篇
+
+学习内容小结：用模拟来证明零知识。Prover Alice 与无知识的 Simulator Zlice 不可区分，而后者没有知识，只有超能力。这是在证明，所谓「零知识证明」确实零知识。「证明的零知识过程，等价于构造（寻找）一个「模拟」算法，这个算法能够让模拟器来模拟出一个「没有知识」的理想世界。如果这个算法存在，而且两个世界不可区分，那么就证明完毕。」
+所谓模拟器不能是全能的，它是一个图灵机、模拟机，可以做到时光倒流，但不能篡改 Verifier Bob 收到的答案。
+证明零知识，就是寻找一个算法，它运行在外部真实的计算系统，但却实现了零知识的模拟机的功能，因此等价于一个零知识的系统，所以它是零知识的。
+模拟证明了零知识，定义了安全性。
+
+
+### 2024.08.04
+学习主题：Proof of Knowledge 如何证明 prover 掌握知识，Schnorr 协议
+
+学习内容小结：
+1. 证明 prover 掌握知识：在理想世界中，一个作弊者是否可以复原出 prover 的知识。
+2. Schnorr 协议
+- 原理：Alice 拥有一个秘密数字，a，我们可以把这个数字想象成「私钥」，然后把它「映射」到椭圆曲线群上的一个点 a*G，简写为 aG。这个点我们把它当做「公钥」。sk = a, PK = aG.
+给任意一个有限域上的整数 r，我们就可以在循环群中找到一个对应的点 rG，或者用一个标量乘法来表示 r*G。但是反过来计算是很「困难」的。
+也就是说，如果任意给一个椭圆曲线循环群上的点 R，那么到底是有限域中的哪一个整数对应 R，这个计算是很难的，如果有限域足够大，比如说 256bit 这么大，我们姑且可以认为这个反向计算是不可能做到的。
+Schnorr 协议充分利用了有限域和循环群之间单向映射，实现了最简单的零知识证明安全协议：Alice 向 Bob 证明她拥有 PK 对应的私钥 sk。
+- Protocol:
+  ![image](https://github.com/user-attachments/assets/06f0b8cf-ad89-49e9-9fa6-aaf58c82c5bd)
+- 此 Protocol 的关键：
+  a. Bob 的随机数，保证 Alice 必须使用知识进行证明：如果我们把挑战数 c 看成是一个未知数，那么 r+a*c=z 可以看成是一个一元一次方程，其中 r 与 a 是方程系数。请注意在 c 未知的前提下，如果 r + a*x = r' + a'*x 要成立，那么根据 Schwatz-Zippel 定理[3]，极大概率上 r=r'，a=a' 都成立。也就是说， Alice 在 c 未知的前提下，想找到另一对不同的 r',a' 来计算 z 骗过 Bob 是几乎不可能的。这个随机挑战数 c 实现了r 和 a 的限制。虽然 Bob 随机选了一个数，但是由于 Alice 事先不知道，所以 Alice 不得不使用私钥 a 来计算 z。这里的关键： c 必须是个随机数。
+  b. Alice 的随机数，保证 Bob 无法复原 Alice 的知识。Bob 不知道 r，但是他知道 r 映射到曲线上的点R；Bob 也不知道 a，但是他知道 a 映射到曲线群上的点 PK，即 a*G。通过同态映射与Schwatz-Zippel 定理，Bob 可以校验 z 的计算过程是否正确，从而知道 Alice 确实是通过 r 和 a 计算得出的 z，但是又不暴露 r 与 a 的值。
+
 <!-- Content_END -->

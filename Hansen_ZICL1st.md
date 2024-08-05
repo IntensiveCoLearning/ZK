@@ -57,12 +57,24 @@ timezone: Asia/Shanghai
 
 <!-- Content_START -->
 
-### 2024.08.01
+### 2024.08.03
+
+- 学习主题：埋藏「秘密」   不知道介绍的这些内容有什么用处  
+	- 「公共参考串」（Common Reference String，简称 CRS
+   	- 每个人都有三种生活，公开的，私人的，以及秘密的。
+   	- snarks 是：一种非交互式零知识证明系统，
+
+### 2024.08.02
 
 - 学习主题：寻找「知识」
+  
+
+### 2024.08.01
+
+- 学习主题：随机「挑战」
 - 学习内容小结：
-	- 算法和证明没有看懂，但是 更加认定，*我们的世界是一个虚拟的世界*。
- 	- If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things. 如果你是一个真正的真理探求者，在你人生中至少要有一次，尽可能地质疑所有的事情。 —— 笛卡尔
+	- 有点难 ，看的似懂非懂
+ 	- 随机预言机： Random Oracle ，像一个黑箱，对任何输入都返回一个真正均匀随机的输出，相同的输入返回相同的输出， 有点像 Hash 函数。 
 
 ### 2024.07.30
 
