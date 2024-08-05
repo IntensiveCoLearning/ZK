@@ -501,4 +501,364 @@ component main {public [in1,in2]} = Multiplier2();
 #### 信号的不可更改型immutable
 
 所有的信号都不能二次赋值，即只能赋值一次。
+
+
+### 2024.08.03
+#### 信号的值
+
+1、信号的值只能是数字、布尔值或者数字列表
+
+2、circom没有字符串这个概念。
+
+#### 约束constrain
+
+1、定义信号signal之间的关系。
+
+2、这些关系在电路执行时候（以及证明过程中）必须满足。
+
+3、一个模板之中通常有多个约束。
+
+##### 信号约束相关符号
+
+| 符号 | 解释                                    | 常用度     |
+| ---- | --------------------------------------- | ---------- |
+| <==  | 约束+赋值，常用语信号signal中，用于约束 | 常用       |
+| ==>  | 和<==一样，就是方向不同                 | 很少       |
+| ===  | 仅仅约束，不赋值                        | 常用       |
+| <--  | 仅赋值，不约束                          | 很少       |
+| -->  | 和<--一样，就是方向不同                 | 很少       |
+| =    | 变量赋值var、component等。              | 不用于信号 |
+
+##### 约束示例
+
+1、有两个约束，第一个是out <== -in * inv + 1;，第二个是in * out === 0;
+
+2、虽然第二个约束看起来没用，但还是能增加系统鲁棒性。
+
+```js
+/* 判断数字是否是0：输入一个数，当这个数字为0时候输出1，当这个数字不0时候输出0.*/
+pragma circom 2.0.0;
+
+template IsZero() {
+    signal input in;
+    signal output out;
+    signal inv;
+    inv <-- in != 0 ? 1/in : 0;
+    out <== -in * inv + 1;
+    in * out === 0;
+}
+
+component main {public [in]} = IsZero();
+
+```
+
+### 变量var
+
+和信号的不同，尤其是中间信号
+
+| 异同点   | var                                | signal |
+| -------- | ---------------------------------- | ------ |
+| 赋值号   | =                                  | <==    |
+| 使用场景 | 临时变量赋值，循环变量，不能做约束 | 约束   |
+| 赋值次数 | 多次                               | 1次    |
+|          |                                    |        |
+
+
+
+### 模版template和组件component
+
+1、template定义了电路逻辑
+
+#### template的参数
+
+1、template可以有参数。
+
+2、template的参数在component中赋值实参，因为component是实例化的意思。
+
+3、不能把template的参数赋值给信号。因为信号是生成见证人阶段从外部输入的。
+
+4、也不能把信号赋值给template参数，因为template实参是以常量形式在代码中输入的，而且是在编译阶段执行实例化的。
+
+```js
+template tempid ( param_1, ... , param_n ) {
+ signal input a;
+ signal output b;
+
+ .....
+
+}
+
+component c = tempid(v1,...,vn);
+```
+
+#### component
+
+1、是实例化的模版
+
+2、模版如果有参数，必须在这个阶段输入参数
+
+3、可以通过.来获取实例中的信号。
+
+#### 主组件main component
+
+
+
+### 有限域
+
+circom的有限域的模p值为：
+
+```
+p = 21888242871839275222246405745257275088548364400416034343698204186575808495617.
+```
+
+### 判断
+
+#### if else判断
+
+```js
+  if(N > 0){
+     a = A(N);
+  }
+  else{
+     a = A(0);
+  }
+```
+
+#### 三元表达式
+
+布尔条件? true值: false值;
+
+
+
+```
+var z = x>y? x : y;
+```
+### 2024.08.04
+
+### 函数
+
+1、函数内无法声明信号，或者创建约束，这只能是模版template的功能。
+
+```js
+function funid ( param1, ... , paramn ) {
+
+ .....
+
+ return x;
+}
+```
+
+2、如果函数有返回值，且返回值是根据判断条件来决定的，那么需要做到每个判断条件都定义返回值，不能存在开放的条件没有返回值的情况。（即有if必须有else或者包含else的其他情况）。
+
+```js
+// 错误，当 N < 0 时，没有返回值
+function example(N){
+    if (N >= 0) {
+        return 1;
+    } 
+}
+
+
+// 正确
+function example(N){
+    if (N >= 0) {
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
+// 正确
+function example(N){
+    if (N >= 0) {
+        return 1;
+    }
+    return 0;
+}
+```
+
+### 导入电路
+
+1、不同于import，circom用语法include来导入其它电路文件
+
+2、文件名必须加后缀.circom
+
+3、可以使用-l参数，具体什么意思不知道。
+
+```
+include "montgomery.circom";
+include "mux3.circom";
+include "babyjub.circom";
+```
+
+### 运算符
+
+#### 布尔运算符
+
+和：&&
+
+或：||
+
+非：!
+
+#### 算数运算符
+
+1、所有的算数运算符都是模运算，包含加减乘除幂。
+
+2、/是乘以逆元，例如10/3 mod11的意思是10 * 8 mod 11 也就是3 mod 11。
+
+3、\是整除，且不进行模运算，返回a/b的整数部分。
+
+4、%取余，切不进行模运算，返回a/b的余数。
+
+### 2024.08.05
+### 断言assertion
+
+1、语法：assert(布尔表达式);
+
+2、注意不仅在编译阶段进行检查，而且会在运行阶段进行检查。比如编译可能正确，但是运行可能错误。这是因为断言的条件可能包含了输入信号：
+
+```js
+// 这个电路可以编译成功，但如果在运行阶段（生成见证阶段）输入信号in > 254，则会报错
+template Translate(n) {
+  signal input in;  
+  assert(in <= 254);
+  . . .
+}
+
+```
+
+### 调试打印log
+
+语法：log(变量/常量/表达式/字符串)，可以用,连接
+
+### 编译阶段调试命令
+
+####  --sym详解
+
+1、该命令生成了fileName.sym文件
+
+2、该命令后面可以跟一个参数，该参数表示信号简化的程度，该参数值为默认没有， -O0 或 --O1
+
+3、该文件表示了该电路内每个信号的详细信息，虽然不是实际传输的见证。（这里电路类似于形参，而见证类似于实参）
+
+4、内有四个字段，分别为\#s, #w, #c, name
+
+| 内容 | 定义     | 解释                                                         | 示例         |
+| ---- | -------- | ------------------------------------------------------------ | ------------ |
+| #s   | 信号编号 | 每个信号都有一个整数编号，从1开始，顺序排列                  | 1            |
+| #w   | 见证位置 | 信号在见证中的位置。<br />如果不是public signal且不出现在最终的R1CS约束中，则值为-1 | 2            |
+| #c   | 组件编号 | 标注信号来自于哪个组件<br />从0开始的非负整数                | 0            |
+| name | 信号名称 | 信号全称，格式为：组件名.信号名                              | main.c.in[1] |
+
+##### 一组.sym文件示例
+
+```txt
+1,1,1,main.out
+2,2,1,main.in[0]
+3,3,1,main.in[1]
+4,-1,0,main.c.out
+5,-1,0,main.c.in[0]
+6,-1,0,main.c.in[1]
+
+```
+
+### 
+#### 匿名组件
+
+1、算是一种组件的语法糖，只支持circom2.1+
+
+2、语法是：temp_name(arg1,...,argN)(input1,...,inputM)，要注意input信号的顺序。
+
+##### 匿名组件示例
+
+1、示例：传统组件
+
+```js
+// 创建一个电路A，输入信号两个，输出信号一个，约束是输出信号=输入信号相乘。
+template A(n){
+   signal input a, b;
+   signal output c;
+   c <== a*b;
+}
+//  创建一个电路B，输入信号是一个数组，输出信号一个，约束借助于A，也就是等于输出信号=输入信号数组内第一个元素和第二个元素相乘
+template B(n){
+   signal input in[n];
+   signal out;
+   component temp_a = A(n);
+   temp_a.a <== in[0]; 
+   temp_a.b <== in[1];
+   out <== temp_a.c;
+}
+component main = B(2);
+```
+
+2、匿名改造
+
+```js
+template A(n){
+   signal input a, b;
+   signal output c;
+   c <== a*b;
+}
+template B(n){
+   signal input in[n];
+   signal out <== A(n)(in[0],in[1]);
+}
+component main = B(2);
+```
+
+##### 总结匿名组件的语法
+
+1、普通组件需要通过component来定义，而匿名组件不需要，直接实例化模板，比如直接A(n)
+
+2、普通组件通过 实例.输入信号 进行电路之间的信号传递，而匿名组件通过实例(输入信号)的语法来进行信号传递，比如A(n)(x,y) 
+
+3、普通组件的输出需要通过 实例.输出信号来传递，而匿名组件直接对结果进行约束，比如signal out <== A(n)(in[0],in[1]);
+
+##### 匿名组件的输出信号
+
+1、没有输出信号：直接temp_name(arg1,...,argN)(input1,...,inputM);
+
+2、有一个输出信号：signal out1 <== temp_name(arg1,...,argN)(input1,...,inputM);
+
+3、多个输出信号：使用元组
+
+```js
+signal output a1, a2, a3;
+(a1, a2, a3) <== temp_name(arg1,...,argN)(input1,...,inputM);
+```
+
+4、可以通过语法_来忽略其中部分输出信号（把对应的约束也忽略了）
+
+```js
+template A(n){
+   signal input a;
+   signal output b, c, d;
+   b <== a * a;
+   c <== a + 2;
+   d <== a * a + 2;
+}
+template B(n){
+   signal input in;
+   signal output out1;
+   (_,out1,_) <== A(n)(in);  // 只留下c
+}
+component main = B(3);
+```
+
+5、扩展：元组也适合变量var
+
+```js
+var  a1, a2, a3;
+(a1, a2, a3) = temp_name(arg1,...,argN)(input1,...,inputM);
+```
+
+
+
+#### 
+
+#circom基础语法学习结束，明天开始回到zk#
+
 <!-- Content_END -->

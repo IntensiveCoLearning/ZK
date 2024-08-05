@@ -129,4 +129,15 @@ I've done some projects about zk poker game, zklogin with groth16. Want to known
 ### 2024.07.31
 - 学习主题：ZKP Lecture 1: Introduction and History of ZKP
 - 学习内容小结：以前第一次听是一句也听不懂，现在居然能听懂了
+
+### 2024.08.03
+- 学习主题：ZKP Lecture 1: Introduction and History of ZKP
+- 学习内容小结：零知识二次剩余，Bob 能够验证 
+ 是二次剩余，但无法了解到 
+ 具体是多少。即使交互多次，由于每次 Alice 都会随机选择一个新的 ，Bob 无法构造出 ，得到的仅是一串随机数。
+### 2024.08.04
+- 学习主题：zkcompression
+- 学习内容小结：
+1. 核心思想：交易可以将帐户数据作为交易负载的一部分传递，而不是将所有帐户存储在磁盘上并在需要时读取它们。我们可以通过使用 Merkle 树来确保提交交易的用户提供正确的状态。 Merkle 证明是提交某些数据的一种方法。这样，可以根据承诺来验证证据，以验证已传入正确的状态并且用户对所提供的状态没有不诚实。
+
 <!-- Content_END -->

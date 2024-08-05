@@ -130,4 +130,15 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 2. 多项式中的知识指的是item的系数
 3. 基本的利用多项式的因式分解来构造的证明系统有一些问题，本质是因为暴露了原始值，所以可以用同态加密来解决，此处利用到了模运算
 
+### 2024.08.03
+- 学习主题：80min的视频： [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+- 学习总结：首先学习了snarks是什么：一种非交互式零知识证明系统，一般是将functional commitment scheme和interactive oracle proof结合；还讲了交互式语言IOP，以及多项式承诺和IOP相结合
+
+### 2024.08.04
+- 学习主题：[1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
+- 学习总结：继续学习了加密多项式的基本知识，要证明的内容是多项式有两个具体的根，证明的方式利用到了因式分解以及一个模糊运算；问题在于prover可以不适用verifier提供的加密值
+
+### 2024.08.05
+- 学习主题：[2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
+- 学习总结：这篇文章主要是解决上一篇文章中“prover可以不适用verifier提供的加密值”的问题，还用复用值以达到非交互性； 数学部分没有彻底理解，明天继续
 <!-- Content_END -->
