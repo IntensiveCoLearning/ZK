@@ -165,6 +165,12 @@ R1CS 提供了一种强大而灵活的框架，支持复杂计算问题的安全
 
 学习主题：学习什么是 Plonkish Arithmetization
 
-学习内容小结：
+学习内容小结：算术化是指把计算转换成数学对象，然后进行零知识证明。 Plonkish 算术化是 Plonk 证明系统特有的算术化方法，在 Plonkish 出现之前，主流的电路表达形式为 R1CS，被 Pinocchio，Groth16，Bulletproofs 等广泛采用。2019 年 Plonk 方案提出了一种看似复古的电路编码方式，但由于 Plonk 方案将多项式的编码应用到了极致，它不再局限于算术电路中的「加法门」和「乘法门」，而是可以支持更灵活的「自定义门」与「查表门」。
+
+### 2024.08.05
+
+学习主题：什么是 halo2
+
+学习内容小结：Halo2 是 ECC 公司在 Halo 的基础上，使用 PLONK 对 Halo 进行升级改造，充分利用了 PLONK 的特性，比如 custom gate，PLONKup 等，使得用 Halo2 开发零知识证明电路更加高效和方便。
 
 <!-- Content_END -->

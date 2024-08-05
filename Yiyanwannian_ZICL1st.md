@@ -164,4 +164,15 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - 随机数必须是具有密码学安全强度的随机数，否则会导致私钥泄露
   - 作者脑洞我们生活是否在模拟世界中生存
 
+
+### 2024.08.05
+
+- 学习主题：
+  - 看视频:  [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+- 学习内容小结：
+  - 讲解zk-SNARK和Blockchain的结合方式：链下存储全量交易，链上验证少量交易
+  - 用sony相机照片（C2PA）的例子举例说明zk-SNARK在非区块链行业的应用场景
+  - 讲解NARK,zk-SNARK，（不是很懂）
+  - 讲解Ploy-IOP、Multilinear-IOP、Vector-IOP, (不是很懂)
+
 <!-- Content_END -->

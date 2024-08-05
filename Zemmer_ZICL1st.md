@@ -711,4 +711,154 @@ include "babyjub.circom";
 3、\是整除，且不进行模运算，返回a/b的整数部分。
 
 4、%取余，切不进行模运算，返回a/b的余数。
+
+### 2024.08.05
+### 断言assertion
+
+1、语法：assert(布尔表达式);
+
+2、注意不仅在编译阶段进行检查，而且会在运行阶段进行检查。比如编译可能正确，但是运行可能错误。这是因为断言的条件可能包含了输入信号：
+
+```js
+// 这个电路可以编译成功，但如果在运行阶段（生成见证阶段）输入信号in > 254，则会报错
+template Translate(n) {
+  signal input in;  
+  assert(in <= 254);
+  . . .
+}
+
+```
+
+### 调试打印log
+
+语法：log(变量/常量/表达式/字符串)，可以用,连接
+
+### 编译阶段调试命令
+
+####  --sym详解
+
+1、该命令生成了fileName.sym文件
+
+2、该命令后面可以跟一个参数，该参数表示信号简化的程度，该参数值为默认没有， -O0 或 --O1
+
+3、该文件表示了该电路内每个信号的详细信息，虽然不是实际传输的见证。（这里电路类似于形参，而见证类似于实参）
+
+4、内有四个字段，分别为\#s, #w, #c, name
+
+| 内容 | 定义     | 解释                                                         | 示例         |
+| ---- | -------- | ------------------------------------------------------------ | ------------ |
+| #s   | 信号编号 | 每个信号都有一个整数编号，从1开始，顺序排列                  | 1            |
+| #w   | 见证位置 | 信号在见证中的位置。<br />如果不是public signal且不出现在最终的R1CS约束中，则值为-1 | 2            |
+| #c   | 组件编号 | 标注信号来自于哪个组件<br />从0开始的非负整数                | 0            |
+| name | 信号名称 | 信号全称，格式为：组件名.信号名                              | main.c.in[1] |
+
+##### 一组.sym文件示例
+
+```txt
+1,1,1,main.out
+2,2,1,main.in[0]
+3,3,1,main.in[1]
+4,-1,0,main.c.out
+5,-1,0,main.c.in[0]
+6,-1,0,main.c.in[1]
+
+```
+
+### 
+#### 匿名组件
+
+1、算是一种组件的语法糖，只支持circom2.1+
+
+2、语法是：temp_name(arg1,...,argN)(input1,...,inputM)，要注意input信号的顺序。
+
+##### 匿名组件示例
+
+1、示例：传统组件
+
+```js
+// 创建一个电路A，输入信号两个，输出信号一个，约束是输出信号=输入信号相乘。
+template A(n){
+   signal input a, b;
+   signal output c;
+   c <== a*b;
+}
+//  创建一个电路B，输入信号是一个数组，输出信号一个，约束借助于A，也就是等于输出信号=输入信号数组内第一个元素和第二个元素相乘
+template B(n){
+   signal input in[n];
+   signal out;
+   component temp_a = A(n);
+   temp_a.a <== in[0]; 
+   temp_a.b <== in[1];
+   out <== temp_a.c;
+}
+component main = B(2);
+```
+
+2、匿名改造
+
+```js
+template A(n){
+   signal input a, b;
+   signal output c;
+   c <== a*b;
+}
+template B(n){
+   signal input in[n];
+   signal out <== A(n)(in[0],in[1]);
+}
+component main = B(2);
+```
+
+##### 总结匿名组件的语法
+
+1、普通组件需要通过component来定义，而匿名组件不需要，直接实例化模板，比如直接A(n)
+
+2、普通组件通过 实例.输入信号 进行电路之间的信号传递，而匿名组件通过实例(输入信号)的语法来进行信号传递，比如A(n)(x,y) 
+
+3、普通组件的输出需要通过 实例.输出信号来传递，而匿名组件直接对结果进行约束，比如signal out <== A(n)(in[0],in[1]);
+
+##### 匿名组件的输出信号
+
+1、没有输出信号：直接temp_name(arg1,...,argN)(input1,...,inputM);
+
+2、有一个输出信号：signal out1 <== temp_name(arg1,...,argN)(input1,...,inputM);
+
+3、多个输出信号：使用元组
+
+```js
+signal output a1, a2, a3;
+(a1, a2, a3) <== temp_name(arg1,...,argN)(input1,...,inputM);
+```
+
+4、可以通过语法_来忽略其中部分输出信号（把对应的约束也忽略了）
+
+```js
+template A(n){
+   signal input a;
+   signal output b, c, d;
+   b <== a * a;
+   c <== a + 2;
+   d <== a * a + 2;
+}
+template B(n){
+   signal input in;
+   signal output out1;
+   (_,out1,_) <== A(n)(in);  // 只留下c
+}
+component main = B(3);
+```
+
+5、扩展：元组也适合变量var
+
+```js
+var  a1, a2, a3;
+(a1, a2, a3) = temp_name(arg1,...,argN)(input1,...,inputM);
+```
+
+
+
+#### 
+
+#circom基础语法学习结束，明天开始回到zk#
+
 <!-- Content_END -->

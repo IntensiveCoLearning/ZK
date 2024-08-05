@@ -90,4 +90,16 @@ timezone: Pacific/Auckland
 - 学习内容小结：
   - [ZKP Lecture 1: Introduction and History of ZKP](https://www.youtube.com/watch?v=uchjTIlPzFo)
 
+### 2024.08.04
+
+- 学习主题：
+- 学习内容小结：
+  - [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+
+### 2024.08.05
+
+- 学习主题：
+- 学习内容小结：
+  - [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+
 <!-- Content_END -->

@@ -120,6 +120,20 @@ timezone: Asia/Shanghai
 
   - **Circom**：是一个用于构建和编译零知识证明电路（比如PLONK电路）的框架。它允许开发者使用一种简化的结构化语言来定义电路，然后将这些电路转换为零知识证明所需的逻辑形式。Circom 通常与 PLONK协议结合使用，以生成所需的证明和验证机制。PLONK 协议是实现 ZKP 的一种具体协议，而 Circom 是开发和构建与 PLONK 兼容的电路的工具。在零知识证明的生态系统中，它们各自发挥着重要的作用。
 
+### 2024.08.05
+
+- 学习主题：Overview of Modern SNARK Constructions
+- 学习内容小结：
+  - ZKP、SNARK 和 STARK 等这些密码学概念随着最近区块链的兴起变得热⻔起来。但是，它们经常会被误解和混用。其实，所有这些概念都属于一个更广义的范畴，叫做证明系统 (Proof System)，或者叫做密码学证明（Cryptographic Proof）。零知识证明和 SNARK、STARK 之间都有交叉的部分，但并不相互包含。它们之间的关系可以用一张图来表示。
+  - 简洁性的证明系统必然是论证系统。结合非交互性，就有了简洁非交互式论证 (Succinct Non-interactive ARGument, SNARG)。如果一个 SNARG 同时是一个知识论证，它就被称为简洁非交互式知识性论证 (Succinct Non-interactive ARgument of Knowledge, SNARK)。SNARK 只具有简洁性和非交互性，并不一定具有零知识性。如果有零知识性，应该叫 zkSNARK。🤔
+
+    ![Image](https://mmbiz.qpic.cn/mmbiz_png/SibzTfiakrIr2c4IOPvSlsRjDfmORJV7NyOqIBlterqNib6R3N2nkVhsAybDzBbTnyp6g87BVOdDEialrvdiagOFxjQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+### 2024.08.06
+
+- 学习主题：Overview of Modern SNARK Constructions
+- 学习内容小结：
+
 
 
 <!-- Content_END -->
