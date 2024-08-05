@@ -137,4 +137,8 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ### 2024.08.04
 - 学习主题：[1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
 - 学习总结：继续学习了加密多项式的基本知识，要证明的内容是多项式有两个具体的根，证明的方式利用到了因式分解以及一个模糊运算；问题在于prover可以不适用verifier提供的加密值
+
+### 2024.08.05
+- 学习主题：[2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
+- 学习总结：这篇文章主要是解决上一篇文章中“prover可以不适用verifier提供的加密值”的问题，还用复用值以达到非交互性； 数学部分没有彻底理解，明天继续
 <!-- Content_END -->
