@@ -158,4 +158,56 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   该篇文章对于零知识证明的探讨确实比较深刻，涉及很多数学知识。需要多多补充相关的知识技能。
 
 
+### 2024.08.04
+
+- 学习主题：circom编程基础 
+- 学习内容小结：
+  ```circom
+  template CalcNum() {
+    signal input a;
+    signal input b;
+    signal output c;
+    c <== a + b;
+  }
+  component main = CalcNum();
+
+  // 加法
+  template Plus(n) {
+    signal input a[n];
+    signal output b;
+  
+    signal temp[n];
+    for(var i = 1; i < n; i++) {
+      temp[i] = a[i - 1] + 1;
+    }
+    b <== temp[n - 1];
+  }
+  component main = Plus(5);
+
+  ```
+### 2024.08.05
+
+- 学习主题：circom编程基础 
+- 学习内容小结：
+
+```circom
+// 数组
+// 乘法
+  template Multiply(n) {
+    signal input a[n];
+    signal output u;
+  
+    signal temp[n];
+
+    temp[0] <== a[0];
+
+    for(var i = 1; i < n; i++) {
+      temp[i] <== temp[i - 1] * a[i];
+    }
+    u <== temp[n - 1];
+  }
+  component main = Multiply(5);
+
+```
+
 <!-- Content_END -->
