@@ -268,5 +268,11 @@ kzg承诺方案
 ![dbf23c96ef57446314e9525b00aa650](https://github.com/user-attachments/assets/00fec876-3fde-4e76-9978-a1ce40cf5543)
 
 
+### 2024.08.05
+双线性映射的相关特性：
+e(g1^a, g2^b) = e(g1^a*b, g2) = e(g1, g2^a*b) = e(g1, g2)^a*b
+e(g1, g2)^a * e(g1, g2)^b = e(g1, g2)^(a+b) = e(g1^(a+b), g2) = e(g1, g2^(a+b))
+
+
 
 <!-- Content_END -->
