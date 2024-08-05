@@ -132,4 +132,11 @@ timezone: Asia/Shanghai
 - 学习内容小结：
     - 跟踪里面的练习代码，查看[官网文档](https://docs.circom.io/circom-language/signals/)熟悉语法
 
+### 2024.08.06
+
+- 学习主题：通过[基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md)学习语法
+- 学习内容小结：
+    - 学习 `===`、`<--`、`<==`含义和示例，顺便学英语阅读
+    - 参考circom文档：[Constraint Generation](https://docs.circom.io/circom-language/constraint-generation/)
+
 <!-- Content_END -->
