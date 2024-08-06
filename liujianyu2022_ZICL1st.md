@@ -274,5 +274,14 @@ e(g1^a, g2^b) = e(g1^a*b, g2) = e(g1, g2^a*b) = e(g1, g2)^a*b
 e(g1, g2)^a * e(g1, g2)^b = e(g1, g2)^(a+b) = e(g1^(a+b), g2) = e(g1, g2^(a+b))
 
 
+### 2024.08.06
+kzg的证明步骤：
+
+![78147a9f9aa4bde646aa02db2963146](https://github.com/user-attachments/assets/2ff2440d-2f5a-4885-86f6-fc2d78af34a0)
+
+
+
+
+
 
 <!-- Content_END -->
