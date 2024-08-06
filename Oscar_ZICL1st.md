@@ -133,6 +133,20 @@ timezone: Asia/Shanghai
 
 - 学习主题：Overview of Modern SNARK Constructions
 - 学习内容小结：
+  - 构造通用、简洁、非交互、公开可验证的零知识证明，简称 zkSNARK。如何构造？🤔
+    - 首先讨论了 NP 的刻画方式，包括图灵机、电路以及 R1CS 等数学问题。
+      - 有点吃力，如何把枯燥的数学变的有趣呀😯
+
+    - 然后讨论了实现简洁性的必要方式：要么假设计算是均匀的，要么使用预处理。
+    - 最后，理想模型中构造零知识证明比直接在非交互场景中构造更加方便，怎样将理想模型中的零知识证明转化为 zkSNARK。
+
+
+### 2024.08.07
+
+- 学习主题：Overview of Modern SNARK Constructions
+- 学习内容小结：
+
+
 
 
 
