@@ -135,4 +135,9 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - 零知识证明性质： Completeness（完备性）、Soundness（可靠性）、Zero-Knowledge（零知识）
   - Schnorr协议公式： z*G ?= R + c*PK = rG + c*(aG)
 
+### 2024.8.5
+
+- 学习主题：承诺方案
+- 学习内容小结：学习承诺方案的各种常见实现
+
 <!-- Content_END -->

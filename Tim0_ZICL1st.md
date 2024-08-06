@@ -131,4 +131,9 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 - 学习主题：回顾
 - 学习内容小结：回顾了一下前几章的知识，着重关注了一下Zlice如何欺骗Bob。在SHVZK中，Zlice需要具有读取Bob预选随机数的“超能力”，将Bob最后验证所需的随机数改为R'=z*G-c*PK.
 而在NIZK中，则是通过绑架负责预言的“精灵”，将c 与 (m, R')写入表格，R'=z*G-c*PK.
+
+### 2024.08.05
+
+- 学习主题：进入zk-SNARK的学习
+- 学习内容小结：通过视频了解zk-SNARK。 
 <!-- Content_END -->

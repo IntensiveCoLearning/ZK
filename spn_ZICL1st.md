@@ -138,4 +138,9 @@ XDU大四学生，ZK在学。
 
 - 学习主题：lookup查询学习
 - 学习内容小结:[课程](https://www.youtube.com/watch?v=pmO6p9Q-x6g)与[文章](https://snowolf0620.xyz/index.php/zkp/919.html)感觉推导的时候看图确实比较清晰一点
+
+### 2024.08.05
+
+- 学习主题：cairo学习+
+- 学习内容小结:将WTF-cairo的15-28讲速通了一下（基于rust写起来确实顺手不少）
 - <!-- Content_END -->
