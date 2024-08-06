@@ -226,7 +226,7 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
     - 新技术使得 SNARK 在各种应用中变得更实用，尤其是在区块链领域。
     - SNARK 技术的进步推动了其在多个行业的广泛应用。
 
-## 2024.08.06
+### 2024.08.06
 - 学习主题：[1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
 - 学习总结：
   1.	多项式交互与证明简介：
