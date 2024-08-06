@@ -175,4 +175,30 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - 讲解NARK,zk-SNARK，（不是很懂）
   - 讲解Ploy-IOP、Multilinear-IOP、Vector-IOP, (不是很懂)
 
+
+### 2024.08.06
+
+- 学习主题：
+  - 看文档:  [1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
+- 学习内容小结：
+  -  Schwatz-Zippel: 不可能找到共享连续段的两条不相等曲线，也就是任何多项式在任意点的计算结果都可以看做是其唯一身份的表示。也就是说只要能证明多项式上的某个随机点就可以证明这个多项式（只有在知道了多项式，才能算出这个点对于的值）
+  - 利用因式的性质构造出了一个证明协议，但这个协议存在一些缺陷，主要是由于
+    - 一旦 prover 知道了 t(r) ，他就可以反过来任意构造任何一个可以整除 t(r) 的 p(r)
+    - prover 知道了点 (r,  t(r)⋅h(r)) 的值，就可以构造经过这一点的任意(高次)多项式，同样满足校验
+    - 协议并没有对 prover 的多项式阶数(次数)进行约束
+    - 同态加密
+      - 通过模运算形成的集合被称为「有限域」，
+      - 通过计算指数再进行模运算形成的集合构成「循环群」。
+      - 常见的同态加密方式除了整数幂取模之外，还有椭圆曲线上的倍乘。
+      - 公式：
+      ```shell
+      E(v) = g^v (mod n)
+    
+      # v 是想要加密的值
+      # 模数 n 是双方都知道的, 它通常写在加密代码中
+      # 生成元 g 是一个整数，作为一个基用来生成一系列的数字比如 g^v
+      # g^v 通常称为密钥，用来对数据进行加密
+    ```
+  - 协议过程: 将v转换为多项式，重走一遍协议，这里由于公式不方便书写,附上链接：[协议过程](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html#%E5%8D%8F%E8%AE%AE%E8%BF%87%E7%A8%8B)
+
 <!-- Content_END -->
