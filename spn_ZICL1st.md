@@ -143,4 +143,9 @@ XDU大四学生，ZK在学。
 
 - 学习主题：cairo学习+
 - 学习内容小结:将WTF-cairo的15-28讲速通了一下（基于rust写起来确实顺手不少）
+  
+### 2024.08.06
+
+- 学习主题：pplonk学习
+- 学习内容小结:[课程](https://www.youtube.com/watch?v=I6asKtO8Q8E)(向量细节好复杂记不清楚😭)
 - <!-- Content_END -->
