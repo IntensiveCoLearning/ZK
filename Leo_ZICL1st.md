@@ -173,4 +173,10 @@ R1CS 提供了一种强大而灵活的框架，支持复杂计算问题的安全
 
 学习内容小结：Halo2 是 ECC 公司在 Halo 的基础上，使用 PLONK 对 Halo 进行升级改造，充分利用了 PLONK 的特性，比如 custom gate，PLONKup 等，使得用 Halo2 开发零知识证明电路更加高效和方便。
 
+### 2024.08.06
+
+学习主题：什么是 Plonky2
+
+学习内容小结：Plonky2 是一个结合了Plonk和FRI的库，Starky 专注于运行基于AIR的STARKs，且支持对其的递归验证。 该方法可以总结为，使用小域，然后使用递归FRI。 相比于基于椭圆曲线的证明系统，FRI允许使用更小的域，可以使用这个非常有趣的素数阶Goldilocks域。Plonky2 由 Polygon 于 2022年1月份公布，Plonky2 是一种递归 SNARK，并且与以太坊原生兼容，结合了 PLONK 和 FRI，具有快速证明和无可信设置。
+
 <!-- Content_END -->
