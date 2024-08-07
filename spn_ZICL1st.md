@@ -146,6 +146,11 @@ XDU大四学生，ZK在学。
   
 ### 2024.08.06
 
-- 学习主题：pplonk学习
+- 学习主题：plookup学习
 - 学习内容小结:[课程](https://www.youtube.com/watch?v=I6asKtO8Q8E)(向量细节好复杂记不清楚😭)
+  
+### 2024.08.07
+
+- 学习主题：plonk源码学习
+- 学习内容小结:查了下github上star多的plonk协议，进行了一个源码的读（x
 - <!-- Content_END -->
