@@ -210,4 +210,45 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 
 ```
 
+
+### 2024.08.05
+
+- 学习主题：circom编程基础 
+- 学习内容小结：
+
+
+template IsZero() {
+    signal input in;
+    signal output out;
+
+    signal inv;
+
+    inv <-- in!=0 ? 1/in : 0;
+
+    out <== -in*inv +1;
+    in*out === 0;
+}
+
+
+template IsEqual() {
+    signal input in[2];
+    signal output out;
+
+    component isz = IsZero();
+
+    in[1] - in[0] ==> isz.in;
+
+    isz.out ==> out;
+}
+
+template ForceEqualIfEnabled() {
+    signal input enabled;
+    signal input in[2];
+
+    component isz = IsZero();
+
+    in[1] - in[0] ==> isz.in;
+
+    (1 - isz.out)*enabled === 0;
+}
 <!-- Content_END -->

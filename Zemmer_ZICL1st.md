@@ -861,4 +861,56 @@ var  a1, a2, a3;
 
 #circom基础语法学习结束，明天开始回到zk#
 
+### 2024.08.06
+
+### Circom典型电路
+注意这两个电路都不作为零知识证明，只是作为基础电路被引用到其它zkp电路中。
+
+#### Num2Bit
+
+功能：将十进制数字转化为二进制
+
+```js
+pragma circom 2.0.0;
+
+template Num2Bits(n) {
+    signal input in;
+    signal output out[n];
+    var lc1=0;
+    var e2=1;
+    for (var i = 0; i<n; i++) {
+        out[i] <-- (in >> i) & 1;
+        out[i] * (out[i] -1 ) === 0;
+        lc1 += out[i] * e2;
+        e2 = e2+e2;
+    }
+    lc1 === in;
+}
+
+component main {public [in]}= Num2Bits(3);
+```
+
+
+
+#### isZero
+
+功能：判断输入的是0还是1。
+
+```js
+pragma circom 2.0.0;
+
+template IsZero() {
+    signal input in;
+    signal output out;
+    signal inv;
+    inv <-- in!=0 ? 1/in : 0;
+    out <== -in*inv +1;
+    in*out === 0;
+}
+
+component main {public [in]}= IsZero();
+```
+
+
+
 <!-- Content_END -->
