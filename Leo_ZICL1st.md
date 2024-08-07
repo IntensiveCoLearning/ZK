@@ -179,4 +179,10 @@ R1CS 提供了一种强大而灵活的框架，支持复杂计算问题的安全
 
 学习内容小结：Plonky2 是一个结合了Plonk和FRI的库，Starky 专注于运行基于AIR的STARKs，且支持对其的递归验证。 该方法可以总结为，使用小域，然后使用递归FRI。 相比于基于椭圆曲线的证明系统，FRI允许使用更小的域，可以使用这个非常有趣的素数阶Goldilocks域。Plonky2 由 Polygon 于 2022年1月份公布，Plonky2 是一种递归 SNARK，并且与以太坊原生兼容，结合了 PLONK 和 FRI，具有快速证明和无可信设置。
 
+### 2024.08.07
+
+学习主题：什么是 Plonky3
+
+学习内容小结：Plonky3 是一个全新且经过增强的加密库，旨在进一步提高递归零知识证明的速度和效率。它包含针对较新 CPU 规格的优化。它实现了多项式 IOP（例如 PLONK 和 STARKS）以及承诺方案（例如 Brakedown）。查看 Plonky3 README 以了解所包含内容的更新。
+
 <!-- Content_END -->
