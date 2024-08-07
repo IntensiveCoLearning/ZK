@@ -149,4 +149,16 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   改进：采用同态和模运算。
   同态加密的核心：允许在加密状态下进行加法和乘法操作
 
+  ### 2024.08.07
+
+- 学习主题：Non-interactivity & Distributed Setup
+- 学习内容小结：
+    所解决的问题
+    1.保证 prover 的证明是按照规则正确构造的 ——> KEA ( a′=a^α (modn)) )
+    2.保证知识的零知性 ——> “无成本的” δ 变换
+    3.可复用证明 ——> 非交互式
+    4.非交互中如何设置安全公开且可复用的参数 ——> 参数加密，verifier 借助 airing 进行验证
+    5.保证参数的生成者不泄密 ——> MPC’s Setup
+
+
 <!-- Content_END -->
