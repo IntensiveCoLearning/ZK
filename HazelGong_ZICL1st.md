@@ -198,5 +198,19 @@ Schnorr 协议充分利用了有限域和循环群之间单向映射，实现了
 - 此 Protocol 的关键：
   a. Bob 的随机数，保证 Alice 必须使用知识进行证明：如果我们把挑战数 c 看成是一个未知数，那么 r+a*c=z 可以看成是一个一元一次方程，其中 r 与 a 是方程系数。请注意在 c 未知的前提下，如果 r + a*x = r' + a'*x 要成立，那么根据 Schwatz-Zippel 定理[3]，极大概率上 r=r'，a=a' 都成立。也就是说， Alice 在 c 未知的前提下，想找到另一对不同的 r',a' 来计算 z 骗过 Bob 是几乎不可能的。这个随机挑战数 c 实现了r 和 a 的限制。虽然 Bob 随机选了一个数，但是由于 Alice 事先不知道，所以 Alice 不得不使用私钥 a 来计算 z。这里的关键： c 必须是个随机数。
   b. Alice 的随机数，保证 Bob 无法复原 Alice 的知识。Bob 不知道 r，但是他知道 r 映射到曲线上的点R；Bob 也不知道 a，但是他知道 a 映射到曲线群上的点 PK，即 a*G。通过同态映射与Schwatz-Zippel 定理，Bob 可以校验 z 的计算过程是否正确，从而知道 Alice 确实是通过 r 和 a 计算得出的 z，但是又不暴露 r 与 a 的值。
+  
+### 2024.08.07
 
+[ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+
+SNARKS are succinct non-interactive proofs. What snarks are, what they are good for, and how to construct them. 
+
+- SNARK: the proof is short and fast to verify. 
+- zk-SNARK: te proof reveals nothing about the message. 
+
+
+
+Blockchain applications: 
+- Scale the L1 blockchain chain using the zkRollup. Off-chains service processes a batch of transactions, L1 chain verifies a succinct proof that those transactions were processed correctly. There might be thousands of transactions, so this applications scales the speed of the L1 chain, since it doesn't have to verify the transactions one by one, just verify this succinct proof that is short and fast to verify.
+- private Tx on a public blockchain needs a zk proof to validate.
 <!-- Content_END -->
