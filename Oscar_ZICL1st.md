@@ -138,15 +138,22 @@ timezone: Asia/Shanghai
       - 有点吃力，如何把枯燥的数学变的有趣呀😯
 
     - 然后讨论了实现简洁性的必要方式：要么假设计算是均匀的，要么使用预处理。
-    - 最后，理想模型中构造零知识证明比直接在非交互场景中构造更加方便，怎样将理想模型中的零知识证明转化为 zkSNARK。
+    - 最后，理想模型中构造零知识证明比直接在非交互场景中构造更加方便，怎样将理想模型中的零知识证明转化为 ZK-SNARK。
 
 
 ### 2024.08.07
 
 - 学习主题：Overview of Modern SNARK Constructions
 - 学习内容小结：
+  - ZK-SNARK 项目中的代表是 Layer1 解决方案 mina protocol。它通过递归零知识证明方式，在保证区块链安全性的同时极大提升了公链可扩展性（TPS）。支持开发者基于递归零知识证明与智能合约开发ZKapp，可以用于：匿名投票系统、（买保险时）健康信息验证、（借贷时）信誉信息验证等。
+  - 准备找相关 ZK 比较成熟的具体应用场景了解学习哈。
+    - [zk-merkle-tree 库：使用 zkSNARK 在以太坊上进行匿名投票](https://foresightnews.pro/article/detail/47366) 
 
 
+### 2024.08.08
+
+- 学习主题：Overview of Modern SNARK Constructions
+- 学习内容小结：
 
 
 
