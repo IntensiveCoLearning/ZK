@@ -175,6 +175,27 @@ https://learnblockchain.cn/article/6188
 1. circom证明电路常见设计方式，包括为0判断、选择等
 2. circom 二进制约束代码
 
+### 2024.08.05
+
+- 学习主题: circom学习
+- 学习内容: 
+1. 对于电路需要注意约束个数，避免出现仅对signal赋值而实际并无约束的情况
+2. 需要注意每一个signal都是prover注入的，约束是为了避免prover作恶的情况，所以需要理解<==和<--的区别
+3. IsEqual构造十分巧妙，可以分析其in out状态理解其约束
+
+### 2024.08.06
+
+- 学习主题: circom学习
+- 学习内容:
+在实际的应用过程中，以snarkjs为例，先要进行
+1. powersoftau生成 ptau文件，参与方逐个生成，并在最后构建出final.ptau
+2. 通过ptau和r1cs生成 zkey文件
+3. 通过zkey产生vk文件
+4. prover通过zkey产生witness proof和 public output
+5. verifier适用output 和proof 进行证明验证
+6. 产生verifier合约用于链上验证
+
+
 
 <!-- Content_END -->
 

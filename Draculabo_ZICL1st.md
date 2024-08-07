@@ -122,4 +122,10 @@ timezone: Asia/Shanghai
 2. 然后将约束关系通过向量化的等式表示。
 3. 再通过多项式编码将各约束式压缩为单个多项式等式的约束关系。
 4. 最后使用多项式承诺来验证约束式。
+
+### 2024.08.07
+
+- 学习主题：Plonk 核心实现 [](https://github1s.com/dusk-network/plonk)
+- 学习内容小结：
+1. 研究 Plonk 代码实现
 <!-- Content_END -->

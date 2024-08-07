@@ -139,4 +139,12 @@ timezone: Asia/Shanghai
     - 学习 `===`、`<--`、`<==`含义和示例，顺便学英语阅读
     - 参考circom文档：[Constraint Generation](https://docs.circom.io/circom-language/constraint-generation/)
 
+### 2024.08.07
+
+- 学习主题：通过[基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md)学习语法
+- 学习内容小结：
+    - `\` 含义，信号赋值后的约束判断
+    - 参考circom文档：[Constraint Generation](https://docs.circom.io/circom-language/constraint-generation/)
+
+
 <!-- Content_END -->

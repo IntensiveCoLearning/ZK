@@ -141,4 +141,9 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ### 2024.08.05
 - 学习主题：[2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
 - 学习总结：这篇文章主要是解决上一篇文章中“prover可以不适用verifier提供的加密值”的问题，还用复用值以达到非交互性； 数学部分没有彻底理解，明天继续
+
+### 2024.08.06
+- 学习主题：[2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
+- 学习总结：从数学角度理解了一下文章中的kea和引入的随机值，并理解了后续复用秘密参数的使用场景，还有crs的生成；此处也体会到zk对数学的组合
+
 <!-- Content_END -->

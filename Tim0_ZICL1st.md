@@ -135,5 +135,18 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ### 2024.08.05
 
 - 学习主题：进入zk-SNARK的学习
-- 学习内容小结：通过视频了解zk-SNARK。 
+- 学习内容小结：通过视频了解zk-SNARK。
+
+- ### 2024.08.06
+
+- 学习主题：学习Polynomial Interaction and Proof
+- 学习内容小结：问题：prover 想要证明他知道一些多项式p(x)，verifier进行验证
+  协议一：
+  verifier构造t(x),t(x)的根是p(x)的根;并计算t(s)，并将s发送给prover
+  prover 用h(x)=p(x)/t(x)计算出h(s)和p(s)发送给verifier进行验证
+  verifier 验证 h(s)*t(s)?=p(s)
+  存在的问题：协议对多项式阶数并没有明确的要求， prover 完全可以拿一个满足因式校验的超级高阶数的多项式来欺骗 verifier
+  改进：采用同态和模运算。
+  同态加密的核心：允许在加密状态下进行加法和乘法操作
+
 <!-- Content_END -->
