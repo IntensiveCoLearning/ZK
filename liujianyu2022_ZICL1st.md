@@ -280,8 +280,9 @@ kzg的证明步骤：
 ![78147a9f9aa4bde646aa02db2963146](https://github.com/user-attachments/assets/2ff2440d-2f5a-4885-86f6-fc2d78af34a0)
 
 
-
-
+### 2024.08.08
+今天学习内容为R1CS转为QAP
+P(X) = L(X) * R(X) - O(X)
 
 
 <!-- Content_END -->
