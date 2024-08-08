@@ -195,6 +195,13 @@ https://learnblockchain.cn/article/6188
 5. verifier适用output 和proof 进行证明验证
 6. 产生verifier合约用于链上验证
 
+### 2024.08.07
+
+- 学习主题: circom学习
+- 学习内容：数独circom实践
+1. 对于每行、每列使用IsEqual进行约束
+2. 所有IsEqual的约束结果out共同组成了最终的结果输出
+3. 需要注意的是 eq.out===1 从生成结果来看会减少repl的约束个数，后续需要再找下原因
 
 
 <!-- Content_END -->

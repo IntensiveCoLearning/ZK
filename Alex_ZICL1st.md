@@ -146,4 +146,8 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 - 学习主题：[2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
 - 学习总结：从数学角度理解了一下文章中的kea和引入的随机值，并理解了后续复用秘密参数的使用场景，还有crs的生成；此处也体会到zk对数学的组合
 
+### 2024.08.07
+- 学习主题: [3-General-Purpose-Computation](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html)
+- 学习总结：这一篇将之前讲的多项式知识实际使用到了程序证明上，多个运算-经过一系列点-多项式结果为0；有一些值得注意的点：当处理多个运算时，对相同输入的系数要相同，核心是所有输入的操作数的系数应该是等比例变化，可以用之前讲的a-shift方法来实现；此外，当左操作数不止一个变量时，可以引入一个值为1或0的数
+
 <!-- Content_END -->

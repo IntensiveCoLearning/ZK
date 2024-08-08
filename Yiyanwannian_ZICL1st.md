@@ -181,7 +181,7 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 - 学习主题：
   - 看文档:  [1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
 - 学习内容小结：
-  -  Schwatz-Zippel: 不可能找到共享连续段的两条不相等曲线，也就是任何多项式在任意点的计算结果都可以看做是其唯一身份的表示。也就是说只要能证明多项式上的某个随机点就可以证明这个多项式（只有在知道了多项式，才能算出这个点对于的值）
+  - Schwatz-Zippel: 不可能找到共享连续段的两条不相等曲线，也就是任何多项式在任意点的计算结果都可以看做是其唯一身份的表示。也就是说只要能证明多项式上的某个随机点就可以证明这个多项式（只有在知道了多项式，才能算出这个点对于的值）
   - 利用因式的性质构造出了一个证明协议，但这个协议存在一些缺陷，主要是由于
     - 一旦 prover 知道了 t(r) ，他就可以反过来任意构造任何一个可以整除 t(r) 的 p(r)
     - prover 知道了点 (r,  t(r)⋅h(r)) 的值，就可以构造经过这一点的任意(高次)多项式，同样满足校验
@@ -200,5 +200,39 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
       # g^v 通常称为密钥，用来对数据进行加密
     ```
   - 协议过程: 将v转换为多项式，重走一遍协议，这里由于公式不方便书写,附上链接：[协议过程](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html#%E5%8D%8F%E8%AE%AE%E8%BF%87%E7%A8%8B)
+
+
+### 2024.08.07
+
+- 学习主题：
+  - 看文档:  [2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
+- 学习内容小结：
+  - 简洁的非交互式多项式知识论证(zk-SNARKOP): [Succinct Non-Interactive Argument of Knowledge of Polynomial](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html#succinct-non-interactive-argument-of-knowledge-of-polynomial)
+  - 解决交互到非交互问题：Pairing: Multiplication of Encrypted Values（配对：加密值的乘法）
+  - Trusted Party Setup
+    - CRS: Common Reference String
+    - 一种解决办法就是由多个参与方使用前面小节中介绍的数学工具来生成一个组合式CRS，这样这些参与方就都不知道「秘密」
+    - 为了多个参与者串谋或不诚实问题，可以额外再要求除了第一个以外的每一个参与者去加密然后公开他的参数
+  - 文章小结：
+    - 保证 prover 的证明是按照规则正确构造的 ——> KEA ( a′ = a^α (mod n)) )
+    - 保证知识的零知性 ——> “无成本的” δ 变换
+    - 可复用证明 ——> 非交互式
+    - 非交互中如何设置安全公开且可复用的参数 ——> 参数加密，verifier 借助 pairing 进行验证
+    - 保证参数的生成者不泄密 ——> MPC’s Setup
+
+
+
+### 2024.08.08
+
+- 学习主题：
+  - 看文档:  [3-General-Purpose-Computation](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html)
+- 学习内容小结：
+  - 将要证明的程序转换为数学语言表达的形式（即加减乘除的计算）
+    - 如: f(w,a,b)=w(a⋅b)+(1−w)(a+b)
+    - 引入概念： 左操作数 运算操作 符右操作数 = 输出
+  - 用多项式在某处的取值来进行计算以此表示数学计算，进而[进行证明](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html#single-variable-operand-polynomial)
+  - 用多项式在多处的取值来进行计算表示多个数学运算，进而[加以证明](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html#multi-variable-operand-polynomial)
+  - 对证明的“程序”在不同计算中使用的相同的变量进行约束
+
 
 <!-- Content_END -->

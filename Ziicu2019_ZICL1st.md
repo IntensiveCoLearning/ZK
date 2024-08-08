@@ -102,4 +102,16 @@ timezone: Pacific/Auckland
 - 学习内容小结：
   - [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
 
+### 2024.08.06
+
+- 学习主题：
+- 学习内容小结：
+  - [1-Polynomial-Interaction-and-Proof](https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html)
+
+### 2024.08.07
+
+- 学习主题：
+- 学习内容小结：
+  - [2-Non-interactivity&Distributed-Setup](https://learn.z2o-k7e.world/zk-snarks/2-Non-interactivity&Distributed-Setup.html)
+
 <!-- Content_END -->
