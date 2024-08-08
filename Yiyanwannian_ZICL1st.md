@@ -221,4 +221,18 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
     - 保证参数的生成者不泄密 ——> MPC’s Setup
 
 
+
+### 2024.08.08
+
+- 学习主题：
+  - 看文档:  [3-General-Purpose-Computation](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html)
+- 学习内容小结：
+  - 将要证明的程序转换为数学语言表达的形式（即加减乘除的计算）
+    - 如: f(w,a,b)=w(a⋅b)+(1−w)(a+b)
+    - 引入概念： 左操作数 运算操作 符右操作数 = 输出
+  - 用多项式在某处的取值来进行计算以此表示数学计算，进而[进行证明](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html#single-variable-operand-polynomial)
+  - 用多项式在多处的取值来进行计算表示多个数学运算，进而[加以证明](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html#multi-variable-operand-polynomial)
+  - 对证明的“程序”在不同计算中使用的相同的变量进行约束
+
+
 <!-- Content_END -->
