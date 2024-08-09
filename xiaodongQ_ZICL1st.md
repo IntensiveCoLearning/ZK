@@ -146,5 +146,12 @@ timezone: Asia/Shanghai
     - `\` 含义，信号赋值后的约束判断
     - 参考circom文档：[Constraint Generation](https://docs.circom.io/circom-language/constraint-generation/)
 
+### 2024.08.10
+
+- 学习主题：继续学习 [基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md)
+- 学习内容小结：
+    - IsZero算术电路
+    - signal只能赋值一次，无论分支是否只走一次
+    - 可参考circom文档：[signals](https://docs.circom.io/circom-language/signals/#public-and-private-signals)
 
 <!-- Content_END -->
