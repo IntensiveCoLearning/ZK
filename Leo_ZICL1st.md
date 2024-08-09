@@ -185,4 +185,10 @@ R1CS 提供了一种强大而灵活的框架，支持复杂计算问题的安全
 
 学习内容小结：Plonky3 是一个全新且经过增强的加密库，旨在进一步提高递归零知识证明的速度和效率。它包含针对较新 CPU 规格的优化。它实现了多项式 IOP（例如 PLONK 和 STARKS）以及承诺方案（例如 Brakedown）。查看 Plonky3 README 以了解所包含内容的更新。
 
+### 2024.08.08
+
+学习主题：什么是 FRI
+
+学习内容小结：FRI, 即 Fast RS IOPP, 全称 Fast Reed−Solomen Interactive Oracle Proofs of Proximity，是一种更有效的 proximiary 测试方法, 测试一个点的集合大部分是在一个度小于某个值的多项式上，能达到线性级的证明复杂度和对数级的验证复杂度。
+
 <!-- Content_END -->

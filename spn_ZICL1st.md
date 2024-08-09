@@ -153,4 +153,9 @@ XDU大四学生，ZK在学。
 
 - 学习主题：plonk源码学习
 - 学习内容小结:查了下github上star多的plonk协议，进行了一个源码的读（x
+
+### 2024.08.08
+
+- 学习主题：plookup源码学习
+- 学习内容小结:根据GitHub的plookup协议进行复现，今天写了KZG10和TranscriptProtocol部分
 - <!-- Content_END -->

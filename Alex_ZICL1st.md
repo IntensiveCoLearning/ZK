@@ -150,4 +150,7 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 - 学习主题: [3-General-Purpose-Computation](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html)
 - 学习总结：这一篇将之前讲的多项式知识实际使用到了程序证明上，多个运算-经过一系列点-多项式结果为0；有一些值得注意的点：当处理多个运算时，对相同输入的系数要相同，核心是所有输入的操作数的系数应该是等比例变化，可以用之前讲的a-shift方法来实现；此外，当左操作数不止一个变量时，可以引入一个值为1或0的数
 
+### 2024.08.08
+- 学习主题：[4-Construction-Properties.md](https://learn.z2o-k7e.world/zk-snarks/4-Construction-Properties.html) 部分
+- 学习总结：相比前面的理论，还是后面的例子更直观更好理解；一点是操作数前面加上常量系数，第二点是将一系列系数赋予操作数，这是为了方便多个运算，用到该运算就是1，否则就是0；
 <!-- Content_END -->

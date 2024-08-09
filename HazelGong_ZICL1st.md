@@ -209,8 +209,11 @@ SNARKS are succinct non-interactive proofs. What snarks are, what they are good 
 - zk-SNARK: te proof reveals nothing about the message. 
 
 
+### 2024.08.08
+
 
 Blockchain applications: 
 - Scale the L1 blockchain chain using the zkRollup. Off-chains service processes a batch of transactions, L1 chain verifies a succinct proof that those transactions were processed correctly. There might be thousands of transactions, so this applications scales the speed of the L1 chain, since it doesn't have to verify the transactions one by one, just verify this succinct proof that is short and fast to verify.
 - private Tx on a public blockchain needs a zk proof to validate.
+
 <!-- Content_END -->
