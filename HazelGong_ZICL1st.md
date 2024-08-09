@@ -216,4 +216,34 @@ Blockchain applications:
 - Scale the L1 blockchain chain using the zkRollup. Off-chains service processes a batch of transactions, L1 chain verifies a succinct proof that those transactions were processed correctly. There might be thousands of transactions, so this applications scales the speed of the L1 chain, since it doesn't have to verify the transactions one by one, just verify this succinct proof that is short and fast to verify.
 - private Tx on a public blockchain needs a zk proof to validate.
 
+
+### 2024.08.09
+
+zk-SNARK article 1: https://learn.z2o-k7e.world/zk-snarks/1-Polynomial-Interaction-and-Proof.html
+
+多项式是 zk-SNARK 核心的部分。可信度几乎 100%。任何多项式在任意点的计算结果都可以看做是其唯一身份的表示（Schwatz-Zippel 定理：我们不可能找到共享连续段的两条不相等曲线，也就是任何多项式在任意点的计算结果都可以看做是其唯一身份的表示。也就是说只要能证明多项式上的某个随机点就可以证明这个多项式（只有在知道了多项式，才能算出这个点对于的值），这个性质是我们下面所有证明的核心）。
+
+Naive 协议：
+利用上述多项式的性质（任何多项式在任意点的计算结果都可以看做是其唯一身份的表示），可以用以下协议来验证 prover 有一个多项式的某些根（包含在 t(r) 里）：
+- verifier 挑选一个随机值 r , 计算 t=t(r) (即，求值) ，然后将 r 发送给 prover。
+- prover 计算 h(x)=p(x)/ t(x) ，并对 p(r) 和 h(r) 进行求值，将计算结果 p, h 提供给 verifier。
+- verifier 验证 p=t⋅h ，如果多项式相等，就意味着 t(x) 是 p(x) 的因式。
+
+但是此协议存在漏洞：一旦 prover 知道了 t(r) ，他就可以反过来任意构造任何一个可以整除 t(r) 的 p(r)，prover 知道了点 (r,  t(r)⋅h(r)) 的值，就可以构造经过这一点的任意(高次)多项式，同样满足校验。
+
+强同态加密的 motivations: 
+如果 verifier 给出的这个 r 值像放在黑盒里一样不可见的话就完美了，有点类似哈希函数，从计算结果就很难再回到原始值上。
+所以用到强同态加密。可以选择一个基数，一个指数，加上一个模，来加密一个选定的 r 值。基数是公开的。加上模运算之后，从运算结果回到初始值不容易。
+
+
+在同态加密中: $ E(v) = g^v (mod p) $ 
+- 模数 p 是双方都知道的。它通常是写在加密代码中的
+- 生成元 g 是一个整数，作为一个基用来生成一系列的数字(密钥，用来对数据进行加密)
+- v 就是我们要加密的值
+
+
+最后的协议没有完全理解。
+<img width="406" alt="Screenshot 2024-08-09 at 23 51 11" src="https://github.com/user-attachments/assets/d243a8b5-1894-4573-aaeb-f4d9e0ac470f">
+
+
 <!-- Content_END -->
