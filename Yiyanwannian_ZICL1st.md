@@ -258,4 +258,18 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
     - Pinocchio 协议通过选择不同的生成元 g ，从而对每个 operand 实行“移位”
 
 
+### 2024.08.10
+
+- 学习主题：
+  - 看文档: [5-Pinocchio-Protocol](https://learn.z2o-k7e.world/zk-snarks/5-Pinocchio-Protocol.html)
+- 学习内容小结：
+  - [zk-SNARK 协议最终流程](https://learn.z2o-k7e.world/zk-snarks/5-Pinocchio-Protocol.html#zk-snark-%E5%8D%8F%E8%AE%AE)
+  - 允许证明计算的有效协议
+    - 简明 (Succinctly) —— 独立于计算量，证明是恒定的，小尺寸的
+    - 非交互性 (Non-interactive) —— 证明只要一经计算就可以在不直接与 prover 交互的前提下使任意数量的 verifier 确信
+    - 可论证的知识 (with Argument of Knowledge) —— 对于陈述是正确的这点有不可忽略的概率，即无法构造假证据；并且 prover 知道正确陈述的对应值（即：证据），例如，如果陈述是 “B 是 sha256(a) 的结果” 那么就说明 prover 知道一些值 a 能够使得 B = sha256(a) 成立，因为 B 只能够通过 a 的知识计算出来，换句话说就是无法通过 B 来反算出 a（假定 a 的熵足够）。
+    - 陈述有不可忽略的概率是正确的 (even@安比实验室: 这里指 Soundness 可靠性)，即，构造假证据是不可行的
+    - 零知识 ( zero-knowledge) —— 很“难”从证明中提取任何知识，即，它与随机数无法区分。
+
+
 <!-- Content_END -->
