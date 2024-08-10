@@ -234,5 +234,28 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - 用多项式在多处的取值来进行计算表示多个数学运算，进而[加以证明](https://learn.z2o-k7e.world/zk-snarks/3-General-Purpose-Computation.html#multi-variable-operand-polynomial)
   - 对证明的“程序”在不同计算中使用的相同的变量进行约束
 
+### 2024.08.09
+
+- 学习主题：
+  - 看文档: [4-Construction-Properties.md](https://learn.z2o-k7e.world/zk-snarks/4-Construction-Properties.html)
+- 学习内容小结：
+  - 通过插值计算和乘法，利用表达式： C_a * a +  C_b * b = C_r * r 来实现计算加减除
+    - 加 (a+b)×1=r
+    - 减 (a+−1⋅b)×1=r
+    - 除 b×r=a
+      - 多项式结构代表的运算，并非是为了计算出结果，而是在 prover已经知晓的变量赋值的情况下，检验这个运算的过程是否正确。换句话说，即约束 prover 必须提供一致的值，无论这些值是什么。
+    - 最终 w(ab)+(1−w)(a+b)=v( w∈{0, 1} ) 用来表示加减乘除的计算
+  - 保证操作数和输出的不可替代性
+    - 使用其它的操作数中的可变多项式，即 L`(s)=o_1(s) + r_1(s) + r_1(s) + ...
+    - 完全交换操作数多项式， 也就是把 O(s) 和 L(s) 换成 O(s)×R(s)=L(s)
+    - 复用相同的操作数多项式，即 L(s)×L(s)=O(s)
+  - 保证跨操作数的可变一致性
+    - 在所有的操作数之间创造一个作为“变换的校验和”(shifted checksum) 的变量多项式(variable polynomial)
+    - 创建一个包含了所有 variable 的 variable poly, 对这些所有的 variable 整体做 α-shift, 就一个都别跑都被约束住了) 那么就可以限制 P 使其只能够赋予(给每个变量)相同的值。 V 可以将这些每个变量的多项式加起来
+  - 处理非延展性变量和变量一致性
+    - 在 setup 阶段将 encrypted space中的 β_s 项与随机秘密值 γ (gamma) 相乘, 从而使 verification key 中加密的 β_s 与加密值 Z(s) 不兼容
+  - 变量值一致性检查优化
+    - Pinocchio 协议通过选择不同的生成元 g ，从而对每个 operand 实行“移位”
+
 
 <!-- Content_END -->
