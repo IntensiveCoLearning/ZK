@@ -272,4 +272,51 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
     - 零知识 ( zero-knowledge) —— 很“难”从证明中提取任何知识，即，它与随机数无法区分。
 
 
+### 2024.08.11
+
+- 学习主题：
+  - 看视频: [ZK Shanghai 基础电路教学](https://www.youtube.com/watch?v=CTJ1JkYLiyw&ab_channel=SutuLabs)
+- 学习内容小结：
+  - circom 代码演示
+  - 课程网址： 
+    - https://zkshanghai.xyz/syllabus.html
+    - https://zkiap.com/
+    - 课程PPT: https://zkshanghai.xyz/lecture/2-circom1.pdf
+  - 算术电路
+    - 有限域 𝔽 = {0, … , 𝑝 − 1} 基于某一素数𝑝 > 2
+    - 算术电路 𝐶: 𝔽𝑛 ⇾ 𝔽
+      - 是计算复杂性理论中的概念，与电子电路毫无关联
+      - 有向无环图
+      - 输入节点标记为1, 𝑥1, … , 𝑥𝑛
+      - 内部节点标记为+,-,x
+      - 每个内部节点也称为门(gate)
+  - 常见代码转电路方式
+    - 判零函数 let y = input > 0 ? 0 : 1;
+    - 选择 let y = s ? (a + b) : (a * b);
+    - 二进制化 5 -> 101
+    - 比较 let y = s1 > s2 ? 1 : 0;
+    - 循环 for (let i = 0; i < N; i++) { y += 1; }
+    - 交换 
+      ```shell
+      if (s) {
+         output1 = input2;
+         output2 = input1;
+       } else {
+         output1 = input1;
+         output2 = input2;
+       }
+       ```
+    - 逻辑
+      ```shell
+       let y = a & b;
+       let y = !a;
+       let y = a | b;
+       let y = a ^ b;
+       ```
+    - 排序： 如冒泡排序
+  - 常见库介绍
+    - snarkjs
+    - [circom-starter](https://github.com/0xPARC/circom-starter)
+    - hardhat circom
+
 <!-- Content_END -->
