@@ -247,5 +247,8 @@ Naive 协议：
 最后的协议没有完全理解。
 <img width="406" alt="Screenshot 2024-08-09 at 23 51 11" src="https://github.com/user-attachments/assets/d243a8b5-1894-4573-aaeb-f4d9e0ac470f">
 
+### 2024.08.11
+
+blog 2 - 5: 用 blog 1 的 proof 构建通用 zk-SNARK 的协议。没有完全理解。待梳理。
 
 <!-- Content_END -->
