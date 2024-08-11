@@ -185,6 +185,21 @@ timezone: Asia/Shanghai
 
 
 
+### 2024.08.11
+
+- 学习主题：ArkStream Capital：零知识证明行业研究
+- 学习内容小结：
+  - ZKP 区块链技术发展路径: 围绕扩容、隐私、 兼容性、加速和互通性。未来展望：ZK将成为加密网络的基础，所有基于互联网的应用和服务都将有 Crypto 版本，并使用ZK进行加速和扩容。
+  - ZKP 区块链应用: ![](https://mmbiz.qpic.cn/mmbiz_jpg/9boz8OkE5jOrYkuhk3yaOwqx9rEic7uY2j1icADTdxaJFUqU1uyybSnc70edULZfsH5ibuz5FqI48kT8vkLTaxBmQ/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+  - ZKP 非区块链应用：![](https://mmbiz.qpic.cn/mmbiz_jpg/9boz8OkE5jOrYkuhk3yaOwqx9rEic7uY26zadOZW9NWgOO0jIxpMykfsaiaWWZs1p5rWCW75TjPQlLV5DKWBibREA/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+### 2024.08.12
+
+- 学习主题：
+- 学习内容小结：
+
+
+
 
 
 
