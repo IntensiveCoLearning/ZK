@@ -204,5 +204,13 @@ https://learnblockchain.cn/article/6188
 3. 需要注意的是 eq.out===1 从生成结果来看会减少repl的约束个数，后续需要再找下原因
 
 
+### 2024.08.08
+
+- 学习主题: snarkjs学习
+- 学习内容：细节整理
+1. prover产生的public.json是public input和out的汇总，并非output
+2. circom内main component的output均为public
+3. verfier验证除了vk、proof还需要 public input和 output
+
 <!-- Content_END -->
 

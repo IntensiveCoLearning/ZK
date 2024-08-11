@@ -158,4 +158,14 @@ XDU大四学生，ZK在学。
 
 - 学习主题：plookup源码学习
 - 学习内容小结:根据GitHub的plookup协议进行复现，今天写了KZG10和TranscriptProtocol部分
+
+### 2024.08.09
+
+- 学习主题：plookup源码学习2
+- 学习内容小结:看并复现了lookuptable部分，希望能尽自己力再改改（
+  
+### 2024.08.10
+
+- 学习主题：plookup代码研究和snark学习
+- 学习内容小结:自己尝试对plookup代码细节进行理解并进行接口对接，将之前的zksnark接着看了看
 - <!-- Content_END -->

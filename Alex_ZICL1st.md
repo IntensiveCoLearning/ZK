@@ -153,4 +153,8 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 ### 2024.08.08
 - 学习主题：[4-Construction-Properties.md](https://learn.z2o-k7e.world/zk-snarks/4-Construction-Properties.html) 部分
 - 学习总结：相比前面的理论，还是后面的例子更直观更好理解；一点是操作数前面加上常量系数，第二点是将一系列系数赋予操作数，这是为了方便多个运算，用到该运算就是1，否则就是0；
+
+### 2024.0809
+- 学习主题：[4-Construction-Properties.md](https://learn.z2o-k7e.world/zk-snarks/4-Construction-Properties.html) 部分
+- 学习总结：学习了操作数和输出的不可代替性质，还有可变一致性，非延展性变量等概念，数学部分没有深刻理解，明天继续
 <!-- Content_END -->
