@@ -212,5 +212,15 @@ https://learnblockchain.cn/article/6188
 2. circom内main component的output均为public
 3. verfier验证除了vk、proof还需要 public input和 output
 
+
+### 2024.08.09
+
+- 学习主题: circom 实用电路学习
+- 学习内容：简单签名方案
+1. 密钥产生、签名、验签
+2. 对于确保消息m是什么 依赖public input
+3. ECDSA必须带随机数，需要在群上面做除法消耗较大
+4. BLS有两条曲线以及一个映射方法（同态），因此BLS不需要随机数？
+
 <!-- Content_END -->
 
