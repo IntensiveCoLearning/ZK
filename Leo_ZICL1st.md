@@ -191,4 +191,25 @@ R1CS 提供了一种强大而灵活的框架，支持复杂计算问题的安全
 
 学习内容小结：FRI, 即 Fast RS IOPP, 全称 Fast Reed−Solomen Interactive Oracle Proofs of Proximity，是一种更有效的 proximiary 测试方法, 测试一个点的集合大部分是在一个度小于某个值的多项式上，能达到线性级的证明复杂度和对数级的验证复杂度。
 
+### 2024.08.09
+
+学习主题：什么是 circom
+
+学习内容小结：Circom是一个底层用rust实现的编译器，它可以编译用circom语言实现的circuit。它将circuit编译的结果以contraints的形式输出，这些constraints能被用于计算相应生成逻辑的proof。
+
+### 2024.08.10
+
+学习主题：circom 组件
+
+学习内容小结：
+
+1. circom
+2. circomlib
+3. circomlibjs
+4. circom_tester
+5. ffjavascript
+6. snarkjs
+
+![关系图](https://gblobscdn.gitbook.com/assets%2F-MDt-cjMfCLyy351MraT%2F-ME35kSLplV3Z39JJsLE%2F-ME37Q2MlDc67k0-jzQS%2Fcircomsnarkjs.png?alt=media&token=4b1b1c11-a1d4-4048-8c3a-0c7b02f4930a)
+
 <!-- Content_END -->
