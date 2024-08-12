@@ -158,4 +158,15 @@ timezone: Asia/Shanghai
 - 学习主题：Plonk 核心实现 [](https://github1s.com/dusk-network/plonk)
 - 学习内容小结：
 1. 研究 Plonk 代码实现
+
+### 2024.08.13
+
+- 学习主题：Plonk 核心实现 [](https://github1s.com/dusk-network/plonk)
+- 学习内容小结：
+1. 研究 Plonk 代码实现
+### 2024.08.14
+
+- 学习主题：Plonk 核心实现 [](https://github1s.com/dusk-network/plonk)
+- 学习内容小结：
+1. 研究 Plonk 代码实现
 <!-- Content_END -->
