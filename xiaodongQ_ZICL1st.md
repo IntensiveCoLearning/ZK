@@ -161,4 +161,10 @@ timezone: Asia/Shanghai
     - 算术电路：IsEqual、Selector、IsNegative
     - template 和 component 文档学习
 
+### 2024.08.12
+
+- 学习主题：继续学习 [基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md)
+- 学习内容小结：
+    - 算术电路：LessThan
+
 <!-- Content_END -->
