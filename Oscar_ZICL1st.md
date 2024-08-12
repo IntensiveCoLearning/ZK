@@ -195,10 +195,18 @@ timezone: Asia/Shanghai
 
 ### 2024.08.12
 
+- 学习主题：零知识证明行业研究
+- 学习内容小结：
+  - ZK 在 VC 领域的融资额远超 Al 和 Depin， 不论是在任意一年。🤔
+  - 投资ZK以投资先进性为主导原则，会不断有新项目新技术来冲击现有格局。除非 Zksync、Starknet 故步自封，不再送代，否则这两个项目就是 ZK 软件赛道估值的天花板。🤔
+  - ZK 赛道是人才密度最高的 web3 赛道，投 ZK 就是投人。🤔
+  - TODO 学习 https://mp.weixin.qq.com/s/7Noxmi7tKjDMB6RYWbKaGg
+
+
+### 2024.08.13
+
 - 学习主题：
 - 学习内容小结：
-
-
 
 
 
