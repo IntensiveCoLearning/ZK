@@ -212,4 +212,24 @@ R1CS 提供了一种强大而灵活的框架，支持复杂计算问题的安全
 
 ![关系图](https://gblobscdn.gitbook.com/assets%2F-MDt-cjMfCLyy351MraT%2F-ME35kSLplV3Z39JJsLE%2F-ME37Q2MlDc67k0-jzQS%2Fcircomsnarkjs.png?alt=media&token=4b1b1c11-a1d4-4048-8c3a-0c7b02f4930a)
 
+### 2024.08.11
+
+学习主题：circom 电路编写
+
+学习内容小结：
+
+``` circom
+pragma circom 2.0.0;
+
+template Multiplier2(){
+   //Declaration of signals
+   signal input in1;
+   signal input in2;
+   signal output out;
+   out <== in1 * in2;
+}
+
+component main {public [in1,in2]} = Multiplier2();
+```
+
 <!-- Content_END -->
