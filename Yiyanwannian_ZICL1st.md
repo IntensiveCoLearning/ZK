@@ -336,5 +336,16 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
     - 抗碰撞
   - 不同的哈希函数对不同的电路友好性不一样
   - 课程PPT: https://zkshanghai.xyz/lecture/4-circom2.pdf
-  
+
+### 2024.08.13
+
+- 学习主题：
+  - 阅读文档: 
+    - [snarkjs resources (zkiap.com)](https://zkiap.com/snarkjs)
+    - [What Is Semaphore? | Semaphore](https://docs.semaphore.pse.dev/)
+- 学习内容小结：
+  - snarkjs 代码转电路的js库
+  - Semaphore 一种zk协议，可以用来构建zk应用：私人投票、举报、匿名去中心化自治组织和混合器等
+
+
 <!-- Content_END -->
