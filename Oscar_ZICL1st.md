@@ -200,13 +200,24 @@ timezone: Asia/Shanghai
   - ZK 在 VC 领域的融资额远超 Al 和 Depin， 不论是在任意一年。🤔
   - 投资ZK以投资先进性为主导原则，会不断有新项目新技术来冲击现有格局。除非 Zksync、Starknet 故步自封，不再送代，否则这两个项目就是 ZK 软件赛道估值的天花板。🤔
   - ZK 赛道是人才密度最高的 web3 赛道，投 ZK 就是投人。🤔
-  - TODO 学习 https://mp.weixin.qq.com/s/7Noxmi7tKjDMB6RYWbKaGg
 
 
 ### 2024.08.13
 
-- 学习主题：
+- 学习主题：zk-SNARK vs zk-STARK
 - 学习内容小结：
+  - zk-SNARK，通过使用复杂的数学工具，如双线性配对和算术电路，来实现高效的零知识证明。特点是证明过程简洁化、非交互式，证明者和验证者之间只需要单次通讯不需要多次交互。此外，**zk-SNARK的证明尺寸非常短小，验证效率高，适合在资源有限的环境中使用。**
+  - zk-STARK，旨在克服zk-SNARK的某些局限性。zk-STARK不依赖于可信设置，使用更透明的数学构造系统，如多项式承诺和有限域运算、哈希碰撞等，来生成和验证证明。**zk-STARK 比 zk-SNARK更具可扩展性，适用于更大规模的计算，证明生成速度更快，但是 Proof 本身的尺寸通常较大。**
+  - 总体来看，**一个ZK证明系统通常包括 PIOP（多项式交互式预言机）和 PCS（多项式承诺方案）两大部分。**常见的 PIOP 方案包括 PLONKish、GKR 等，而常见的 PCS 方案包括 FRI，KZG，IPA 等，比如 Zcash 版本的Halo2 使用了 Plonkish + IPA 的实现方式，至于 zk-STARK 其实可以当成是一种基于 FRI 的特殊的 zk-SNARK。如果更详细的说，不同类型的证明系统会使用不同的多项式承诺方案(PCS)、算术化方案、交互式预言机证明(IOP)或概率可检查证明(PCP)。
+
+
+### 2024.08.14
+
+- 学习主题：跳过基础电路，ZK 理论集应用方向学习为主
+- 学习内容小结：
+  - TODO 学习 https://mp.weixin.qq.com/s/7Noxmi7tKjDMB6RYWbKaGg
+
+
 
 
 
