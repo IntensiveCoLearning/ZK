@@ -319,4 +319,33 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
     - [circom-starter](https://github.com/0xPARC/circom-starter)
     - hardhat circom
 
+### 2024.08.12
+
+- 学习主题：
+  - 看视频: [ZK Shanghai 实用电路教学](https://www.youtube.com/watch?v=smJz5RdY0Nc)
+- 学习内容小结：
+  - 简单签名方案分3部分
+    - KeyGen → (sk, pk): 选择一个随机密钥 sk 和对应的公钥 pk
+    - Sign(m, sk) → s: 给定消息 m 和密钥 sk，输出签名 s
+    - Verify(m, s, pk) → 1/0: 给定消息 m、签名 s 和公钥 pk，验证签名是否有效
+    - circom 签名代码演示
+  - 群里面的成员非常多并且数量可变时，引入merkle tree解决
+  - 哈希计算安全特性
+    - 抗第一原像攻击
+    - 抗第二原像攻击
+    - 抗碰撞
+  - 不同的哈希函数对不同的电路友好性不一样
+  - 课程PPT: https://zkshanghai.xyz/lecture/4-circom2.pdf
+
+### 2024.08.13
+
+- 学习主题：
+  - 阅读文档: 
+    - [snarkjs resources (zkiap.com)](https://zkiap.com/snarkjs)
+    - [What Is Semaphore? | Semaphore](https://docs.semaphore.pse.dev/)
+- 学习内容小结：
+  - snarkjs 代码转电路的js库
+  - Semaphore 一种zk协议，可以用来构建zk应用：私人投票、举报、匿名去中心化自治组织和混合器等
+
+
 <!-- Content_END -->
