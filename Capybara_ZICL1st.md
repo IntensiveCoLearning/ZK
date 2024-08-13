@@ -307,4 +307,11 @@ template ForceEqualIfEnabled() {
 Pinocchio 协议是针对 GGPR 论文的改进，在3.1节中也提到了实现零知识只需要沿用 GGPR 论文的方法即可，并不是这篇论文的贡献。另外，Pinocchio 协议论文侧重工程实践，在2013年时，零知识证明还并没有得到应用。真正的应用还是自从 ZCash 起始
 
 所谓 Argument——论证，区别于 Proof —— 证明。 Pinocchio 协议是 Argument 而非 Proof。这是因为 Pinocchio 的可靠性是 Computational Soundness，Statistical ZK，这一类的证明系统被称为 Argument。所谓的 Computational Soundness 暗含了这样的事实：如果 Prover 计算能力足够强大的话，可以破坏可靠性。
+
+
+### 2024.08.13
+
+- 学习主题：Plonkish Arithmetization
+- 学习内容小结：
+算术化是指把计算转换成数学对象，然后进行零知识证明。 Plonkish 算术化是 Plonk 证明系统特有的算术化方法，在 Plonkish 出现之前，主流的电路表达形式为 R1CS，被 Pinocchio，Groth16，Bulletproofs 等广泛采用。2019 年 Plonk 方案提出了一种看似复古的电路编码方式，但由于 Plonk 方案将多项式的编码应用到了极致，它不再局限于算术电路中的「加法门」和「乘法门」，而是可以支持更灵活的「自定义门」与「查表门」
 <!-- Content_END -->
