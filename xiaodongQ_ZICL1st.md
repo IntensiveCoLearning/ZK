@@ -167,4 +167,10 @@ timezone: Asia/Shanghai
 - 学习内容小结：
     - 算术电路：LessThan
 
+### 2024.08.13
+
+- 学习主题：回头听一下 [零知识证明：一场”无知“的游戏](https://www.xiaoyuzhoufm.com/episode/6672a76bb6a8412729e0b103)
+- 学习内容小结：
+    - 比之前能稍微听得进去一点了
+
 <!-- Content_END -->
