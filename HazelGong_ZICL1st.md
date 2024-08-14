@@ -251,4 +251,9 @@ Naive 协议：
 
 blog 2 - 5: 用 blog 1 的 proof 构建通用 zk-SNARK 的协议。没有完全理解。待梳理。
 
+### 2024.08.14
+
+看 [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)。
+
+
 <!-- Content_END -->

@@ -161,4 +161,22 @@ timezone: Asia/Shanghai
     - 算术电路：IsEqual、Selector、IsNegative
     - template 和 component 文档学习
 
+### 2024.08.12
+
+- 学习主题：继续学习 [基础电路练习](https://github.com/wenjin1997/zkshanghai-workshop/blob/main/lecture2-homework.md)
+- 学习内容小结：
+    - 算术电路：LessThan
+
+### 2024.08.13
+
+- 学习主题：回头听一下 [零知识证明：一场”无知“的游戏](https://www.xiaoyuzhoufm.com/episode/6672a76bb6a8412729e0b103)
+- 学习内容小结：
+    - 比之前能稍微听得进去一点了
+
+### 2024.08.14
+
+- 学习主题：回头看一下视频 [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+- 学习内容小结：
+    - 只看了部分
+
 <!-- Content_END -->
