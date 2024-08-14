@@ -212,5 +212,19 @@ GPT解释：同态加密的解谜过程固定。难度是受解密密钥和算�
 2.2 稳定元 = 4 = 确定一个面后，正方体能旋转4次却不改变面的位置
 2.3 轨道 = 1 -> 1个单一的、连续的轨道，轨道大小 = 6 = 可被移动的面 = 互换性 & 对称性
 - 3. 同构 = 结构相同而名字不同，同态 = 名字相同罢了，同构是同态的一种特殊表现形式，即映射且一一对应。
- `点了。看似不同的数学对象之间其实有深层次联系。`  
+ `点了。看似不同的数学对象之间其实有深层次联系。`
+
+### 2024.08.13
+今日了解「群论」- group theory & Euler's formula 欧拉公式
+- 了解它可以改变对numbers和algebra - 代数的看法
+- group theory & the nature of symmetry 对称性
+- example: a square 正方形，不管怎么作用都具有对称性，把8种对称性作用力放在一起就是group of symmetry。正方形的这个例子是一种finite group，自然就有infinite group，如圆
+- 学习的意义是知道对称性之间如何作用影响的：作用A + 作用B = 作用C
+- 从「对称性」和「对称性的复合」- composing symmetries 可以引申例子：Square materices, Molecular, Cryptography, numbers.
+- Numbers as group: addditive 加法 + multiplicative 乘法 -> numebrs as actions, not just counting things.
+- why numbers are actions?
+- 1）加法可以看成是groups of line symmetries，aka Additive group of real number 实数加法群，甚至在直角坐标系xy轴中这个结论也成立，也就是Additive group of complex numbers
+- 3) 乘法可以看成是 group of stretching/squishing actions，aka multiplicative group of positive real numbers -> multiplicative group of complex numbers
+ `GPT解释number的各种分类：在等式x²+1 = 0中，无real numbers解，因为实数不可能是负数，可是可以有复数解，解是个虚数imaginary unit。还有，5+0i是pure real numbers，0+2i是pure imaginary numbers，3+4i是general complex numbers`
+- 剩10分钟幂函数这块明天在看。
 <!-- Content_END -->
