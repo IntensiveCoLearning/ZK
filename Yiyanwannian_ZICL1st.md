@@ -347,5 +347,12 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - snarkjs 代码转电路的js库
   - Semaphore 一种zk协议，可以用来构建zk应用：私人投票、举报、匿名去中心化自治组织和混合器等
 
+### 2024.08.14
+
+- 学习主题：
+  - circom本地环境搭建
+- 学习内容小结：
+  - circom本地环境搭建
+
 
 <!-- Content_END -->
