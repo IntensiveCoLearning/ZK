@@ -1443,6 +1443,374 @@ def generate_csprng():
 
 6、而且这个可信第三方需要同时得到Alice和Bob的信任。
 
+### 2024.08.14
+
+总结了代码、算数、电路
+# 常用电路
+
+## 判断相等
+
+### 等于0 isZero
+
+分别用python和circom写出电路，判断输入的数字为0
+
+#### 1、理论基础
+
+第一种方式是直接判断
+
+第二种方式是费马小定理
+
+##### 费马小定理：
+
+1、费马小定理提出，对于任意整数 a 和质数 p，如果 a 不被 p 整除，那么：a^(p-1)^ ≡ 1 (mod p)
+
+2、由于p是质数，因此能整除p的只能是0或者p本身或p的倍数
+
+3、而有限域定义在整数域{0, p-1}上，因此该整数域上只有0能被p整除。
+
+4、利用这个定理，我们可以构造一个方法来证明一个数是否等于0：
+
+- 如果 a ≠ 0 (mod p)，那么 a^(p-1)^ - 1 ≡ 0 (mod p)
+- 如果 a ≡ 0 (mod p)，那么 a^(p-1)^ - 1 ≢ 0 (mod p)
+
+#### 2、python解答判断0
+
+##### 1、直接判断
+
+```python
+def is_zero(a):
+    return (f"{a} is {'zero' if a == 0 else 'non-zero'}")
+
+p = 17  # A prime number
+for i in range(p):
+    print(is_zero(i))
+```
+
+##### 2、费马小定律
+
+```python
+def is_zero_fermat(a, p):
+    """
+    Check if a number is zero using Fermat's Little Theorem.
+    
+    :param a: The number to check
+    :param p: A prime number (modulus)
+    :return: True if a is zero, False otherwise
+    """
+    return pow(pow(a, p-1, p) - 1, p-1, p) == 0
+
+# Example usage
+p = 17  # A prime number
+for a in range(p):
+    print(f"{a} is {'non-zero' if is_zero_fermat(a, p) else 'zero'}")
+```
+
+#### 3、circom电路判断0
+
+用一个预先计算的提示值作为中间信号inv，来实现简单的0判断电路
+
+```js
+pragma circom 2.0.0;
+
+template IsZero() {
+    signal input in;
+    signal output out;
+    signal inv;
+    inv <-- in!=0 ? 1/in : 0;
+    out <== -in*inv +1;
+    in*out === 0;
+}
+
+component main {public [in]}= IsZero();
+```
+
+### 两数相等 isEqual
+
+判断两个整数是否相等，如果相等返回1，否则为0
+
+？
+
+## 二进制Num2Bits
+
+功能：将十进制数字转化为二进制
+
+```js
+pragma circom 2.0.0;
+
+template Num2Bits(n) {
+    signal input in;
+    signal output out[n];
+    var lc1=0;
+    var e2=1;
+    for (var i = 0; i<n; i++) {
+        out[i] <-- (in >> i) & 1;
+        out[i] * (out[i] -1 ) === 0;
+        lc1 += out[i] * e2;
+        e2 = e2+e2;
+    }
+    lc1 === in;
+}
+
+component main {public [in]}= Num2Bits(3);
+```
+
+### 
+
+## 比较大小
+
+### GreaterThan
+
+判断：整数s1是否大于s2？
+
+#### 逻辑
+
+```js
+let y = s1 > s2 ? 1 : 0
+```
+
+```python
+y = 1 if s1 > s2 else 0
+```
+
+#### 电路
+
+##### 要求
+
+1、输入：s1和s2两个整数
+
+2、输出：判断结果如果大于则为1，如果小于则为0
+
+##### 原理
+
+1、无法在电路中直接比较十进制的整数大小
+
+2、而需要转化为二进制。
+
+3、因为二进制的加减法等算数运算都通过比较简单的门可以实现。
+
+4、这里利用了二进制数的一个重要特性：较高位的 1 比任何较低位的组合都"更大"
+
+##### 步骤
+
+1、先将十进制整数都转化为二进制。
+
+2、比较依次从右向左，比较二进制的同一最高位。
+
+3、如果该位一样都为1或者0，则比较下一位。
+
+4、列出公式：y = s1 + 2^n^ - s2
+
+```
+代码略
+```
+
+### LessThan
+
+功能：输入两个整数的数组，判断数组中第一个数是否小于第二个数
+
+```js
+include "Num2bits.circom"
+
+// 参数n的解释：n为二进制的位数。手动限制二进制的位数的目的是减少计算量。
+template LessThan(n){
+    assert(n <= 252);
+    signal input in[2];
+    signal output out;
+    component n2b = Num2Bits(n+1);
+    
+    n2b.in <== in[0] + (1 << n) - in[1];
+    
+    out <== 1-n2b.out[n];
+}
+```
+
+其它函数包括：LessEqThan、GreaterEqThan
+
+## 选择器Selecter
+
+### 选择器的概念
+
+二选一，if else，或三元判断 s ? a : b
+
+### 选择器的实现
+
+1、制造一个开关s，
+
+2、s输入为二进制0或者1，表示两种选择的一种。
+
+3、该s符合s *(s -1) = 0，其中s和s-1分别为开关两种状态。
+
+4、每一种情况与其中一种状态相乘，即 y = s * a + (s-1) * b
+
+5、这样当s输入不同的数时候，得到y = a 或者y = b。
+
+### 问1：
+
+## 交换
+
+将两个输入a和b进行交换，输出为b和a
+
+## 逻辑运算
+
+1、逻辑自身是二进制，表示布尔值。
+
+2、下面a和b理解为是条件的判断结果，比如a = 6 > 7，此时a = false。
+
+3、值为1表示为真，值为0表示为假。
+
+4、逻辑运算基于选择器
+
+### 反门
+
+两个值选任意一个都成立
+
+##### 代码
+
+```js
+let y = !a
+```
+
+##### 算数
+
+当a = 0时候y = 1，反之当a = 1时候y = 0
+
+```
+y = 1 - a
+```
+
+##### 电路
+
+```js
+pragma circom 2.1.6;
+
+template Reverse() {
+    signal input a;
+    signal output y;
+
+    0 === a * (a - 1);
+    y <== 1 - a;
+}
+
+component main  = Reverse();
+
+/* INPUT = {
+    "a": 1
+} */
+```
+
+### 与门
+
+a和b同时为1时候，y才能为1。
+
+##### 代码
+
+```js
+let y = a & b
+```
+
+##### 算数
+
+y = a * b
+
+##### 电路
+
+```js
+pragma circom 2.1.6;
+
+template AND() {
+    signal input a;
+    signal input b;
+    signal output y;
+
+    0 === a * (a - 1);
+    0 === b * (b - 1);
+    y <== a * b;
+}
+
+component main  = AND();
+
+/* INPUT = {
+    "a": 1,
+    "b": 1
+} */
+```
+
+### 或门
+
+两个值选任意一个都成立
+
+##### 代码
+
+```js
+let y = a | b
+```
+
+##### 算数
+
+y=1 − (1−a)*(1−b)
+
+##### 电路
+
+```js
+pragma circom 2.1.6;
+
+template OR() {
+    signal input a;
+    signal input b;
+    signal output y;
+    
+    0 === a * (a - 1);
+    0 === b * (b - 1);
+    y <== 1 - (1 - a) * (1 - b);
+}
+
+component main  = OR();
+
+/* INPUT = {
+    "a": 1,
+    "b": 0
+} */
+
+```
+
+### 异或
+
+##### 代码
+
+```js
+let y = a ^ b
+```
+
+##### 算数
+
+y = a + b - 2 * (a * b) 
+
+##### 电路
+
+```js
+pragma circom 2.1.6;
+
+template XOR() {
+    signal input a;
+    signal input b;
+    signal output y;
+    
+    0 === a * (a - 1);
+    0 === b * (b - 1);
+    y <== a + b - 2 * (a * b) ;
+}
+
+component main  = XOR();
+
+/* INPUT = {
+    "a": 1,
+    "b": 0
+} */
+
+```
+
+#####  
+
 
 
 <!-- Content_END -->
