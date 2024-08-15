@@ -173,4 +173,10 @@ timezone: Asia/Shanghai
 - 学习内容小结：
     - 比之前能稍微听得进去一点了
 
+### 2024.08.14
+
+- 学习主题：回头看一下视频 [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+- 学习内容小结：
+    - 只看了部分
+
 <!-- Content_END -->

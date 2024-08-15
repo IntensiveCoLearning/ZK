@@ -227,4 +227,7 @@ GPT解释：同态加密的解谜过程固定。难度是受解密密钥和算�
 - 3) 乘法可以看成是 group of stretching/squishing actions，aka multiplicative group of positive real numbers -> multiplicative group of complex numbers
  `GPT解释number的各种分类：在等式x²+1 = 0中，无real numbers解，因为实数不可能是负数，可是可以有复数解，解是个虚数imaginary unit。还有，5+0i是pure real numbers，0+2i是pure imaginary numbers，3+4i是general complex numbers`
 - 剩10分钟幂函数这块明天在看。
+
+### 2024.08.13
+- 幂函数对于群论的作用？Adding inputs = multiply outputs
 <!-- Content_END -->
