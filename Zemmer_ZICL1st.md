@@ -1811,6 +1811,169 @@ component main  = XOR();
 
 #####  
 
+### 2024.08.15
+### 强制控制相等ForceEqualIfEnabled
+
+1、enabled为输入参数，当1为强制两个输入的整数必须相等，即返回1。否则电路出错。
+
+2、为0时候只是判断两个整数是否相等，和isEqual一样，不做控制。
+
+3、使用场景是有点类似于将输入控制为0或1的x * (1 - x) === 0; 一样，就是控制输入。
+
+```js
+pragma circom 2.0.0;
+
+include "IsZero.circom";
+
+template ForceEqualIfEnabled() {
+    signal input enabled;
+    signal input in[2];
+
+    component isz = IsZero();
+
+    in[1] - in[0] ==> isz.in;
+
+    (1 - isz.out)*enabled === 0;
+}
+```
+
+## 交换
+
+将两个输入a和b进行交换，输出为b和a
+
+#### 算数
+
+a, b = b, a
+
+#### 电路
+
+设置了一个开关s
+
+```js
+pragma circom 2.1.6;
+
+template Swap() {
+    signal input input1;
+    signal input input2;
+    signal input s;  // 交换标识，0 或 1
+    signal output output1;
+    signal output output2;
+
+    0 === s * (s - 1);
+    output1 <== (input2 - input1) * s + input1;
+    output2 <== (input1 - input2) * s + input2;
+}
+
+component main = Swap();
+
+/* INPUT = {
+    "input1": 15,
+    "input2": 8,
+    "s": 1
+} */
+
+```
+
+#### 场景
+
+排序
+
+## 排序
+
+从大到小排序
+
+#### 代码
+
+```python
+a = [ 1, 5, 6, 3]
+print( sorted(a, reverse=True))
+
+# 冒泡排序
+for i in range(len(a)):
+    for j in range(0, len(a)-i-1):
+        if a[j] < a[j+1]:
+            a[j], a[j+1] = a[j+1], a[j]  
+
+print(a)  # Output: [6, 5, 3, 1]
+```
+
+#### 算法
+
+1、依次比较元素，如果a < b则交换位置
+
+2、比较一轮后开始第二轮，执行元素多的轮次。
+
+#### 电路
+
+1、排序必须导入交换swap、两个数比较大小GreaterThan和数字转化二进制Num2Bits、
+
+2、电路的排序需要明确被比较的元素数量，不能未知数量。
+
+```js
+// 以下只能三个非负整数按照从小到大排列。
+pragma circom 2.1.6;
+
+include "GreaterThan.circom";
+include "Swap.circom";
+
+// BubbleSort3 模板，用于对3个数字进行冒泡排序（从大到小）
+template BubbleSort3(n) {
+    signal input in[3];
+    signal output out[3];
+
+    // 第一次比较和交换
+    component gt1 = GreaterThan(n);
+    gt1.in[0] <== in[0];
+    gt1.in[1] <== in[1];
+
+    component swap1 = Swap();
+    swap1.input1 <== in[0];
+    swap1.input2 <== in[1];
+    swap1.s <== gt1.out;
+
+    // 交换后的中间结果
+    signal temp0;
+    signal temp1;
+    temp0 <== swap1.output1;
+    temp1 <== swap1.output2;
+
+    // 第二次比较和交换
+    component gt2 = GreaterThan(n);
+    gt2.in[0] <== temp0;
+    gt2.in[1] <== in[2];
+
+    component swap2 = Swap();
+    swap2.input1 <== temp0;
+    swap2.input2 <== in[2];
+    swap2.s <== gt2.out;
+
+    // 交换后的中间结果
+    signal temp2;
+    temp2 <== swap2.output2;
+
+    // 第三次比较和交换
+    component gt3 = GreaterThan(n);
+    gt3.in[0] <== temp1;
+    gt3.in[1] <== temp2;
+
+    component swap3 = Swap();
+    swap3.input1 <== temp1;
+    swap3.input2 <== temp2;
+    swap3.s <== gt3.out;
+
+    // 输出最终结果
+    out[0] <== swap2.output1;
+    out[1] <== swap3.output1;
+    out[2] <== swap3.output2;
+}
+
+component main= BubbleSort3(10);
+
+/* INPUT = {
+    "in": [2,4,2]
+} */
+```
+
 
 
 <!-- Content_END -->
