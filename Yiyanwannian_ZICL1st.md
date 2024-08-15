@@ -355,4 +355,11 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - circom本地环境搭建
 
 
+### 2024.08.15
+
+- 学习主题：
+  - Semaphore文档阅读
+- 学习内容小结：
+  - Semaphore本地测试
+
 <!-- Content_END -->
