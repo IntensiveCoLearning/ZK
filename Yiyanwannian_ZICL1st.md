@@ -362,4 +362,12 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
 - 学习内容小结：
   - Semaphore本地测试
 
+### 2024.08.16
+
+- 学习主题：
+  - 看视频 [Semaphore in a Nutshell](https://www.youtube.com/watch?v=WEKqycIMmLY)
+- 学习内容小结：
+  - 了解Semaphore具体是做什么的
+
+
 <!-- Content_END -->
