@@ -188,4 +188,9 @@ XDU大四学生，ZK在学。
 
 - 学习主题：复建
 - 学习内容小结:熟悉cairo和circom
+
+## 2024.08.15
+
+- 学习主题：学习snarkjs和web3js
+- 学习内容小结:学习js跟circom电路结合
 - <!-- Content_END -->

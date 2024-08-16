@@ -355,4 +355,19 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - circom本地环境搭建
 
 
+### 2024.08.15
+
+- 学习主题：
+  - Semaphore文档阅读
+- 学习内容小结：
+  - Semaphore本地测试
+
+### 2024.08.16
+
+- 学习主题：
+  - 看视频 [Semaphore in a Nutshell](https://www.youtube.com/watch?v=WEKqycIMmLY)
+- 学习内容小结：
+  - 了解Semaphore具体是做什么的
+
+
 <!-- Content_END -->
