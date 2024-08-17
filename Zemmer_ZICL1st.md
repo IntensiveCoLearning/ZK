@@ -1979,4 +1979,61 @@ component main= BubbleSort3(10);
 复习了merkle tree相关的操作。
 circom的进度太慢了，又没有勇气把每个电路复现一遍，很痛苦。
 
+### 2024.08.17
+## Circom的简单数字签名
+
+### 需求
+
+#### 证明内容
+
+我（证明者）拥有能够生成这个数字签名的私钥，但我不会向你（验证者）展示这个私钥本身。
+
+#### 电路过程
+
+1、证明者：公钥密码生成器：输入私钥sk，输出公钥pk
+
+2、证明者：签名sign：s = Sign(m, sk)
+
+3、验证者：验证verify：bool = Verify(m, s, pk)，从而验证陈述。
+
+### 代码
+
+#### 公钥生成模块
+
+1、调用circomlib的posidon组件，该组件用来生成哈希。
+
+2、利用该组件来从私钥生成公钥
+
+```js
+pragma circom 2.1.6;
+
+include "circomlib/poseidon.circom";
+
+template sk2pk() {
+    signal input sk;
+    signal output pk;
+
+    component poseidon = Poseidon(1);
+
+    poseidon.inputs[0] <== sk;
+
+    pk <== poseidon.out;
+}
+
+component main = sk2pk();
+
+/* 
+INPUT = { "sk": 5 }
+*/
+
+/* pk = 19065150524771031435284970883882288895168425523179566388456001105768498065277 */
+```
+
+#### posidon详解
+加密哈希函数，专为电路设计，相比SHA256等传统加密函数在电路方面更加快且节省资源。
+
+将一个或多个输入的整数转化为哈希值。
+
+输出为BN254即254位的大整数。（254位二进制转为十进制）
+
 <!-- Content_END -->
