@@ -309,4 +309,6 @@ zkVM 的缺点:
 zk实际用例：
 zksync
 https://medium.com/zksync-cn/%E9%9B%B6%E7%9F%A5%E8%AF%86-192e5c839784
+### 2024.08.17
+今日请假，本周请假第二次
 <!-- Content_END -->
