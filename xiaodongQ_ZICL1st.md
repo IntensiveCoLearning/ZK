@@ -185,4 +185,11 @@ timezone: Asia/Shanghai
 - 学习内容小结：
     - 学习视频
 
+### 2024.08.17
+
+- 学习主题：看完视频 [ZKP Lecture 2: Overview of Modern SNARK Constructions](https://www.youtube.com/watch?v=bGEXYpt3sj0)
+- 学习内容小结：
+    - ZK学习暂告一段落，对基础概念和简单原理有了一个认识。看数学公式的过程里，也提升了其他方面的技能，比如最近看leveldb的布隆过滤器原理，里面一些概率论方面的证明过程，看到也能稍微沉下心来看明白。相比而言，ZK的数学原理自己当前还比较吃力。
+    - 这次初学作为一个起点。
+
 <!-- Content_END -->
