@@ -305,4 +305,8 @@ zkVM 的优点:
 zkVM 的缺点:
 计算架构特殊: 并非所有零知识证明系统可以被用来做 zkVM.
 性能问题: 电路需要优化, 可以为特定计算进行针对性优化.
+### 2024.08.16
+zk实际用例：
+zksync
+https://medium.com/zksync-cn/%E9%9B%B6%E7%9F%A5%E8%AF%86-192e5c839784
 <!-- Content_END -->

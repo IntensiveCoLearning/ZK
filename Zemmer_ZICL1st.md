@@ -1974,6 +1974,9 @@ component main= BubbleSort3(10);
 } */
 ```
 
-
+### 2024.08.16
+了解了什么是semaphore，以及它和tornado cash实现匿名交易的不同原理。
+复习了merkle tree相关的操作。
+circom的进度太慢了，又没有勇气把每个电路复现一遍，很痛苦。
 
 <!-- Content_END -->

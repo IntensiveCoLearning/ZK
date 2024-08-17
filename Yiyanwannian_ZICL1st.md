@@ -370,4 +370,12 @@ timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
   - 了解Semaphore具体是做什么的
 
 
+### 2024.08.17
+
+- 学习主题：
+  - rust语法学习 [泛型、Trait 和生命周期](https://kaisery.github.io/trpl-zh-cn/ch10-00-generics.html)
+- 学习内容小结：
+  - 了解rust的泛型、Trait 和生命周期的用法
+
+
 <!-- Content_END -->

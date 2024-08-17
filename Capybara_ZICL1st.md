@@ -307,4 +307,18 @@ template ForceEqualIfEnabled() {
 Pinocchio 协议是针对 GGPR 论文的改进，在3.1节中也提到了实现零知识只需要沿用 GGPR 论文的方法即可，并不是这篇论文的贡献。另外，Pinocchio 协议论文侧重工程实践，在2013年时，零知识证明还并没有得到应用。真正的应用还是自从 ZCash 起始
 
 所谓 Argument——论证，区别于 Proof —— 证明。 Pinocchio 协议是 Argument 而非 Proof。这是因为 Pinocchio 的可靠性是 Computational Soundness，Statistical ZK，这一类的证明系统被称为 Argument。所谓的 Computational Soundness 暗含了这样的事实：如果 Prover 计算能力足够强大的话，可以破坏可靠性。
+
+
+### 2024.08.13
+
+- 学习主题：Plonkish Arithmetization
+- 学习内容小结：
+算术化是指把计算转换成数学对象，然后进行零知识证明。 Plonkish 算术化是 Plonk 证明系统特有的算术化方法，在 Plonkish 出现之前，主流的电路表达形式为 R1CS，被 Pinocchio，Groth16，Bulletproofs 等广泛采用。2019 年 Plonk 方案提出了一种看似复古的电路编码方式，但由于 Plonk 方案将多项式的编码应用到了极致，它不再局限于算术电路中的「加法门」和「乘法门」，而是可以支持更灵活的「自定义门」与「查表门」
+
+### 2024.08.14
+
+- 学习主题：多项式编码
+- 学习内容小结：
+Schwartz-Zippel 定理：
+把多个约束验证合并的神奇能力来自于「多项式随机挑战」。如果有两个多项式 f(X) 和 g(X) 同为两个次数不超过 d 的多项式。那么 Verifier 只需要给出一个随机挑战值 ζ∈F，计算 f(ζ) 是否等于 g(ζ) 即可大概率得知 f(X)=g(X)，其中出错的概率 ≤d/∣F∣。只要保证 F 足够大，那么检查出错的概率就可以忽略不计。
 <!-- Content_END -->
