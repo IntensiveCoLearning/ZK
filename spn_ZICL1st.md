@@ -193,4 +193,9 @@ XDU大四学生，ZK在学。
 
 - 学习主题：学习snarkjs和web3js
 - 学习内容小结:学习js跟circom电路结合
+  
+## 2024.08.17
+
+- 学习主题：复建rust and plookup学习
+- 学习内容小结:研究将之前整合到plookup整合成api在前端交互
 - <!-- Content_END -->
