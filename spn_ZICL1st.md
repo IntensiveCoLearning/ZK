@@ -198,4 +198,9 @@ XDU大四学生，ZK在学。
 
 - 学习主题：复建rust and plookup学习
 - 学习内容小结:研究将之前整合到plookup整合成api在前端交互
+  
+### 2024.08.18
+
+- 学习主题：snark and front
+- 学习内容小结:继续学习snark跟snarkjs，跟前端打架（bushi）
 - <!-- Content_END -->
