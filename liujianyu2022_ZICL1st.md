@@ -321,6 +321,8 @@ y2 = k(x0 - x2) - y0
 今天学习内容：
 编写circom代码：isZero。
 
-
+### 2024.08.18
+今天学习内容：
+编写circom代码：f(x) = x^3 + 2*x + 5
 
 <!-- Content_END -->
