@@ -99,6 +99,8 @@ Telegram：https://t.me/LXDAO/9644
 - 打卡：
   - 报名成功后，你将拥有 main 分支的 push 权限，你需要将每天学习笔记按日期更新到你的 YourName_ZICLst.md 文档中，提交更新后，我们会自动更新你的打卡状态到下面的打卡记录表。
 
+---
+
 ## ZK 残酷共学打卡记录表
 
 ✅ = Done ⭕️ = Missed ❌ = Failed
