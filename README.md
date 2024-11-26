@@ -101,7 +101,7 @@ Telegram：https://t.me/LXDAO/9644
 
 ---
 
-## ZK 残酷共学打卡记录表
+## 残酷共学打卡记录表
 
 ✅ = Done ⭕️ = Missed ❌ = Failed
 
