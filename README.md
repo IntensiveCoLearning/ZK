@@ -164,6 +164,21 @@ Telegram：https://t.me/LXDAO/9644
 | maxwell | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ⭕️ |   | ❌ | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
 
+<!-- STATISTICALDATA_START -->
+
+
+## 统计数据
+
+- 总参与人数: 54
+- 完成人数: 6
+- 完成用户: Draculabo, Oscar, xiaodongQ, Yiyanwannian, spn, btou
+- 全勤用户: Draculabo, Yiyanwannian
+- 淘汰人数: 46
+- 淘汰率: 85.19%
+- Fork人数: 61
+<!-- STATISTICALDATA_END -->
+
+
 
 
 
