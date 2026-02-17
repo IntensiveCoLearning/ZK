@@ -123,7 +123,7 @@ Telegram：https://t.me/LXDAO/9644
 | [LambertAlpha](https://github.com/IntensiveCoLearning/ZK/blob/main/LambertAlpha.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [XieJunhua](https://github.com/IntensiveCoLearning/ZK/blob/main/XieJunhua.md) | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | |
 | [GINAYY](https://github.com/IntensiveCoLearning/ZK/blob/main/GINAYY.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
-| [LRlulu](https://github.com/IntensiveCoLearning/ZK/blob/main/LRlulu.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ⭕️ | ✅ |   | ❌ | |
+| [LRlulu](https://github.com/IntensiveCoLearning/ZK/blob/main/LRlulu.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ⭕️ | ✅ | ❌ | | |
 | [Coooder-Crypto](https://github.com/IntensiveCoLearning/ZK/blob/main/Coooder-Crypto.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | |
 | [haobarry](https://github.com/IntensiveCoLearning/ZK/blob/main/haobarry.md) | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | |
 | [No-HUL](https://github.com/IntensiveCoLearning/ZK/blob/main/No-HUL.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | |
@@ -141,10 +141,10 @@ Telegram：https://t.me/LXDAO/9644
 | [keroro520](https://github.com/IntensiveCoLearning/ZK/blob/main/keroro520.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [coderprepares](https://github.com/IntensiveCoLearning/ZK/blob/main/coderprepares.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | |
 | [liujianyu2022](https://github.com/IntensiveCoLearning/ZK/blob/main/liujianyu2022.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [rayjun](https://github.com/IntensiveCoLearning/ZK/blob/main/rayjun.md) | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   | ✅ | ⭕️ |
+| [rayjun](https://github.com/IntensiveCoLearning/ZK/blob/main/rayjun.md) | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ❌ |
 | [0530-Suyb](https://github.com/IntensiveCoLearning/ZK/blob/main/0530-Suyb.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | |
 | [AricRedemption](https://github.com/IntensiveCoLearning/ZK/blob/main/AricRedemption.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
-| [tmors](https://github.com/IntensiveCoLearning/ZK/blob/main/tmors.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ |   | ❌ | |
+| [tmors](https://github.com/IntensiveCoLearning/ZK/blob/main/tmors.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | |
 | [twiagle](https://github.com/IntensiveCoLearning/ZK/blob/main/twiagle.md) | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
 | [zzhenhongg](https://github.com/IntensiveCoLearning/ZK/blob/main/zzhenhongg.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [tomslark123](https://github.com/IntensiveCoLearning/ZK/blob/main/tomslark123.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
@@ -160,9 +160,10 @@ Telegram：https://t.me/LXDAO/9644
 | [Draculabo](https://github.com/IntensiveCoLearning/ZK/blob/main/Draculabo.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [Maohua Zhu](https://github.com/IntensiveCoLearning/ZK/blob/main/Maohua Zhu.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [jidalii](https://github.com/IntensiveCoLearning/ZK/blob/main/jidalii.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
-| [Prcentos](https://github.com/IntensiveCoLearning/ZK/blob/main/Prcentos.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   | ⭕️ | ❌ |
-| [spn21](https://github.com/IntensiveCoLearning/ZK/blob/main/spn21.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | ✅ | ✅ |
+| [Prcentos](https://github.com/IntensiveCoLearning/ZK/blob/main/Prcentos.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ |   | ❌ |
+| [spn21](https://github.com/IntensiveCoLearning/ZK/blob/main/spn21.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
