@@ -121,7 +121,7 @@ Telegram：https://t.me/LXDAO/9644
 | [btou666](https://github.com/IntensiveCoLearning/ZK/blob/main/btou666.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |
 | [0xhardman](https://github.com/IntensiveCoLearning/ZK/blob/main/0xhardman.md) | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | |
 | [LambertAlpha](https://github.com/IntensiveCoLearning/ZK/blob/main/LambertAlpha.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
-| [XieJunhua](https://github.com/IntensiveCoLearning/ZK/blob/main/XieJunhua.md) | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | |
+| [XieJunhua](https://github.com/IntensiveCoLearning/ZK/blob/main/XieJunhua.md) |   | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | | |
 | [GINAYY](https://github.com/IntensiveCoLearning/ZK/blob/main/GINAYY.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [LRlulu](https://github.com/IntensiveCoLearning/ZK/blob/main/LRlulu.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ⭕️ | ✅ | ❌ | | |
 | [Coooder-Crypto](https://github.com/IntensiveCoLearning/ZK/blob/main/Coooder-Crypto.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | |
@@ -163,6 +163,7 @@ Telegram：https://t.me/LXDAO/9644
 | [Prcentos](https://github.com/IntensiveCoLearning/ZK/blob/main/Prcentos.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | |
 | [spn21](https://github.com/IntensiveCoLearning/ZK/blob/main/spn21.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
